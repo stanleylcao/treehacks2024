@@ -7,7 +7,10 @@
 - Company simulator where people hate you and you have to make them work
 
 ### Sustainability
-- 
+- No.
+
+### Health
+- Automated day-by-day journaling (with background data collection) for mental health analysis
 
 # Candidates
 - fetch.ai (Smartest AI Agent Prize)
