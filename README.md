@@ -7,3 +7,4 @@
 - coframe? (Best AI Hack)
 - Reflex (Best app using proprietary full-stack API)
 - cotopaxi (Best app in sustainability)
+- McCoy Family Center (Best ethics essay)
