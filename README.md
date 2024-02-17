@@ -13,7 +13,8 @@
 - Automated day-by-day journaling (with background data collection) for mental health analysis
 
 ### Education
-- 
+- Human language learning (already done)
+- Grading feedback (already done)
 
 # Candidates
 - fetch.ai (Smartest AI Agent Prize)
