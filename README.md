@@ -1,5 +1,12 @@
 # treehacks2024
 
+# New Yorker Caption Contest
+
+1. LLM Arena for Humor
+2. Do some lit review
+3. 5-shot GPT-V eval, followed by training a model
+4. Try to use negative samples from human comparisons to train the model
+
 # Ideas
 ### Entertainment
 - AI video game scene generation
