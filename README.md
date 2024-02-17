@@ -1,9 +1,13 @@
 # treehacks2024
 
 # Ideas
+### Entertainment
 - AI video game scene generation
 - Text-based murder mystery game with NLP agents behind the scenes
 - Company simulator where people hate you and you have to make them work
+
+### Sustainability
+- 
 
 # Candidates
 - fetch.ai (Smartest AI Agent Prize)
