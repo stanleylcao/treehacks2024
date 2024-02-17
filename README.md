@@ -6,3 +6,5 @@
 - Otsuka/Valuenex (Best Hack to Connect with Others through Food)
 - codegen (Best Use of AI Agents)
 - coframe? (Best AI Hack)
+- Reflex
+- cotopaxi
