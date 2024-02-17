@@ -1,1 +1,9 @@
 reflex==0.4.0
+datasets
+ipykernel
+Pillow
+python-dotenv
+black
+more-itertools
+tenacity
+tqdm
