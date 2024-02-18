@@ -1,20 +1,21 @@
 import asyncio
 import base64
+import json
 import logging
 import os
-from typing import Any, Coroutine, Iterator, TypeVar, cast
+from typing import Any, AsyncGenerator, Coroutine, Iterator, TypeVar, cast
 from openai import AsyncOpenAI
 from openai import OpenAIError
 from openai.types.chat import ChatCompletionMessageParam
 from dotenv import load_dotenv
-import datasets
 import pandas as pd
 from PIL import Image
 from io import BytesIO
 from more_itertools import flatten
 import tenacity
-from tqdm import tqdm
+from pathlib import Path
 from tqdm.asyncio import tqdm_asyncio
+import fire
 
 from yorknew.models.data_processing import get_validation_data
 
@@ -108,29 +109,43 @@ async def gather_with_concurrency_yield(*coros: Coroutine[Any, Any, T], n: int =
         yield await task
 
 
-async def eval_gptv(df: pd.DataFrame, limit: int | None = None) -> None:
+async def eval_gptv(
+    df: pd.DataFrame, limit: int | None = None
+) -> AsyncGenerator[dict[str, Any], None]:
     maximum = len(df) if limit is None else min(limit, len(df))
 
-    async def get_image_caption_pair(
-        df: pd.DataFrame, idx: int
-    ) -> tuple[pd.Series, str]:
-        return (
-            df.iloc[idx],
-            await _get_caption(df, idx),
-        )
+    async def get_image_caption_pair(df: pd.DataFrame, idx: int) -> dict[str, Any]:
+        return {
+            "idx": 0,
+            "params": {},
+            "caption": await _get_caption(df, idx),
+        }
 
     async for res in gather_with_concurrency_yield(
         *(get_image_caption_pair(df, idx) for idx in range(maximum))
     ):
-        print(res)
+        yield res
 
 
-async def main() -> None:
+OUTPUT_FILE = "data/gptv_samples.jsonl"
+
+
+async def main(limit: int | None = None, output_file: str = OUTPUT_FILE) -> None:
+    logging.basicConfig(level=logging.INFO)
+
+    output_path = Path(output_file)
+    output_path.parent.mkdir(exist_ok=True, parents=True)
+
     df = get_validation_data()
     df = df.query("is_correct == True")
 
-    await eval_gptv(df.sample(6), limit=1)
+    logger.info("Loaded %d correct captions", len(df))
+
+    with output_path.open("w") as f:
+        async for res in eval_gptv(df, limit=limit):
+            json.dump(res, f)
+            f.write("\n")
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    fire.Fire(main)
