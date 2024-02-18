@@ -4,40 +4,42 @@ from rxconfig import config
 import reflex as rx
 
 import yorknew.components.styles
-from yorknew.components.scroller import scroller
+from yorknew.components.scroller import scroller, ratingScroller
 import yorknew.database as db
 
 
 class btnState(rx.State):
     def button_1_click(self):
-        db.State.handle_submit({"winner": '1'})
+        db.State.handle_submit({"winner": "1"})
 
     def button_2_click(self):
-        db.State.handle_submit({"winner": '2'})
+        db.State.handle_submit({"winner": "2"})
 
 
 def ratingscontent():
-    db.State.load_two_captions_to_rate(db.State.contest_number_rating)
     return rx.center(
         rx.vstack(
             # Heading
-            rx.heading(f"Rate The Caption for Image \
-                        {db.State.contest_number_rating}", size="7"),
+            rx.heading(
+                f"Rate The Caption for Image \
+                        {db.State.contest_number_rating}",
+                size="7",
+            ),
             # Image
-            rx.image(src="/example_nycomic.webp", width="400px"),
+            rx.image(src=f"/contest_images/729.jpg", width="400px"),
             # Scroller
-            scroller(1),  # replace with rating_page statevar
+            scroller(ratingScroller),  # replace with rating_page statevar
             # Default two choices
             rx.hstack(
                 rx.button(
-                    db.State.test_caption_1.caption,
+                    db.State.caption_1.caption,
                     size="4",
                     type="submit",
                     # on_click=rx.console_log('NE ADDED')
                     on_click=btnState.button_1_click,
                 ),
                 rx.button(
-                    db.State.test_caption_2.caption,
+                    db.State.caption_2.caption,
                     size="4",
                     type="submit",
                     on_click=btnState.button_2_click,
