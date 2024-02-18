@@ -10,11 +10,16 @@ navbar_height = "6em"
 def navbar():
     return rx.hstack(
         rx.image(src="/eustace-400.webp", width="3em"),
+        rx.button(
+            rx.chakra.icon(tag="view"),
+            "CLEAR",
+            on_click=db.State.clear_db,
+        ),
         rx.spacer(),
         rx.heading(
-            "YORKNEW",
+            "THE NEW YORKER CAPTION CLUB",
             font_family="NYTitleFont",
-            font_size="2em",
+            font_size="45px",
             position="absolute",
             left="0%",
             right="0%",
@@ -36,11 +41,6 @@ def navbar():
             rx.chakra.icon(tag="view"),
             "Leaderboard",
             on_click=rx.redirect("/rankings"),
-        ),
-        rx.button(
-            rx.chakra.icon(tag="view"),
-            "CLEAR",
-            on_click=db.State.clear_db,
         ),
         position="fixed",
         # flex_direction='row',

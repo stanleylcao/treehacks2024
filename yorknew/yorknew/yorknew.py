@@ -30,7 +30,6 @@ app = rx.App(
     ),
     style={
         'accent_color': '#8C1515',
-        # "font_family": "Libre Caslon Text, serif",
         rx.button: {"font_family": "Merriweather",
                     'transition': 'background-color 0.3s ease, transform 0.3s ease',
                     'background-color': '#2E2D29',
@@ -39,8 +38,12 @@ app = rx.App(
                         'background-color': '#8C1515',
                     }
                     },
-        rx.text: {"font_family": "Merriweather", },
-        rx.heading: {"font_family": "Merriweather", }
+        rx.text: {"font_family": "Merriweather", 'font_size': '17px'},
+        rx.heading: {"font_family": "Merriweather", 'font_size': '35px'},
+        # 'font_family': "adobe-caslon",
+        'font_family': "Merriweather",
+        'font_size': '10px'
+        # rx.data_table: {"font_family": "Merriweather", }
     },
 )
 
@@ -92,7 +95,8 @@ def initialize_database_with_captions():
             )
             if not session.exec(
                 db.Entry.select.where(
-                    (db.Entry.name == item.name) & (db.Entry.subject == item.subject)
+                    (db.Entry.name == item.name) & (
+                        db.Entry.subject == item.subject)
                 )
             ).first():
                 session.add(entry)

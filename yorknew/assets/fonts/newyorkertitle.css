@@ -8,6 +8,11 @@
   src: url("Merriweather-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: adobe-caslon;
+  src: url("Adobe-Caslon-Pro-Italic.ttf") format("truetype");
+}
+
 /* @font-face {
   font-family: NYTitleFont;
   font-weight: bold;
