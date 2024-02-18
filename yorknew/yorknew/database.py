@@ -1,14 +1,16 @@
+from collections import defaultdict
 import reflex as rx
 from yorknew.ELO import adjust_rating
 from sqlmodel import Session
 from os import listdir
-from typing import List
+from typing import Any, List
 from random import randrange
 
 import random
 
 path_to_contest_images = "./assets/contest_images/"
 entrycolumns = ["Rating", "User", "Caption"]
+user_elo_columns = ["Rank", "User", "Rating"]
 
 columns: list[dict[str, str]] = [
     {
@@ -56,6 +58,7 @@ class State(rx.State):
 
     # For leaderboard display
     leaderboard_table: list[list]
+    user_elo_table: list[list]
 
     # For rating page
     caption_1: Entry = None
@@ -71,6 +74,35 @@ class State(rx.State):
                 Entry.select.where(Entry.subject == self.contest_number_leaderboard)
             )
             self.leaderboard_table = list(map(State.convert_entry_to_list, entry_list))
+
+    def get_user_elo_table(self):
+        user_elo_table = defaultdict(float)
+        with rx.session() as session:
+            comparisons = session.exec(
+                Comparison.select.where(True).order_by(Comparison.id)
+            ).all()
+
+        for comparison in comparisons:
+            winner = (
+                comparison.name_1 if comparison.one_is_better else comparison.name_2
+            )
+            loser = comparison.name_2 if comparison.one_is_better else comparison.name_1
+
+            user_elo_table[winner], user_elo_table[loser] = adjust_rating(
+                user_elo_table[winner], user_elo_table[loser]
+            )
+
+        self.user_elo_table = list(
+            sorted(
+                [[name, rating] for name, rating in user_elo_table.items()],
+                key=lambda x: x[1],
+                reverse=True,
+            )
+        )
+        self.user_elo_table = [
+            [i + 1, name, rating]
+            for i, (name, rating) in enumerate(self.user_elo_table)
+        ]
 
     def clear_db(self):
         with rx.session() as session:
