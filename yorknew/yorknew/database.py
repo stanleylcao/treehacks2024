@@ -19,10 +19,9 @@ class Entry(rx.Model, table=True):
 
 # State for updating the current panel being observed
 
-
 class State(rx.State):
-    contest_number_leaderboard: int
-    contest_number_rating: int
+    contest_number_leaderboard: int = 0
+    contest_number_rating: int = 0
 
     # For leaderboard display
     leaderboard_table: list[list]
@@ -74,6 +73,7 @@ class State(rx.State):
             session.commit()
 
     def handle_submit(self, form_data):
+        self.load_two_captions_to_rate(db.State.contest_number_rating)
         with rx.session() as session:
             if ('winner' in form_data.keys()):
                 if (form_data['winner'] == '1'):
