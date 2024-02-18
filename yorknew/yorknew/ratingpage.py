@@ -45,7 +45,6 @@ def ratingscontent():
                         type="submit",
                     ),
                     align="center",
-                    spacing="7",
                 ),
                 # on_submit=FormState.handle_submit,
                 reset_on_submit=True,
