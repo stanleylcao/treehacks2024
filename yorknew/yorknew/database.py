@@ -77,9 +77,6 @@ class State(rx.State):
                     Entry.subject == self.contest_number_leaderboard)
             )
             self.leaderboard_table = list(
-<<<<<<< HEAD
-                map(State.convert_entry_to_list, entry_list))
-=======
                 # sort by ELO rating
                 sorted(
                     map(State.convert_entry_to_list, entry_list),
@@ -87,7 +84,6 @@ class State(rx.State):
                     reverse=True,
                 )
             )
->>>>>>> refs/remotes/origin/master
 
     def get_user_elo_table(self):
         with rx.session() as session:
