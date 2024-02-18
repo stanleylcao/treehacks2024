@@ -1,0 +1,13 @@
+http://yorknew.fly.dev
+
+encode gzip
+
+@backend_routes path /_event/* /_upload /ping
+handle @backend_routes {
+	reverse_proxy localhost:8000
+}
+
+# Handle everything else by proxying to localhost:3000
+handle {
+	reverse_proxy localhost:3000
+}
