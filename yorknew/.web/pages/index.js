@@ -3,21 +3,50 @@
 
 import { Fragment, useCallback, useContext } from "react"
 import { EventLoopContext } from "/utils/context"
-import { Event, getBackendURL, isTrue } from "/utils/state"
-import { Button as RadixThemesButton, Code as RadixThemesCode, Dialog as RadixThemesDialog, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Text as RadixThemesText, ThemePanel as RadixThemesThemePanel } from "@radix-ui/themes"
+import { Event, getBackendURL, getRefValue, getRefValues, isTrue } from "/utils/state"
+import { Button as RadixThemesButton, Container as RadixThemesContainer, Dialog as RadixThemesDialog, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Select as RadixThemesSelect, Text as RadixThemesText, TextArea as RadixThemesTextArea } from "@radix-ui/themes"
 import env from "/env.json"
+import { ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon, PlusSquareIcon, QuestionIcon, StarIcon, ViewIcon } from "@chakra-ui/icons"
+import { Root as RadixFormRoot } from "@radix-ui/react-form"
 import NextHead from "next/head"
 
 
 
-export function Button_d474754a9d7f8322123330cf11ed7fd1 () {
+export function Button_97346566d08bf7b05c25ead1063c06c1 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_123926a228ab954b33ec736733dffdba = useCallback((_e) => addEvents([Event("_redirect", {path:`https://reflex.dev/docs/getting-started/introduction`,external:false})], (_e), {}), [addEvents, Event])
+  const on_click_2939200eea777f8472dc8e0dfda72a2d = useCallback((_e) => addEvents([Event("_redirect", {path:`/about`,external:false})], (_e), {}), [addEvents, Event])
 
   return (
-    <RadixThemesButton onClick={on_click_123926a228ab954b33ec736733dffdba} size={`4`}>
-  {`Check out our docs!`}
+    <RadixThemesButton onClick={on_click_2939200eea777f8472dc8e0dfda72a2d}>
+  <QuestionIcon/>
+  {`About`}
+</RadixThemesButton>
+  )
+}
+
+export function Button_e00a6c9cbb18ab1d43a894a35482fb5a () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_73cbbcc5d9db9e563330a061e04f36ef = useCallback((_e) => addEvents([Event("_redirect", {path:`/`,external:false})], (_e), {}), [addEvents, Event])
+
+  return (
+    <RadixThemesButton onClick={on_click_73cbbcc5d9db9e563330a061e04f36ef}>
+  <PlusSquareIcon/>
+  {`Rating`}
+</RadixThemesButton>
+  )
+}
+
+export function Button_8acf3db9f5cfd134e66cc91cc5619fe3 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_9145ee51f08d0dea0717cf5b624a566c = useCallback((_e) => addEvents([Event("_redirect", {path:`/rankings`,external:false})], (_e), {}), [addEvents, Event])
+
+  return (
+    <RadixThemesButton onClick={on_click_9145ee51f08d0dea0717cf5b624a566c}>
+  <ViewIcon/>
+  {`Leaderboard`}
 </RadixThemesButton>
   )
 }
@@ -56,24 +85,93 @@ export default function Component() {
   return (
     <Fragment>
   <Fragment_1762bb90abdb81b879b2a22edbbe01a1/>
-  <RadixThemesFlex css={{"height": "100vh", "display": "flex", "alignItems": "center", "justifyContent": "center"}}>
-  <RadixThemesThemePanel defaultOpen={false}/>
-  <RadixThemesFlex align={`center`} css={{"fontSize": "2em", "flexDirection": "column"}} gap={`7`}>
-  <RadixThemesHeading size={`9`}>
-  {`Welcome to Reflex!`}
+  <Fragment>
+  <RadixThemesFlex align={`start`} css={{"position": "fixed", "top": "0px", "backgroundColor": "lightgray", "padding": "1em", "height": "4em", "width": "100%", "zIndex": "5", "flexDirection": "row"}} gap={`2`}>
+  <img css={{"width": "2em"}} src={`/eustace-400.webp`}/>
+  <RadixThemesFlex css={{"flex": 1, "justifySelf": "stretch", "alignSelf": "stretch"}}/>
+  <RadixThemesHeading css={{"fontFamily": "NYTitleFont", "fontSize": "2em"}}>
+  {`YORKNEW`}
 </RadixThemesHeading>
-  <RadixThemesText as={`p`}>
-  {`Get Started `}
-  <RadixThemesCode>
-  {`yorknew/yorknew.py`}
-</RadixThemesCode>
+  <RadixThemesFlex css={{"flex": 1, "justifySelf": "stretch", "alignSelf": "stretch"}}/>
+  <Button_97346566d08bf7b05c25ead1063c06c1/>
+  <Button_e00a6c9cbb18ab1d43a894a35482fb5a/>
+  <Button_8acf3db9f5cfd134e66cc91cc5619fe3/>
+</RadixThemesFlex>
+  <RadixThemesContainer css={{"paddingTop": "6em"}}>
+  <RadixThemesFlex css={{"height": "100vh", "display": "flex", "alignItems": "center", "justifyContent": "center"}}>
+  <RadixThemesFlex align={`center`} css={{"fontSize": "2em", "flexDirection": "column"}} gap={`7`}>
+  <RadixThemesHeading size={`7`}>
+  {`Rate The Caption for Image (statevar)`}
+</RadixThemesHeading>
+  <img css={{"width": "400px"}} src={`/example_nycomic.webp`}/>
+  <RadixThemesFlex align={`start`} css={{"flexDirection": "row"}} gap={`2`}>
+  <RadixThemesButton>
+  <ArrowLeftIcon/>
+</RadixThemesButton>
+  <RadixThemesButton>
+  <ChevronLeftIcon/>
+</RadixThemesButton>
+  <RadixThemesButton>
+  <StarIcon/>
+</RadixThemesButton>
+  <RadixThemesButton>
+  <ChevronRightIcon/>
+</RadixThemesButton>
+  <RadixThemesButton>
+  <ArrowRightIcon/>
+</RadixThemesButton>
+  <RadixThemesSelect.Root css={{"fontFamily": "IBM Plex Mono", "fontSize": "1.5em"}} size={`2`}>
+  <RadixThemesSelect.Trigger placeholder={`Current Page #`}/>
+  <RadixThemesSelect.Content>
+  <RadixThemesSelect.Group>
+  <RadixThemesSelect.Label>
+  {`Page Number`}
+</RadixThemesSelect.Label>
+  <RadixThemesSelect.Item value={`1`}>
+  {`1`}
+</RadixThemesSelect.Item>
+  <RadixThemesSelect.Item value={`2`}>
+  {`2`}
+</RadixThemesSelect.Item>
+  <RadixThemesSelect.Item value={`3`}>
+  {`3`}
+</RadixThemesSelect.Item>
+  <RadixThemesSelect.Item value={`4`}>
+  {`4`}
+</RadixThemesSelect.Item>
+  <RadixThemesSelect.Item value={`5`}>
+  {`5`}
+</RadixThemesSelect.Item>
+</RadixThemesSelect.Group>
+</RadixThemesSelect.Content>
+</RadixThemesSelect.Root>
+</RadixThemesFlex>
+  <RadixFormRoot className={`Root`}>
+  <RadixThemesFlex align={`center`} css={{"flexDirection": "column"}} gap={`7`}>
+  <RadixThemesFlex align={`start`} css={{"flexDirection": "row"}} gap={`2`}>
+  <RadixThemesButton size={`4`} type={`submit`}>
+  {`Option 1`}
+</RadixThemesButton>
+  <RadixThemesButton size={`4`} type={`submit`}>
+  {`Option 2`}
+</RadixThemesButton>
+</RadixThemesFlex>
+  <RadixThemesText as={`p`} size={`3`}>
+  {`Don't like either? Write your own!`}
 </RadixThemesText>
-  <Button_d474754a9d7f8322123330cf11ed7fd1/>
+  <RadixThemesTextArea css={{"width": "300px", "height": "50px"}} placeholder={`My superior caption...`}/>
+  <RadixThemesButton size={`4`} type={`submit`}>
+  {`Submit my caption`}
+</RadixThemesButton>
+</RadixThemesFlex>
+</RadixFormRoot>
 </RadixThemesFlex>
 </RadixThemesFlex>
+</RadixThemesContainer>
+</Fragment>
   <NextHead>
   <title>
-  {`Reflex App`}
+  {`Yorknew`}
 </title>
   <meta content={`A Reflex app.`} name={`description`}/>
   <meta content={`favicon.ico`} property={`og:image`}/>

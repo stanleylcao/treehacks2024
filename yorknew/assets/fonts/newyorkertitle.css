@@ -1,0 +1,10 @@
+@font-face {
+    font-family: NYTitleFont;
+    src: url("NY\ Irvin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: NYTitleFont;
+    font-weight: bold;
+    src: url("NY\ Irvin.ttf") format("truetype");
+}

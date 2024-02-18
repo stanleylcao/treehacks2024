@@ -1,25 +1,54 @@
+""" This contains the rating page for ease of access to users """
+
 from rxconfig import config
 import reflex as rx
 
-docs_url = "https://reflex.dev/docs/getting-started/introduction"
-filename = f"{config.app_name}/{config.app_name}.py"
+import yorknew.components.styles
+from yorknew.components.scroller import scroller
+from yorknew.database import State
 
-
-class State(rx.State):
-    """The app state."""
-
-""" This contains the rating page for ease of access to users """
-@rx.page()
-def index() -> rx.Component:
+def ratingscontent():
     return rx.center(
-        rx.theme_panel(default_open=False),
         rx.vstack(
-            rx.heading("Welcome to Reflex!", size="9"),
-            rx.text("Get Started ", rx.code(filename)),
-            rx.button(
-                "Check out our docs!",
-                on_click=lambda: rx.redirect(docs_url),
-                size="4",
+            # Heading
+            rx.heading("Rate The Caption for Image (statevar)", size="7"),
+            # Image
+            rx.image(src="/example_nycomic.webp", width="400px"),
+            # Scroller
+            scroller(1), # replace with rating_page statevar
+
+            # Submission Form
+            rx.form(
+                rx.vstack(
+                    # Default two choices
+                    rx.hstack(
+                        rx.button(
+                            "Option 1",
+                            size="4",
+                            type="submit",
+                        ),
+                        rx.button(
+                            "Option 2",
+                            size="4",
+                            type="submit",
+                        ),
+                    ),
+                    # Custom choice entry
+                    rx.text("Don't like either? Write your own!", size="3"),
+                    rx.text_area(
+                        placeholder="My superior caption...",
+                        style={"width": "300px", "height": "50px"},
+                    ),
+                    rx.button(
+                        "Submit my caption",
+                        size="4",
+                        type="submit",
+                    ),
+                    align="center",
+                    spacing="7",
+                ),
+                # on_submit=FormState.handle_submit,
+                reset_on_submit=True,
             ),
             align="center",
             spacing="7",
