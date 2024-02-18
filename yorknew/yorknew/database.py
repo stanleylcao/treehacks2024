@@ -20,7 +20,7 @@ class Entry(rx.Model, table=True):
 
 
 class State(rx.State):
-    contest_number_leaderboard: int = 0
+    contest_number_leaderboard: int = 19
     contest_number_rating: int = 0
 
     # For leaderboard display
@@ -40,7 +40,6 @@ class State(rx.State):
                 Entry.select.where(Entry.subject == self.contest_number_leaderboard)
             )
             self.leaderboard_table = list(map(State.convert_entry_to_list, entry_list))
-            pprint(self.leaderboard_table.__wrapped__)
 
     def clear_db(self):
         with rx.session() as session:
@@ -48,13 +47,6 @@ class State(rx.State):
             for e in entry_list:
                 session.delete(e)
             session.commit()
-
-    def get_leaderboard_table(self) -> None:
-        with rx.session() as session:
-            entry_list = session.exec(
-                Entry.select.where(Entry.subject == self.contest_number_leaderboard)
-            )
-            self.leaderboard_table = list(map(State.convert_entry_to_list, entry_list))
 
     def load_two_captions_to_rate(self):
         with rx.session() as session:
