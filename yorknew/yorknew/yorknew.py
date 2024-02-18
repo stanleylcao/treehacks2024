@@ -48,8 +48,8 @@ app = rx.App(
         rx.heading: {
             "font_family": "Merriweather",
         },
-        'font_family': 'Merriweather',
-        'font_size': '10px'
+        "font_family": "Merriweather",
+        "font_size": "10px",
     },
 )
 
@@ -76,7 +76,10 @@ def about() -> rx.Component:
     )
 
 
-@rx.page(title="Yorknew Leaderboard", on_load=db.State.get_leaderboard_table)
+@rx.page(
+    title="Yorknew Leaderboard",
+    on_load=[db.State.get_leaderboard_table, db.State.get_user_elo_table],
+)
 def rankings() -> rx.Component:
     return rx.fragment(
         navbar.navbar(),
