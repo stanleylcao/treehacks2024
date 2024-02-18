@@ -75,7 +75,14 @@ class State(rx.State):
             entry_list = session.exec(
                 Entry.select.where(Entry.subject == self.contest_number_leaderboard)
             )
-            self.leaderboard_table = list(map(State.convert_entry_to_list, entry_list))
+            self.leaderboard_table = list(
+                # sort by ELO rating
+                sorted(
+                    map(State.convert_entry_to_list, entry_list),
+                    key=lambda x: x[0],
+                    reverse=True,
+                )
+            )
 
     def get_user_elo_table(self):
         with rx.session() as session:
