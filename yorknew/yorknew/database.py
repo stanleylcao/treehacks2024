@@ -39,11 +39,11 @@ class State(rx.State):
     def get_leaderboard_table(self):
         with rx.session() as session:
             entry_list = session.exec(
-                Entry.select.where(Entry.subject == self.contest_number_leaderboard)
+                Entry.select.where(
+                    Entry.subject == self.contest_number_leaderboard)
             )
-            self.leaderboard_table = list(map(State.convert_entry_to_list, entry_list))
-            # self.leaderboard_table = list(map(
-            #     lambda entry: [entry.rating, entry.user, entry.caption], entry_list))
+            self.leaderboard_table = list(
+                map(State.convert_entry_to_list, entry_list))
             pprint(self.leaderboard_table.__wrapped__)
 
     def clear_db(self):
@@ -56,10 +56,12 @@ class State(rx.State):
     def load_two_captions_to_rate(self):
         with rx.session() as session:
             entry_list = session.exec(
-                Entry.select.where(Entry.subject == self.contest_number_rating).all()
+                Entry.select.where(
+                    Entry.subject == self.contest_number_rating).all()
                 # Entry.select.contains(self.contest_number_rating).all()
             )
-            self.test_caption_1, self.test_caption_2 = random.sample(entry_list, 2)
+            self.test_caption_1, self.test_caption_2 = random.sample(
+                entry_list, 2)
 
     def update_captions_rating(self, session, caption_1_new_r, caption_2_new_r):
         self.test_caption_1.rating = caption_1_new_r
@@ -85,12 +87,14 @@ class State(rx.State):
                     new_rating_1, new_rating_2 = adjust_rating(
                         self.test_caption_1.rating, self.test_caption_2.rating
                     )
-                    self.update_captions_rating(session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(
+                        session, new_rating_1, new_rating_2)
                 else:
                     new_rating_2, new_rating_1 = adjust_rating(
                         self.test_caption_2.rating, self.test_caption_1.rating
                     )
-                    self.update_captions_rating(session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(
+                        session, new_rating_1, new_rating_2)
             else:
                 self.add_new_caption(
                     session, 0, form_data["new_name"], form_data["new_caption"]
