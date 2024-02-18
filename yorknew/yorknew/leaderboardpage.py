@@ -23,7 +23,7 @@ def rankingscontent():
             ),
             # Image
             rx.image(src=f"/contest_images/{db.State.imagelist \
-				[db.State.contest_number_leaderboard - 1]}", height="400px"),
+				[db.State.contest_number_leaderboard - 1]}", height="200px"),
             # Scroller
             leaderboardscroller(),  # replace with ranking_page statevar
             rx.data_table(
@@ -45,14 +45,6 @@ def rankingscontent():
                 vertical_border=False,
                 # column_select="multi",
                 overscroll_x=100,
-                # theme=styles.rankingtheme,
-                # style=theme
-                # on_cell_clicked=DataTableState2.get_clicked_data,
-                # on_cell_edited=DataTableState2.get_edited_data,
-                # on_group_header_context_menu=DataTableState2.get_group_header_right_click,
-                # on_item_hovered=DataTableState2.get_item_hovered,
-                # on_delete=DataTableState2.get_deleted_item,
-                # on_column_resize=DataTableState2.column_resize,
             ),
             align="center",
             spacing="7",
