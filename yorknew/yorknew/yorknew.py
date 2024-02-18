@@ -1,6 +1,7 @@
 """This file serves as the starting point for app deployment and nav"""
 
 import logging
+import os
 from pathlib import Path
 import pandas as pd
 import reflex as rx
@@ -29,6 +30,7 @@ app = rx.App(
         accent_color="orange",
     ),
     style={"font_family": "Libre Caslon Text, serif"},
+    db_url=os.environ.get("REFLEX_DB", "sqlite:///reflex.db"),
 )
 
 
@@ -65,35 +67,6 @@ def rankings() -> rx.Component:
     )
 
 
-def initialize_database_with_captions():
-    print("Initializing database...")
-    df = pd.read_csv(REFLEX_ROOT_DIR / "data" / "combined_df.csv")
-    added_items = 0
-    with rx.session() as session:
-        for item in df.itertuples():
-            entry = db.Entry(
-                name=item.name,
-                caption=item.caption,
-                rating=item.rating,
-                subject=item.subject,
-            )
-            if not session.exec(
-                db.Entry.select.where(
-                    (db.Entry.name == item.name) & (db.Entry.subject == item.subject)
-                )
-            ).first():
-                session.add(entry)
-                added_items += 1
-
-        session.commit()
-
-    print("Database initialized! Added {} missing items".format(added_items))
-
-
 app.add_page(index)
 app.add_page(about)
 app.add_page(rankings)
-
-
-# Initialize the database if it isn't already loaded
-initialize_database_with_captions()
