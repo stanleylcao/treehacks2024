@@ -12,6 +12,19 @@ import NextHead from "next/head"
 
 
 
+export function Button_97346566d08bf7b05c25ead1063c06c1 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_2939200eea777f8472dc8e0dfda72a2d = useCallback((_e) => addEvents([Event("_redirect", {path:`/about`,external:false})], (_e), {}), [addEvents, Event])
+
+  return (
+    <RadixThemesButton onClick={on_click_2939200eea777f8472dc8e0dfda72a2d}>
+  <QuestionIcon/>
+  {`About`}
+</RadixThemesButton>
+  )
+}
+
 export function Button_8acf3db9f5cfd134e66cc91cc5619fe3 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
@@ -36,48 +49,15 @@ export function Heading_9cf1a1296a9061d170141f36d8d2c54b () {
   )
 }
 
-export function Root_c49442acd5c012919c5118fbd8c99ebd () {
-  
-    const handleSubmit_af2c23b8e0f779a09089ef3004458a2b = useCallback((ev) => {
-        const $form = ev.target
-        ev.preventDefault()
-        const form_data = {...Object.fromEntries(new FormData($form).entries()), ...{}}
-
-        addEvents([Event("state.state.handle_submit", {form_data:form_data})])
-
-        if (true) {
-            $form.reset()
-        }
-    })
-    
+export function Button_e00a6c9cbb18ab1d43a894a35482fb5a () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
+  const on_click_73cbbcc5d9db9e563330a061e04f36ef = useCallback((_e) => addEvents([Event("_redirect", {path:`/`,external:false})], (_e), {}), [addEvents, Event])
 
   return (
-    <RadixFormRoot className={`Root`} onSubmit={handleSubmit_af2c23b8e0f779a09089ef3004458a2b}>
-  <RadixThemesFlex align={`center`} css={{"flexDirection": "column"}} gap={`2`}>
-  <RadixThemesText as={`p`} size={`3`}>
-  {`Don't like either? Write your own!`}
-</RadixThemesText>
-  <RadixThemesTextField.Input css={{"width": "200px", "height": "50px"}} name={`new_name`} placeholder={`My leaderboard name...`}/>
-  <RadixThemesTextField.Input css={{"width": "300px", "height": "50px"}} name={`new_caption`} placeholder={`My superior caption...`}/>
-  <RadixThemesButton size={`4`} type={`submit`}>
-  {`Submit my caption`}
-</RadixThemesButton>
-</RadixThemesFlex>
-</RadixFormRoot>
-  )
-}
-
-export function Button_97346566d08bf7b05c25ead1063c06c1 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_2939200eea777f8472dc8e0dfda72a2d = useCallback((_e) => addEvents([Event("_redirect", {path:`/about`,external:false})], (_e), {}), [addEvents, Event])
-
-  return (
-    <RadixThemesButton onClick={on_click_2939200eea777f8472dc8e0dfda72a2d}>
-  <QuestionIcon/>
-  {`About`}
+    <RadixThemesButton onClick={on_click_73cbbcc5d9db9e563330a061e04f36ef}>
+  <PlusSquareIcon/>
+  {`Rating`}
 </RadixThemesButton>
   )
 }
@@ -95,15 +75,28 @@ export function Button_3aaf4f98d67924d267702d81d2f1cd7e () {
   )
 }
 
-export function Button_e00a6c9cbb18ab1d43a894a35482fb5a () {
+export function Button_3f81869f991d07bcf7185cbf7da07242 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_73cbbcc5d9db9e563330a061e04f36ef = useCallback((_e) => addEvents([Event("_redirect", {path:`/`,external:false})], (_e), {}), [addEvents, Event])
+  const on_click_df336efed36fc00b2a9809f569ea80c9 = useCallback((_e) => addEvents([Event("state.state.clear_db", {})], (_e), {}), [addEvents, Event])
 
   return (
-    <RadixThemesButton onClick={on_click_73cbbcc5d9db9e563330a061e04f36ef}>
-  <PlusSquareIcon/>
-  {`Rating`}
+    <RadixThemesButton onClick={on_click_df336efed36fc00b2a9809f569ea80c9}>
+  <ViewIcon/>
+  {`CLEAR`}
+</RadixThemesButton>
+  )
+}
+
+export function Button_5db4940ff9dda6799299a5227c7c06dd () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+  const state__state = useContext(StateContexts.state__state)
+
+  const on_click_c682aa20f98c7a419c9418731a87dcb7 = useCallback((_e) => addEvents([Event("state.btn_state.button_2_click", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <RadixThemesButton onClick={on_click_c682aa20f98c7a419c9418731a87dcb7} size={`4`} type={`submit`}>
+  {state__state.test_caption_2?.caption}
 </RadixThemesButton>
   )
 }
@@ -137,16 +130,36 @@ export function Fragment_1762bb90abdb81b879b2a22edbbe01a1 () {
   )
 }
 
-export function Button_5db4940ff9dda6799299a5227c7c06dd () {
+export function Root_c2fad76accffdb448c632d928d4973fc () {
   const [addEvents, connectError] = useContext(EventLoopContext);
-  const state__state = useContext(StateContexts.state__state)
+  
+    const handleSubmit_1594dd99e217e3483cad73ddb82b0448 = useCallback((ev) => {
+        const $form = ev.target
+        ev.preventDefault()
+        const form_data = {...Object.fromEntries(new FormData($form).entries()), ...{}}
 
-  const on_click_c682aa20f98c7a419c9418731a87dcb7 = useCallback((_e) => addEvents([Event("state.btn_state.button_2_click", {})], (_e), {}), [addEvents, Event])
+        addEvents([Event("state.state.handle_submit", {form_data:form_data})])
+
+        if (true) {
+            $form.reset()
+        }
+    })
+    
+
 
   return (
-    <RadixThemesButton onClick={on_click_c682aa20f98c7a419c9418731a87dcb7} size={`4`} type={`submit`}>
-  {state__state.test_caption_2?.caption}
+    <RadixFormRoot className={`Root`} onSubmit={handleSubmit_1594dd99e217e3483cad73ddb82b0448}>
+  <RadixThemesFlex align={`center`} css={{"flexDirection": "column"}} gap={`2`}>
+  <RadixThemesText as={`p`} size={`3`}>
+  {`Don't like either? Write your own!`}
+</RadixThemesText>
+  <RadixThemesTextField.Input css={{"width": "200px", "height": "50px"}} name={`new_name`} placeholder={`My leaderboard name...`}/>
+  <RadixThemesTextField.Input css={{"width": "300px", "height": "50px"}} name={`new_caption`} placeholder={`My superior caption...`}/>
+  <RadixThemesButton size={`4`} type={`submit`}>
+  {`Submit my caption`}
 </RadixThemesButton>
+</RadixThemesFlex>
+</RadixFormRoot>
   )
 }
 
@@ -166,6 +179,7 @@ export default function Component() {
   <Button_97346566d08bf7b05c25ead1063c06c1/>
   <Button_e00a6c9cbb18ab1d43a894a35482fb5a/>
   <Button_8acf3db9f5cfd134e66cc91cc5619fe3/>
+  <Button_3f81869f991d07bcf7185cbf7da07242/>
 </RadixThemesFlex>
   <RadixThemesContainer css={{"paddingTop": "6em"}}>
   <RadixThemesFlex css={{"height": "100vh", "display": "flex", "alignItems": "center", "justifyContent": "center"}}>
@@ -218,7 +232,7 @@ export default function Component() {
   <Button_3aaf4f98d67924d267702d81d2f1cd7e/>
   <Button_5db4940ff9dda6799299a5227c7c06dd/>
 </RadixThemesFlex>
-  <Root_c49442acd5c012919c5118fbd8c99ebd/>
+  <Root_c2fad76accffdb448c632d928d4973fc/>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesContainer>

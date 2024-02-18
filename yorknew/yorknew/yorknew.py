@@ -6,6 +6,7 @@ import reflex as rx
 from yorknew.ratingpage import ratingscontent
 from yorknew.aboutpage import aboutcontent
 from yorknew.leaderboardpage import rankingscontent
+import yorknew.database as db
 
 import yorknew.components.navbar as navbar
 
@@ -44,7 +45,7 @@ def about() -> rx.Component:
     )
 
 
-@rx.page(title="Yorknew Leaderboard")
+@rx.page(title="Yorknew Leaderboard", on_load=db.State.get_leaderboard_table)
 def rankings() -> rx.Component:
     return rx.fragment(
         navbar.navbar(),

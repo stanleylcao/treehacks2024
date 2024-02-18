@@ -33,6 +33,7 @@ def ratingscontent():
                     db.State.test_caption_1.caption,
                     size="4",
                     type="submit",
+                    # on_click=rx.console_log('NE ADDED')
                     on_click=btnState.button_1_click,
                 ),
                 rx.button(
