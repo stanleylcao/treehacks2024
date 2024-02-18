@@ -1,6 +1,7 @@
 """This file serves as the starting point for app deployment and nav"""
 
 import logging
+import os
 from pathlib import Path
 import pandas as pd
 import reflex as rx
@@ -28,22 +29,25 @@ app = rx.App(
         radius="large",
         # accent_color="gray",
     ),
+    db_url=os.environ.get("REFLEX_DB", "sqlite:///reflex.db"),
     style={
-        'accent_color': '#8C1515',
-        rx.button: {"font_family": "Merriweather",
-                    'transition': 'background-color 0.3s ease, transform 0.3s ease',
-                    'background-color': '#2E2D29',
-                    '_hover': {
-                        'transform': 'scale(1.1)',
-                        'background-color': '#8C1515',
-                    }
-                    },
-        rx.text: {"font_family": "Merriweather", 'font_size': '17px'},
-        rx.heading: {"font_family": "Merriweather", 'font_size': '35px'},
-        # 'font_family': "adobe-caslon",
-        'font_family': "Merriweather",
-        'font_size': '10px'
-        # rx.data_table: {"font_family": "Merriweather", }
+        "accent_color": "#8C1515",
+        # "font_family": "Libre Caslon Text, serif",
+        rx.button: {
+            "font_family": "Merriweather",
+            "transition": "background-color 0.3s ease, transform 0.3s ease",
+            "background-color": "#2E2D29",
+            "_hover": {
+                "transform": "scale(1.1)",
+                "background-color": "#8C1515",
+            },
+        },
+        rx.text: {
+            "font_family": "Merriweather",
+        },
+        rx.heading: {
+            "font_family": "Merriweather",
+        },
     },
 )
 
@@ -79,6 +83,7 @@ def rankings() -> rx.Component:
             padding_top=navbar.navbar_height,
         ),
     )
+
 
 app.add_page(index)
 app.add_page(about)
