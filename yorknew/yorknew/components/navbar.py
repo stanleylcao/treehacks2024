@@ -16,15 +16,18 @@ def navbar():
             on_click=db.State.clear_db,
         ),
         rx.spacer(),
-        rx.heading(
-            "THE NEW YORKER CAPTION CLUB",
-            font_family="NYTitleFont",
-            font_size="45px",
+        rx.link(
+            rx.heading(
+                "THE NEW YORKER CAPTION CLUB",
+                font_family="NYTitleFont",
+                font_size="45px",
+            ),
+            href="/",
+            color="black",
             position="absolute",
             left="0%",
             right="0%",
             text_align="center",
-            zIndex="-1",
         ),
         rx.button(
             rx.chakra.icon(tag="question"),
