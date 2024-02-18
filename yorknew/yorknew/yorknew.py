@@ -55,7 +55,7 @@ app = rx.App(
 
 
 @rx.page(
-    title="Yorknew",
+    title="The New Yorker Caption Club",
     on_load=[db.State.randomize_contest_selection, db.State.load_two_captions_to_rate],
 )
 def index() -> rx.Component:
@@ -68,7 +68,7 @@ def index() -> rx.Component:
     )
 
 
-@rx.page(title="About Yorknew")
+@rx.page(title="About The New Yorker Caption Club")
 def about() -> rx.Component:
     return rx.fragment(
         navbar.navbar(),
@@ -80,7 +80,7 @@ def about() -> rx.Component:
 
 
 @rx.page(
-    title="Yorknew Leaderboard",
+    title="The New Yorker Caption Club Leaderboard",
     on_load=[db.State.get_leaderboard_table, db.State.get_user_elo_table],
 )
 def rankings() -> rx.Component:
