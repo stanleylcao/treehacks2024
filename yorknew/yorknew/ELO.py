@@ -12,3 +12,4 @@ def adjust_rating(winner_rating, loser_rating):
 
     new_winner_rating = R_A + K * (1 - E_A)
     new_loser_rating = R_B + K * (0 - E_B)
+    return new_winner_rating, new_loser_rating
