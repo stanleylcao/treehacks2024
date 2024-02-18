@@ -24,7 +24,7 @@ def ratingscontent():
             rx.heading(f"Rate The Caption for Image \
                         {db.State.contest_number_rating}", size="7"),
             # Image
-            rx.image(src="/example_nycomic.webp", width="400px"),
+            rx.image(src=f"/{contest_number_rating}.jpg", width="400px"),
             # Scroller
             scroller(1),  # replace with rating_page statevar
             # Default two choices

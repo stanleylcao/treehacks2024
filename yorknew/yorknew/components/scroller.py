@@ -3,6 +3,10 @@ import reflex as rx
 
 import yorknew.components.styles as styles
 
+def btnState(rx.State):
+	def most_right(self):
+		
+
 def scroller(curpage):
 	return rx.hstack(
 		rx.button(rx.chakra.icon(tag="arrow_left")),
