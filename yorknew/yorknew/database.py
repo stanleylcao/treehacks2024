@@ -5,6 +5,7 @@ from sqlmodel import Session, select
 from os import listdir
 from typing import Any, List, Sequence
 from random import randrange
+from better_profanity import profanity
 
 import random
 
@@ -180,8 +181,9 @@ class State(rx.State):
             print(self.caption_1)
             if len(entry_list) >= 2:
                 print(f"entry list!")
-                self.caption_1, self.caption_2 = tuple(map(
-                    State.strip_quotes, random.sample(entry_list, 2)))
+                self.caption_1, self.caption_2 = tuple(
+                    map(State.strip_quotes, random.sample(entry_list, 2))
+                )
             else:
                 self.caption_1, self.caption_2 = None, None
 
@@ -214,8 +216,7 @@ class State(rx.State):
         self.go_page_rating(new_value)
 
     def go_up_rating(self):
-        new_value = min(len(self.imgidlist) - 1,
-                        self.contest_number_rating + 1)
+        new_value = min(len(self.imgidlist) - 1, self.contest_number_rating + 1)
         self.go_page_rating(new_value)
 
     def go_top_rating(self):
@@ -245,8 +246,7 @@ class State(rx.State):
         self.go_page_leaderboard(new_value)
 
     def go_up_leaderboard(self):
-        new_value = min(len(self.imgidlist) - 1,
-                        self.contest_number_leaderboard + 1)
+        new_value = min(len(self.imgidlist) - 1, self.contest_number_leaderboard + 1)
         self.go_page_leaderboard(new_value)
 
     def go_top_leaderboard(self):
@@ -283,14 +283,12 @@ class State(rx.State):
                     new_rating_1, new_rating_2 = adjust_rating(
                         self.caption_1.rating, self.caption_2.rating
                     )
-                    self.update_captions_rating(
-                        session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(session, new_rating_1, new_rating_2)
                 else:
                     new_rating_2, new_rating_1 = adjust_rating(
                         self.caption_2.rating, self.caption_1.rating
                     )
-                    self.update_captions_rating(
-                        session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(session, new_rating_1, new_rating_2)
                 print("WINNER")
                 self.load_two_captions_to_rate()
 
@@ -305,12 +303,22 @@ class State(rx.State):
                     )
                 )
             else:
-                self.add_new_caption(
-                    session,
-                    self.contest_number_rating,
-                    form_data["new_name"],
-                    form_data["new_caption"],
-                )
-                self.get_leaderboard_table()
+                if form_data["new_name"] == "" or form_data["new_caption"] == "":
+                    print("Issue: Form is empty")
+                    return rx.window_alert("Both fields must be non-empty.")
+                elif (
+                    profanity.contains_profanity(form_data["new_name"])
+                    or profanity.contains_profanity(form_data["new_caption"])
+                ):
+                    print("Issue: Form has profane content")
+                    return rx.window_alert("Neither field can contain profanity.")
+                else:
+                    self.add_new_caption(
+                        session,
+                        self.contest_number_rating,
+                        form_data["new_name"],
+                        form_data["new_caption"],
+                    )
+                    self.get_leaderboard_table()
             print("commited")
             session.commit()
