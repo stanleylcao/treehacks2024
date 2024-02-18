@@ -28,32 +28,27 @@ class State(rx.State):
     # For leaderboard display
     leaderboard_table: list[list]
 
-#     # For rating systems
+    #     # For rating systems
     test_caption_1: Entry = None
     test_caption_2: Entry = None
 
     @staticmethod
     def convert_entry_to_list(entry):
-        return [entry.rating, entry.user, entry.caption]
+        return [entry.rating, entry.name, entry.caption]
 
     def get_leaderboard_table(self):
         with rx.session() as session:
             entry_list = session.exec(
-                Entry.select.where(
-                    Entry.subject == self.contest_number_leaderboard)
+                Entry.select.where(Entry.subject == self.contest_number_leaderboard)
             )
-            pprint(list(entry_list))
-            self.leaderboard_table = list(map(
-                State.convert_entry_to_list, entry_list))
+            self.leaderboard_table = list(map(State.convert_entry_to_list, entry_list))
             # self.leaderboard_table = list(map(
             #     lambda entry: [entry.rating, entry.user, entry.caption], entry_list))
-            pprint(self.leaderboard_table)
+            pprint(self.leaderboard_table.__wrapped__)
 
     def clear_db(self):
         with rx.session() as session:
-            entry_list = session.exec(
-                Entry.select.where(True)
-            )
+            entry_list = session.exec(Entry.select.where(True))
             for e in entry_list:
                 session.delete(e)
             session.commit()
@@ -61,12 +56,10 @@ class State(rx.State):
     def load_two_captions_to_rate(self):
         with rx.session() as session:
             entry_list = session.exec(
-                Entry.select.where(
-                    Entry.subject == self.contest_number_rating).all()
+                Entry.select.where(Entry.subject == self.contest_number_rating).all()
                 # Entry.select.contains(self.contest_number_rating).all()
             )
-            self.test_caption_1, self.test_caption_2 = \
-                random.sample(entry_list, 2)
+            self.test_caption_1, self.test_caption_2 = random.sample(entry_list, 2)
 
     def update_captions_rating(self, session, caption_1_new_r, caption_2_new_r):
         self.test_caption_1.rating = caption_1_new_r
@@ -75,7 +68,7 @@ class State(rx.State):
         session.add(self.test_caption_2)
 
     def add_new_caption(self, session, subject, name, caption):
-        print(f'subject = {subject}, {name}, {caption}')
+        print(f"subject = {subject}, {name}, {caption}")
         session.add(
             Entry(
                 subject=subject,
@@ -87,21 +80,21 @@ class State(rx.State):
 
     def handle_submit(self, form_data):
         with rx.session() as session:
-            if ('winner' in form_data.keys()):
-                if (form_data['winner'] == '1'):
+            if "winner" in form_data.keys():
+                if form_data["winner"] == "1":
                     new_rating_1, new_rating_2 = adjust_rating(
-                        self.test_caption_1.rating, self.test_caption_2.rating)
-                    self.update_captions_rating(
-                        session, new_rating_1, new_rating_2)
+                        self.test_caption_1.rating, self.test_caption_2.rating
+                    )
+                    self.update_captions_rating(session, new_rating_1, new_rating_2)
                 else:
                     new_rating_2, new_rating_1 = adjust_rating(
-                        self.test_caption_2.rating, self.test_caption_1.rating)
-                    self.update_captions_rating(
-                        session, new_rating_1, new_rating_2)
+                        self.test_caption_2.rating, self.test_caption_1.rating
+                    )
+                    self.update_captions_rating(session, new_rating_1, new_rating_2)
             else:
-                self.add_new_caption(session, 0,
-                                     form_data['new_name'],
-                                     form_data['new_caption'])
+                self.add_new_caption(
+                    session, 0, form_data["new_name"], form_data["new_caption"]
+                )
                 self.get_leaderboard_table()
-            print('commited')
+            print("commited")
             session.commit()
