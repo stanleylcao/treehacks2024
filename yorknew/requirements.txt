@@ -18,3 +18,4 @@ uri-template==1.3.0
 webcolors==1.13
 wheel==0.42.0
 pandas
+better-profanity
