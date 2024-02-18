@@ -5,13 +5,24 @@ import reflex as rx
 
 import yorknew.components.styles
 from yorknew.components.scroller import scroller
-from yorknew.database import State
+import yorknew.database as db
+
+
+class btnState(rx.State):
+    def button_1_click(self):
+        db.State.handle_submit({"winner": '1'})
+
+    def button_2_click(self):
+        db.State.handle_submit({"winner": '2'})
+
 
 def ratingscontent():
+    db.State.load_two_captions_to_rate(db.State.contest_number_rating)
     return rx.center(
         rx.vstack(
             # Heading
-            rx.heading("Rate The Caption for Image (statevar)", size="7"),
+            rx.heading(f"Rate The Caption for Image \
+                        {db.State.contest_number_rating}", size="7"),
             # Image
             rx.image(src="/example_nycomic.webp", width="400px"),
             # Scroller
@@ -19,14 +30,16 @@ def ratingscontent():
             # Default two choices
             rx.hstack(
                 rx.button(
-                    "Option 1",
+                    db.State.test_caption_1.caption,
                     size="4",
                     type="submit",
+                    on_click=btnState.button_1_click,
                 ),
                 rx.button(
-                    "Option 2",
+                    db.State.test_caption_2.caption,
                     size="4",
                     type="submit",
+                    on_click=btnState.button_2_click,
                 ),
             ),
             rx.form(
@@ -34,6 +47,12 @@ def ratingscontent():
                     # Custom choice entry
                     rx.text("Don't like either? Write your own!", size="3"),
                     rx.input(
+                        name="new_name",
+                        placeholder="My leaderboard name...",
+                        style={"width": "200px", "height": "50px"},
+                    ),
+                    rx.input(
+                        name="new_caption",
                         placeholder="My superior caption...",
                         style={"width": "300px", "height": "50px"},
                     ),
@@ -43,9 +62,9 @@ def ratingscontent():
                         type="submit",
                     ),
                     align="center",
-                    # on_submit=FormState.handle_submit,
-                    reset_on_submit=True,
                 ),
+                on_submit=db.State.handle_submit,
+                reset_on_submit=True,
             ),
             align="center",
             spacing="7",

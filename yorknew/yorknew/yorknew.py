@@ -5,7 +5,7 @@ import reflex as rx
 
 from yorknew.ratingpage import ratingscontent
 from yorknew.aboutpage import aboutcontent
-from yorknew.rankingpage import rankingscontent
+from yorknew.leaderboardpage import rankingscontent
 
 import yorknew.components.navbar as navbar
 
@@ -13,13 +13,14 @@ app = rx.App(
     stylesheets=[
         "fonts/newyorkertitle.css",
     ],
-	theme=rx.theme(
-        appearance="light", 
-		has_background=True, 
-		radius="large", 
-		accent_color="orange",
+    theme=rx.theme(
+        appearance="light",
+        has_background=True,
+        radius="large",
+        accent_color="orange",
     ),
 )
+
 
 @rx.page(title="Yorknew")
 def index() -> rx.Component:
@@ -31,6 +32,7 @@ def index() -> rx.Component:
         ),
     )
 
+
 @rx.page(title="About Yorknew")
 def about() -> rx.Component:
     return rx.fragment(
@@ -41,6 +43,7 @@ def about() -> rx.Component:
         ),
     )
 
+
 @rx.page(title="Yorknew Leaderboard")
 def rankings() -> rx.Component:
     return rx.fragment(
@@ -50,6 +53,7 @@ def rankings() -> rx.Component:
             padding_top=navbar.navbar_height,
         ),
     )
+
 
 app.add_page(index)
 app.add_page(about)

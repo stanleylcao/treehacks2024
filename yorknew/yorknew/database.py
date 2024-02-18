@@ -21,52 +21,37 @@ class Entry(rx.Model, table=True):
 
 
 class State(rx.State):
-    ratingspage: int
-    rankingspage: int
+    contest_number_leaderboard: int
+    contest_number_rating: int
 
-    # For general purpose
-    captions_set: list[Entry]
+    # For leaderboard display
     leaderboard_table: list[list]
 
-    # For rating systems
-    test_caption_1: Entry
-    test_caption_2: Entry
+#     # For rating systems
+    test_caption_1: Entry = None
+    test_caption_2: Entry = None
 
+    @staticmethod
     def convert_entry_to_list(entry):
         return [entry.rating, entry.user, entry.caption]
 
-    def get_all_captions_for_subject(self, subject):
-        with rx.session() as session:
-            self.captions_set = session.exec(
-                Entry.select.where(Entry.subject == subject).all()
-            )
-
-    def load_two_captions_for_subject(self, subject):
+    def get_leaderboard_table(self):
         with rx.session() as session:
             entry_list = session.exec(
-                Entry.select.where(Entry.subject == subject).all()
+                Entry.select.where(
+                    Entry.subject == self.contest_number_leaderboard).all()
             )
-            test_caption_1, test_caption_2 = random.sample(entry_list, 2)
+            self.leaderboard_table = map(
+                State.convert_entry_to_list, entry_list)
 
-    def update_captions_rating(self, caption_1_new_r, caption_2_new_r):
+    def load_two_captions_to_rate(self):
         with rx.session() as session:
-            self.test_caption_1.rating = caption_1_new_r
-            session.add(test_caption_1)
-            self.test_caption_2.rating = caption_2_new_r
-            session.add(test_caption_2)
-            session.commit()
-
-    def add_new_caption(self, subject, name, caption):
-        with rx.session() as session:
-            session.add(
-                Entry(
-                    subject=self.subject,
-                    name=self.name,
-                    caption=self.caption,
-                    rating=0,
-                )
+            entry_list = session.exec(
+                Entry.select.where(
+                    Entry.subject == self.contest_number_rating).all()
             )
-            session.commit()
+            self.test_caption_1, self.test_caption_2 = \
+                random.sample(entry_list, 2)
 
     def update_captions_rating(self, caption_1_new_r, caption_2_new_r):
         with rx.session() as session:
@@ -80,14 +65,26 @@ class State(rx.State):
         with rx.session() as session:
             session.add(
                 Entry(
-                    subject=self.subject,
-                    name=self.name,
-                    caption=self.caption,
-                    rating=self.rating,
+                    subject=subject,
+                    name=name,
+                    caption=caption,
+                    rating=0,
                 )
             )
             session.commit()
 
-    def handle_submit(self, entry_winner, entry_loser):
+    def handle_submit(self, form_data):
         with rx.session() as session:
-            pass
+            if ('winner' in form_data.keys()):
+                if (form_data['winner'] == '1'):
+                    new_rating_1, new_rating_2 = adjust_rating(
+                        self.test_caption_1.rating, self.test_caption_2.rating)
+                    self.update_captions_rating(new_rating_1, new_rating_2)
+                else:
+                    new_rating_2, new_rating_1 = adjust_rating(
+                        self.test_caption_2.rating, self.test_caption_1.rating)
+                    self.update_captions_rating(new_rating_1, new_rating_2)
+            else:
+                self.add_new_caption(self.contest_number_rating,
+                                     form_data['new_name'],
+                                     form_data['new_caption'])
