@@ -24,6 +24,11 @@ def aboutcontent():
                 font_family="adobe-caslon",
                 font_size="24px",
             ),
+            rx.text(
+                "Made by Brion, Stanley, and Kevin",
+                font_family="adobe-caslon",
+                font_size="24px",
+            ),
             align="center",
             spacing="7",
             # font_size="2em",
