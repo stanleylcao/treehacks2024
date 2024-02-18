@@ -17,8 +17,6 @@ from pathlib import Path
 from tqdm.asyncio import tqdm_asyncio
 import fire
 
-from yorknew.models.data_processing import get_validation_data
-
 
 load_dotenv()
 
@@ -44,9 +42,12 @@ def image_to_data_uri(image: Image.Image) -> str:
     retry=tenacity.retry_if_exception_type(OpenAIError),
     before_sleep=tenacity.before_sleep_log(logger, logging.WARNING),
 )
-async def _get_caption(df: pd.DataFrame, idx: int) -> str:
+async def _get_caption(df: pd.DataFrame, idx: int) -> tuple[str, set[int]]:
     # Compute 5 few-shot examples
-    few_shots = df.sample(NUM_FEW_SHOT_EXAMPLES)
+    few_shots = df.iloc[[i for i in range(df.shape[0]) if i != idx]].sample(
+        n=NUM_FEW_SHOT_EXAMPLES, replace=False
+    )
+    few_shot_contest_numbers = set(int(i) for i in few_shots.contest_number)
     few_shot_messages: Iterator[ChatCompletionMessageParam] = flatten(
         [
             {
@@ -90,7 +91,7 @@ async def _get_caption(df: pd.DataFrame, idx: int) -> str:
         max_tokens=512,
     )
     assert res.choices[0].message.content is not None
-    return res.choices[0].message.content
+    return res.choices[0].message.content, few_shot_contest_numbers
 
 
 T = TypeVar("T")
@@ -115,10 +116,12 @@ async def eval_gptv(
     maximum = len(df) if limit is None else min(limit, len(df))
 
     async def get_image_caption_pair(df: pd.DataFrame, idx: int) -> dict[str, Any]:
+        caption, few_shot_contest_numbers = await _get_caption(df, idx)
         return {
-            "idx": 0,
+            "contest_number": int(df.iloc[idx].contest_number),
             "params": {},
-            "caption": await _get_caption(df, idx),
+            "few_shot_contest_numbers": list(few_shot_contest_numbers),
+            "caption": caption,
         }
 
     async for res in gather_with_concurrency_yield(
@@ -128,6 +131,7 @@ async def eval_gptv(
 
 
 OUTPUT_FILE = "data/gptv_samples.jsonl"
+INPUT_FILE = Path(__file__).parent.parent.parent.parent / "comics.pkl"
 
 
 async def main(limit: int | None = None, output_file: str = OUTPUT_FILE) -> None:
@@ -136,8 +140,10 @@ async def main(limit: int | None = None, output_file: str = OUTPUT_FILE) -> None
     output_path = Path(output_file)
     output_path.parent.mkdir(exist_ok=True, parents=True)
 
-    df = get_validation_data()
-    df = df.query("is_correct == True")
+    with INPUT_FILE.open("rb") as f:
+        df = pd.read_pickle(f)
+
+    df = df.query('rank == "winner"').head(100)
 
     logger.info("Loaded %d correct captions", len(df))
 
