@@ -11,12 +11,20 @@ def navbar():
     return rx.hstack(
         rx.image(src="/eustace-400.webp", width="2em"),
         rx.spacer(),
-        rx.heading("YORKNEW", font_family="NYTitleFont", font_size="2em"),
-        rx.spacer(),
+        rx.heading(
+            "YORKNEW",
+            font_family="NYTitleFont",
+            font_size="2em",
+            position="absolute",
+            left="0%",
+            right="0%",
+            text_align="center",
+        ),
         rx.button(
             rx.chakra.icon(tag="question"),
             "About",
             on_click=rx.redirect("/about"),
+            style={"font_family": "Libre Caslon Text"},
         ),
         rx.button(
             rx.chakra.icon(tag="plus_square"),
@@ -35,7 +43,8 @@ def navbar():
         ),
         position="fixed",
         top="0px",
-        background_color="lightgray",
+        border_bottom="1px solid rgb(229, 229, 229)",
+        background_color="white",
         padding="1em",
         height="4em",
         width="100%",

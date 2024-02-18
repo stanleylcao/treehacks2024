@@ -18,8 +18,8 @@ def rankingscontent():
             # Scroller
             scroller(1),  # replace with ranking_page statevar
             rx.data_table(
-                data=db.entrytable,
-                columns=db.entrycolumns,
+                # data=db.entrytable,
+                # columns=db.entrycolumns,
                 on_paste=True,
                 draw_focus_ring=False,
                 freeze_columns=2,

@@ -20,6 +20,7 @@ app = rx.App(
         radius="large",
         accent_color="orange",
     ),
+    style={"font_family": "Libre Caslon Text, serif"},
 )
 
 

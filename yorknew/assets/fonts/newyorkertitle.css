@@ -1,10 +1,29 @@
 @font-face {
-    font-family: NYTitleFont;
-    src: url("NY\ Irvin.ttf") format("truetype");
+  font-family: NYTitleFont;
+  src: url("NY\ Irvin.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: NYTitleFont;
-    font-weight: bold;
-    src: url("NY\ Irvin.ttf") format("truetype");
+  font-family: NYTitleFont;
+  font-weight: bold;
+  src: url("NY\ Irvin.ttf") format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {
+  font-family: "Libre Caslon Text", serif;
+}
+
+.radix-themes {
+  --heading-font-family: "NYTitleFont", serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
 }
