@@ -14,8 +14,7 @@ def aboutcontent():
 			captioning contest. It's fun for all ages and trains your \
 			comedy muscles, but it only happens once a week. We're \
 			offering a platform that generalizes this competition to \
-			all kinds of images (including AI-generated New Yorker-style \
-			panels), so people can competitively captions without a care.",
+			all kinds of images, so people can competitively captions without a care.",
                     font_family='adobe-caslon',  font_size="24px",
                     ),
             align='center',
