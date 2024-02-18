@@ -72,14 +72,20 @@ def initialize_database_with_captions():
     with rx.session() as session:
         for item in df.itertuples():
             entry = db.Entry(
-                subject=item.subject,
                 name=item.name,
                 caption=item.caption,
                 rating=item.rating,
+                subject=item.subject,
             )
-            if not session.exec(db.Entry.select.where(db.Entry.name == item.name)):
+            if not session.exec(
+                db.Entry.select.where(
+                    (db.Entry.name == item.name) & (db.Entry.subject == item.subject)
+                )
+            ).first():
                 session.add(entry)
                 added_items += 1
+
+        session.commit()
 
     print("Database initialized! Added {} missing items".format(added_items))
 

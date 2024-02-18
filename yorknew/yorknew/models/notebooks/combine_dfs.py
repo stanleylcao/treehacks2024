@@ -23,19 +23,19 @@ COLUMNS = ["subject", "name", "caption", "rating"]
 # Convert into a format similar to the database: subject | name | caption | rating
 df_for_db = pd.concat(
     [
-        df_cot.assign(subject="GPT-4V (complex CoT)", rating=0).rename(
+        df_cot.assign(name="GPT-4V (complex CoT)", rating=0).rename(
             columns={
-                "contest_number": "name",
+                "contest_number": "subject",
             }
         )[COLUMNS],
-        df_fewshot.assign(subject="GPT-4V (few-shot)", rating=0).rename(
+        df_fewshot.assign(name="GPT-4V (few-shot)", rating=0).rename(
             columns={
-                "contest_number": "name",
+                "contest_number": "subject",
             }
         )[COLUMNS],
-        df_human.assign(subject="New Yorker winner", rating=0).rename(
+        df_human.assign(name="New Yorker winner", rating=0).rename(
             columns={
-                "contest_number": "name",
+                "contest_number": "subject",
             }
         )[COLUMNS],
     ]
