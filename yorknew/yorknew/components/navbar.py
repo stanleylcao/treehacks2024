@@ -28,6 +28,7 @@ def navbar():
             left="0%",
             right="0%",
             text_align="center",
+            z_index="-1",
         ),
         rx.button(
             rx.chakra.icon(tag="question"),

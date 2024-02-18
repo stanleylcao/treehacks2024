@@ -27,11 +27,13 @@ columns: list[dict[str, str]] = [
     },
 ]
 
+
 def generate_image_list(imgpath):
     imgidlist = listdir(imgpath)
-    imgidlist = [s.replace('.jpg', '') for s in imgidlist]
+    imgidlist = [s.replace(".jpg", "") for s in imgidlist]
     imgidlist.sort(key=int)
     return imgidlist
+
 
 # Database for the rankings of each caption
 
@@ -52,14 +54,18 @@ class Comparison(rx.Model, table=True):
     one_is_better: bool
 
 
+imgidlist = generate_image_list(path_to_contest_images)
+
+
 # State for updating the current panel being observed
+
 
 class State(rx.State):
     # imagelist: List[str] = listdir(path_to_contest_images)
     # imgidlist: List[str] = [s.replace('.jpg', '') for s in imagelist]
-    imgidlist: List[str] = generate_image_list(path_to_contest_images)
+    imgidlist: List[str] = imgidlist
 
-    contest_number_leaderboard: int = 5
+    contest_number_leaderboard: int = 0
     contest_number_rating: int = 0
 
     # For leaderboard display
@@ -76,11 +82,18 @@ class State(rx.State):
     def convert_entry_to_list(entry) -> tuple[int, str, str]:
         return [round(entry.rating, 0), entry.name, entry.caption]
 
+    def randomize_contest_selection(self):
+        self.contest_number_leaderboard = random.sample(range(len(self.imgidlist)), 1)[
+            0
+        ]
+        self.contest_number_rating = self.contest_number_leaderboard
+
     def get_leaderboard_table(self):
         with rx.session() as session:
             entry_list = session.exec(
                 Entry.select.where(
-                    Entry.subject == self.imgidlist[self.contest_number_leaderboard])
+                    Entry.subject == self.imgidlist[self.contest_number_leaderboard]
+                )
             )
             self.leaderboard_table = list(
                 # sort by ELO rating
@@ -158,14 +171,15 @@ class State(rx.State):
             entry_list = list(
                 session.exec(
                     Entry.select.where(
-                    Entry.subject == self.imgidlist[self.contest_number_rating])
+                        Entry.subject == self.imgidlist[self.contest_number_rating]
+                    )
                 )
             )
-            print(f'contest number rating {self.contest_number_rating}')
-            print(f'entry list {entry_list}')
+            print(f"contest number rating {self.contest_number_rating}")
+            print(f"entry list {entry_list}")
             print(self.caption_1)
             if len(entry_list) >= 2:
-                print(f'entry list!')
+                print(f"entry list!")
                 self.caption_1, self.caption_2 = random.sample(entry_list, 2)
                 # tuple(map(
                 #     State.strip_quotes, random.sample(entry_list, 2)))
@@ -268,14 +282,12 @@ class State(rx.State):
                     new_rating_1, new_rating_2 = adjust_rating(
                         self.caption_1.rating, self.caption_2.rating
                     )
-                    self.update_captions_rating(
-                        session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(session, new_rating_1, new_rating_2)
                 else:
                     new_rating_2, new_rating_1 = adjust_rating(
                         self.caption_2.rating, self.caption_1.rating
                     )
-                    self.update_captions_rating(
-                        session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(session, new_rating_1, new_rating_2)
                 print("WINNER")
                 self.load_two_captions_to_rate()
 

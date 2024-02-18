@@ -54,7 +54,10 @@ app = rx.App(
 )
 
 
-@rx.page(title="Yorknew", on_load=db.State.load_two_captions_to_rate)
+@rx.page(
+    title="Yorknew",
+    on_load=[db.State.randomize_contest_selection, db.State.load_two_captions_to_rate],
+)
 def index() -> rx.Component:
     return rx.fragment(
         navbar.navbar(),
