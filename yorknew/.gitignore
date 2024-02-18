@@ -1,6 +1,6 @@
-*.db
-*.py[cod]
-*.web
-.web
-.web/*
+*.db
+*.py[cod]
+*.web
+.web
+.web/*
 __pycache__/
