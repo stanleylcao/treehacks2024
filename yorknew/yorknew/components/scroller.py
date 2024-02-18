@@ -36,6 +36,7 @@ def ratingscroller():
         ),
         rx.select(
             db.State.imgidlist,
+            value=f"{db.State.contest_number_rating}",
             placeholder="Current Page #",
             label="Page Number",
             size="2",
@@ -70,6 +71,7 @@ def leaderboardscroller():
         ),
         rx.select(
             db.State.imgidlist,
+            value=f"{db.State.contest_number_leaderboard}",
             placeholder="Current Page #",
             label="Page Number",
             size="2",
