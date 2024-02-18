@@ -66,7 +66,7 @@ class State(rx.State):
 
     @staticmethod
     def convert_entry_to_list(entry) -> tuple[int, str, str]:
-        return [entry.rating, entry.name, entry.caption]
+        return [round(entry.rating, 0), entry.name, entry.caption]
 
     def get_leaderboard_table(self):
         with rx.session() as session:
@@ -94,7 +94,7 @@ class State(rx.State):
 
         self.user_elo_table = list(
             sorted(
-                [[name, rating] for name, rating in user_elo_table.items()],
+                [[name, round(rating, 0)] for name, rating in user_elo_table.items()],
                 key=lambda x: x[1],
                 reverse=True,
             )
