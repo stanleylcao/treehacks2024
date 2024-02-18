@@ -1,9 +1,8 @@
 *.db
-
 *.py[cod]
-
 *.web
-
 .web
-
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 __pycache__/

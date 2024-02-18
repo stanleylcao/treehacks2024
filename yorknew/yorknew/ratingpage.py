@@ -26,8 +26,8 @@ def ratingscontent():
                 size="7",
             ),
             # Image
-            rx.image(src=f"/contest_images/{db.State.imagelist \
-				[db.State.contest_number_rating - 1]}", height="200px"),
+            rx.image(
+                src=f"/contest_images/{db.State.imagelist [db.State.contest_number_rating - 1]}", height="200px"),
             # Scroller
             ratingscroller(),  # replace with rating_page statevar
             # Default two choices

@@ -48,6 +48,8 @@ app = rx.App(
         rx.heading: {
             "font_family": "Merriweather",
         },
+        'font_family': 'Merriweather',
+        'font_size': '10px'
     },
 )
 

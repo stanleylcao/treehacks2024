@@ -22,8 +22,8 @@ def rankingscontent():
                 size="7",
             ),
             # Image
-            rx.image(src=f"/contest_images/{db.State.imagelist \
-				[db.State.contest_number_leaderboard - 1]}", height="200px"),
+            rx.image(
+                src=f"/contest_images/{db.State.imagelist [db.State.contest_number_leaderboard - 1]}", height="200px"),
             # Scroller
             leaderboardscroller(),  # replace with ranking_page statevar
             rx.data_table(
