@@ -22,12 +22,22 @@ df_human.info()
 df = df_gptv.merge(
     df_human, on="contest_number", how="left", suffixes=("_gptv", "_human")
 )
+
+# %%
+
+df = df.rename(
+    columns={
+        "caption_gptv": "caption_a",
+        "caption_human": "caption_b",
+    }
+)
+
 # %%
 
 for i, row in df.iterrows():
     display(row["image"])
-    print("GPT:", row["caption_gptv"])
-    print("Human:", row["caption_human"])
+    print("A:", row["caption_a"].replace('"', ""))
+    print("B:", row["caption_b"])
     print()
     if i == 5:
         break
