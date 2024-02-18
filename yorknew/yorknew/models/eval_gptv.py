@@ -16,6 +16,8 @@ import tenacity
 from tqdm import tqdm
 from tqdm.asyncio import tqdm_asyncio
 
+from yorknew.models.data_processing import get_validation_data
+
 
 load_dotenv()
 
@@ -106,13 +108,29 @@ async def gather_with_concurrency_yield(*coros: Coroutine[Any, Any, T], n: int =
         yield await task
 
 
-async def eval_gptv(dataset: datasets.Dataset, max_tokens: int = 100) -> None:
-    # Convert the dataset into a df
-    df = dataset.to_pandas()
-    assert isinstance(df, pd.DataFrame)
-    df["image"] = df["image"].apply(lambda x: Image.open(BytesIO(x["bytes"])))  # type: ignore
+async def eval_gptv(df: pd.DataFrame, limit: int | None = None) -> None:
+    maximum = len(df) if limit is None else min(limit, len(df))
+
+    async def get_image_caption_pair(
+        df: pd.DataFrame, idx: int
+    ) -> tuple[pd.Series, str]:
+        return (
+            df.iloc[idx],
+            await _get_caption(df, idx),
+        )
 
     async for res in gather_with_concurrency_yield(
-        *(_get_caption(df, idx) for idx in range(len(df)))
+        *(get_image_caption_pair(df, idx) for idx in range(maximum))
     ):
         print(res)
+
+
+async def main() -> None:
+    df = get_validation_data()
+    df = df.query("is_correct == True")
+
+    await eval_gptv(df.sample(6), limit=1)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

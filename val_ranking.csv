@@ -1,0 +1,727 @@
+,image,caption,contest_number,winner_source,is_correct,rank
+2,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=709x498 at 0x12BF11960>,"Don't worry, it's cyclical.",362,official_winner,False,bad
+3,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=709x498 at 0x12BF11960>,Worst Groupon ever!,362,official_winner,True,finalist
+4,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=589x484 at 0x12BF11AB0>,I suggest you slowly back up two paces and take one step to the side.,399,official_winner,True,finalist
+5,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=589x484 at 0x12BF11AB0>,Nobody executes a fork on the Chaturanga kid and lives to tell about it.,399,official_winner,False,bad
+6,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BF11B40>,"Location, location, location.",467,official_winner,False,bad
+7,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BF11B40>,Is it weird that we have a pet?,467,official_winner,True,finalist
+8,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=720x528 at 0x12BF11BA0>,"In my defense, I did't even finish",357,official_winner,False,bad
+9,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=720x528 at 0x12BF11BA0>,He makes me feel young again.,357,official_winner,True,finalist
+10,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=405x308 at 0x12BF11B10>,Well? The swamp closed up over two hours ago.,505,official_winner,False,bad
+11,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=405x308 at 0x12BF11B10>,"Yes, they're new shoes, but it's no one you know.",505,official_winner,True,finalist
+14,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=750x583 at 0x12BBC99C0>,I've had other jobs too.,430,official_winner,False,bad
+15,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=750x583 at 0x12BBC99C0>,Any red flags?,430,official_winner,True,finalist
+18,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=599x444 at 0x12BBC9A80>,I lost my radar gun to budget cuts.,385,official_winner,False,bad
+19,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=599x444 at 0x12BBC9A80>,Let that be a lesson to you.,385,official_winner,True,finalist
+28,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12BBCA0E0>,We hired him to appeal to perennials.,545,official_winner,True,finalist
+29,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12BBCA0E0>,The day marijuana became legal in New York .,545,official_winner,False,bad
+30,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=476x330 at 0x12BBCA170>,We uncoupled.,497,official_winner,True,finalist
+31,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=476x330 at 0x12BBCA170>,50 years ago I could.,497,official_winner,False,bad
+38,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=600x415 at 0x12BBCA4A0>,Where the hell is the cartoon??,598,official_winner,False,bad
+39,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=600x415 at 0x12BBCA4A0>,Do you seek alignment?,598,official_winner,True,finalist
+42,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=476x330 at 0x12BBC9E10>,She left me for an engine that could.,497,official_winner,True,finalist
+43,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=476x330 at 0x12BBC9E10>,They don't even make Westerns any more!,497,official_winner,False,bad
+44,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x605 at 0x12BBCA6E0>,It could be worse. I could insult you on Twitter.,697,official_winner,False,bad
+45,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x605 at 0x12BBCA6E0>,Wait till he finds out this isn't his stop.,697,official_winner,True,finalist
+48,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=684x489 at 0x12BBCA920>,You the Ponzi varmint that lost our nest egg?,233,official_winner,True,finalist
+49,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=684x489 at 0x12BBCA920>,Looking for new management consultants?,233,official_winner,False,bad
+50,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x605 at 0x12BBCA9B0>,No one crosses the Pirates of Penn Station.,697,official_winner,True,finalist
+51,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x605 at 0x12BBCA9B0>,Three more paces to the double arrr.,697,official_winner,False,bad
+54,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12BBCAAA0>,You may be questioning whether I'm qualified to be here.,545,official_winner,False,bad
+55,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12BBCAAA0>,It's amazing to think he started out in the lobby.,545,official_winner,True,finalist
+56,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x645 at 0x12BBC9FF0>,They told me he wouldn't get bigger than 50 pounds when I adopted him.,717,official_winner,False,bad
+57,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x645 at 0x12BBC9FF0>,"I know it's not an elephant, but we still need to talk about it.",717,official_winner,True,finalist
+58,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x660 at 0x12BBCAB60>,Since when did the pizza delivery guy get his own pole?,754,official_winner,True,finalist
+59,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x660 at 0x12BBCAB60>,This is when I start questioning all my life decisions.,754,official_winner,False,bad
+62,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x637 at 0x12BBCAC20>,"No, you grow up.",558,official_winner,True,finalist
+63,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x637 at 0x12BBCAC20>,Get me room service.,558,official_winner,False,bad
+64,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x280 at 0x12BBCAB00>,"To be fair, Martha, you started it.",35,official_winner,True,finalist
+65,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x280 at 0x12BBCAB00>,"Actually, the correct term is strangulation.",35,official_winner,False,bad
+66,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x392 at 0x12BBCA6B0>,"You're sure they can't hear or see us, right?",561,official_winner,False,bad
+67,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x392 at 0x12BBCA6B0>,This was more romantic in Lady and the Tramp.,561,official_winner,True,finalist
+68,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x674 at 0x12BBCABC0>,"Oh, no. I have its little one in my backpack.",685,official_winner,True,finalist
+69,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x674 at 0x12BBCABC0>,I am never going on another Bumble date ever again.,685,official_winner,False,bad
+70,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x193 at 0x12BBCADA0>,"I'm going to let you off with a warning, since you have no prior history.",91,official_winner,True,finalist
+71,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x193 at 0x12BBCADA0>,I recommend just paying the fine. It's so easy a caveman could do it.,91,official_winner,False,bad
+72,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x349 at 0x12BBCADD0>,Just come to bed and kill yourself in the morning.,150,official_winner,True,finalist
+73,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x349 at 0x12BBCADD0>,"Let's face it George, success has never come easy.",150,official_winner,False,bad
+76,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x594 at 0x12BBCAD70>,You wanna go somewhere else?,757,official_winner,False,bad
+77,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x594 at 0x12BBCAD70>,I think the weather's turning on us.,757,official_winner,True,finalist
+78,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x359 at 0x12BBCB010>,I didn't expect to gain weight on this cruise.,180,official_winner,True,finalist
+79,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x359 at 0x12BBCB010>,Do you like pina coladas and taking walks in the rain?,180,official_winner,False,bad
+84,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=750x583 at 0x12BBCB070>,"Not so fun when you're the one being charged, is it?",430,official_winner,True,finalist
+85,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=750x583 at 0x12BBCB070>,Of course I knew your dad. We worked together at Merrill.,430,official_winner,False,bad
+86,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x395 at 0x12BBCB220>,No. Our Water Resources Department is in the home office.,194,official_winner,False,bad
+87,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x395 at 0x12BBCB220>,"Just so we're straight, this is a billable mirage.",194,official_winner,True,finalist
+90,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x464 at 0x12BBCB130>,"But, first, a word on foot odor.",215,official_winner,True,finalist
+91,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x464 at 0x12BBCB130>,I promise not to look up,215,official_winner,False,bad
+92,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x464 at 0x12BBCB3A0>,"And, in this corner, also hailing from Chernobyl...",215,official_winner,True,finalist
+93,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x464 at 0x12BBCB3A0>,The rules were clear gentlemen - underwear mandatory.,215,official_winner,False,bad
+94,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=759x578 at 0x12BBCB0A0>,My hobby? Jackhammering. Why?,349,official_winner,False,bad
+95,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=759x578 at 0x12BBCB0A0>,"Best decaf in town, Dolores.",349,official_winner,True,finalist
+96,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x697 at 0x12BBCB370>,I made sure to put your friends in the placebo group,730,official_winner,False,bad
+97,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x697 at 0x12BBCB370>,I bet you also had to be twice as smart as the men.,730,official_winner,True,finalist
+98,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x594 at 0x12BBCB460>,"So, how long will your mother stay?",757,official_winner,False,bad
+99,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x594 at 0x12BBCB460>,"Don't worry, it's just a front.",757,official_winner,True,finalist
+100,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x500 at 0x12BBCB610>,He raced out,361,official_winner,False,bad
+101,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x500 at 0x12BBCB610>,It's a Toy!,361,official_winner,True,finalist
+102,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x288 at 0x12BBCB4F0>,"7, 8, 9... Get it? 7, 8, 9!",6,official_winner,False,bad
+103,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x288 at 0x12BBCB4F0>,"It's me....""9""....from yoga class.",6,official_winner,True,finalist
+104,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x482 at 0x12BBCB700>,They flew early in for Sid's 10:00.,564,official_winner,False,bad
+105,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x482 at 0x12BBCB700>,"Gladys, get me a BLT and nine mice.",564,official_winner,True,finalist
+106,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x196 at 0x12BBCB5B0>,I didn't even know that you liked French food.,139,official_winner,False,bad
+107,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x196 at 0x12BBCB5B0>,If he wasn't an internist he is now.,139,official_winner,True,finalist
+110,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BBCB820>,That's what happens to whistle-blowers,467,official_winner,False,bad
+111,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BBCB820>,Never ever put me in assisted living.,467,official_winner,True,finalist
+112,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x612 at 0x12BBCBBB0>,I didn't think the decision was that earth shattering.,176,official_winner,False,bad
+113,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x612 at 0x12BBCBBB0>,This is what I get for convicting the janitor.,176,official_winner,True,finalist
+114,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x581 at 0x12BBCB910>,It’s mostly water weight.,441,official_winner,True,finalist
+115,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x581 at 0x12BBCB910>,I met a lawyer.,441,official_winner,False,bad
+116,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x223 at 0x12BBCB940>,"Oh, did I mention that Timmy fell down the well?",19,official_winner,True,finalist
+117,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x223 at 0x12BBCB940>,I prefer a hard-cover book for its solidness.,19,official_winner,False,bad
+118,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x395 at 0x12BBCB880>,"First we discuss my percentage of any water you find, real or imagined.",194,official_winner,True,finalist
+119,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x395 at 0x12BBCB880>,This is your final notice. Your car warranty is about to expire!,194,official_winner,False,bad
+124,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x589 at 0x12BBCB490>,"Not O.K., Cupid!",416,official_winner,True,finalist
+125,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x589 at 0x12BBCB490>,I can't stop loving myself,416,official_winner,False,bad
+130,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x660 at 0x12BBCBCA0>,"Apparently, the one you use says a lot about your personality.",754,official_winner,True,finalist
+131,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x660 at 0x12BBCBCA0>,This is the point when I realize I'm still asleep in my bunk.,754,official_winner,False,bad
+132,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x550 at 0x12BBCBFA0>,Hope PETA's happy now!,514,official_winner,False,bad
+133,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x550 at 0x12BBCBFA0>,"No, you grow up.",514,official_winner,True,finalist
+134,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x211 at 0x12BBCBC40>,I just love that Green Party candidate.,70,official_winner,False,bad
+135,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x211 at 0x12BBCBC40>,They do say results will vary.,70,official_winner,True,finalist
+138,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x456 at 0x12B961C90>,I got tired of my work being grilled at the office.,574,official_winner,False,bad
+139,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x456 at 0x12B961C90>,Ask the kids how they want their backpacks.,574,official_winner,True,finalist
+140,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x456 at 0x12B961150>,It looked so much better on Masterchef.,574,official_winner,False,bad
+141,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x456 at 0x12B961150>,Did I mention I quit my job today?,574,official_winner,True,finalist
+142,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x333 at 0x12B963460>,I'll write that down for you.,161,official_winner,False,bad
+143,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x333 at 0x12B963460>,So why did you leave Red Lobster?,161,official_winner,True,finalist
+146,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x581 at 0x12B960160>,He only wanted me for my body.,441,official_winner,True,finalist
+147,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x581 at 0x12B960160>,Stay away from Wall Street,441,official_winner,False,bad
+156,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12B9602E0>,I don't know protocol...should I wait for everone to be awake?,229,official_winner,False,bad
+157,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12B9602E0>,"O.K., counsellor, we heard your argument. Now tell us a story.",229,official_winner,True,finalist
+160,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=669x563 at 0x12B9620B0>,He's certainly showing his true colors.,315,official_winner,False,bad
+161,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=669x563 at 0x12B9620B0>,They say jolliness skips a generation.,315,official_winner,True,finalist
+162,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x337 at 0x12B962E90>,"Let's meet in my office, weather permitting.",201,official_winner,True,finalist
+163,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x337 at 0x12B962E90>,"Other than me, the entire 12th floor was downsized.",201,official_winner,False,bad
+164,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x589 at 0x12B962EC0>,Well the show's called 'The Bachelor' for a reason!,416,official_winner,False,bad
+165,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x589 at 0x12B962EC0>,"I'm not feeling much love, but my arthritis is a lot better.",416,official_winner,True,finalist
+166,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=617x350 at 0x12B961AE0>,We voted against bored meetings.,451,official_winner,False,bad
+167,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=617x350 at 0x12B961AE0>,This little piggy owns the market.,451,official_winner,True,finalist
+168,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=589x484 at 0x12B9636D0>,This can only end in a draw.,399,official_winner,True,finalist
+169,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=589x484 at 0x12B9636D0>,Ever feel like you're not in control?,399,official_winner,False,bad
+170,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x303 at 0x12B9607C0>,"When I said 'yes' to product placement, I never dreamed they'd send us dish soap.",122,official_winner,False,bad
+171,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x303 at 0x12B9607C0>,"Yeah, well, it got me through college and law school, and it'll get me through here, too.",122,official_winner,True,finalist
+172,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x321 at 0x12B9607F0>,The invisible man picked up my tab.,314,official_winner,True,finalist
+173,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x321 at 0x12B9607F0>,This is the worst recession I've ever seen.,314,official_winner,False,bad
+176,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=627x620 at 0x12B9627A0>,Who'd have thought they'd get you for tax evasion.,517,official_winner,True,finalist
+177,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=627x620 at 0x12B9627A0>,"Don't worry, we've got a killer strategy.",517,official_winner,False,bad
+178,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x297 at 0x12B963C70>,So much for homeland security...,131,official_winner,False,bad
+179,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x297 at 0x12B963C70>,Every time I wash the car.,131,official_winner,True,finalist
+180,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=614x387 at 0x12B9632E0>,You two have a lot in common: 98% of your DNA and you're both in accounting.,370,official_winner,True,finalist
+181,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=614x387 at 0x12B9632E0>,"Frankly, it seems to me this is exactly what the Founding Fathers intended.",370,official_winner,False,bad
+184,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x258 at 0x12B960F40>,Leave it here. He always comes down for his lunch.,114,official_winner,False,bad
+185,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x258 at 0x12B960F40>,The regular lifeguard isn't seeing anybody today.,114,official_winner,True,finalist
+186,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x372 at 0x12B960670>,Just get your feet wet and see if this is something you want to do.,177,official_winner,False,bad
+187,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x372 at 0x12B960670>,It's sloppy work like that that gives the mob a bad name.,177,official_winner,True,finalist
+188,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12B961A80>,You got yourself here. That's a good start.,536,official_winner,True,finalist
+189,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12B961A80>,Do you know if your warranty covers Prozac?,536,official_winner,False,bad
+190,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=720x528 at 0x12B961BD0>,Meet my etch-a-sketch.,357,official_winner,False,bad
+191,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=720x528 at 0x12B961BD0>,He's not finished.,357,official_winner,True,finalist
+196,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x365 at 0x12B962500>,Margaritaville or bust.,210,official_winner,True,finalist
+197,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x365 at 0x12B962500>,Spare some plane fare?,210,official_winner,False,bad
+198,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=445x306 at 0x12B960FD0>,"Nice catch, son, now close the deal.",444,official_winner,True,finalist
+199,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=445x306 at 0x12B960FD0>,No thanks. I already have boat insurance.,444,official_winner,False,bad
+200,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=667x629 at 0x12B960E50>,As a matter of fact I am feeling smaller.,438,official_winner,False,bad
+201,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=667x629 at 0x12B960E50>,"I've gotta go, the exterminator is here.",438,official_winner,True,finalist
+202,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x436 at 0x12B960CA0>,"You know this is a smoke-free zone, right?",524,official_winner,False,bad
+203,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x436 at 0x12B960CA0>,I'm sorry I said you had small hands.,524,official_winner,True,finalist
+204,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=707x478 at 0x12B9626E0>,We're skipping the rectal exam.,360,official_winner,False,bad
+205,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=707x478 at 0x12B9626E0>,Now I'm getting a signal.,360,official_winner,True,finalist
+206,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x675 at 0x12B962CB0>,"My apologies, but there will be no main course tonight.",374,official_winner,False,bad
+207,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x675 at 0x12B962CB0>,"Cholesterol, shlemesterol, André loved to say.",374,official_winner,True,finalist
+208,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x510 at 0x12B961B70>,What makes you think you were not our first choice?,550,official_winner,True,finalist
+209,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x510 at 0x12B961B70>,"Father, may I move three giant seats forward?",550,official_winner,False,bad
+212,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x289 at 0x12B963BB0>,"Look, the first thousand years are the toughest.",118,official_winner,False,bad
+213,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x289 at 0x12B963BB0>,I always figured hell would be less ironic.,118,official_winner,True,finalist
+214,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x497 at 0x12B961120>,I thought that this only happens to Japanese Women,332,official_winner,False,bad
+215,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x497 at 0x12B961120>,"Where am I going to get the 4,000,000 shrimp for the ransom?",332,official_winner,True,finalist
+220,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=791x597 at 0x12B961E70>,"Genetically modified? No, ma'am. Steroid supplements. This Tom was a big Yankee fan.",405,official_winner,False,bad
+221,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=791x597 at 0x12B961E70>,"It's a turduckant""....a turkey stuffed with a duck, stuffed with a young, tender elephant.",405,official_winner,True,finalist
+222,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x321 at 0x12B962A40>,Did anyone turn in a cape last night?,314,official_winner,True,finalist
+223,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x321 at 0x12B962A40>,Me? I am known as Tech Support.,314,official_winner,False,bad
+224,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x497 at 0x12B962290>,"But honey, I just ate.",332,official_winner,True,finalist
+225,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x497 at 0x12B962290>,Ishmael is on his way.,332,official_winner,False,bad
+226,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=667x629 at 0x12B963DF0>,It's out of the bag.,438,official_winner,True,finalist
+227,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=667x629 at 0x12B963DF0>,We got 14 million hits so far.,438,official_winner,False,bad
+228,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=707x478 at 0x12BF8E290>,"This week, on the West Wing.",360,official_winner,False,bad
+229,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=707x478 at 0x12BF8E290>,I am from Doctors Without Offices.,360,official_winner,True,finalist
+230,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x660 at 0x12BF8C100>,I knew hiring Spongebob was a mistake.,754,official_winner,False,bad
+231,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x660 at 0x12BF8C100>,Is the fire in Times Square or Columbus Circle?,754,official_winner,True,finalist
+232,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BF8C130>,Five to four of us would like you to get the lights on your way out.,229,official_winner,True,finalist
+233,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BF8C130>,The class action suit against the mattress company was not going well.,229,official_winner,False,bad
+234,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x243 at 0x12BF8C250>,I never know what to pack.,33,official_winner,True,finalist
+235,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x243 at 0x12BF8C250>,They were supposed to eat the moths.,33,official_winner,False,bad
+236,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x637 at 0x12BF8C2E0>,My parents must have missed the recall notice !,558,official_winner,False,bad
+237,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x637 at 0x12BF8C2E0>,There's got to be an easier way to keep me insured.,558,official_winner,True,finalist
+238,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x285 at 0x12BF8C190>,"Well, if you must know, he makes me laugh.",10,official_winner,True,finalist
+239,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x285 at 0x12BF8C190>,"It's called a mid-life crisis, not a midlife circus.",10,official_winner,False,bad
+240,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x206 at 0x12BF8C3A0>,"Janice, hold all my calls. Indefinitely.",136,official_winner,True,finalist
+241,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x206 at 0x12BF8C3A0>,My guess is that we're down-sizing.,136,official_winner,False,bad
+242,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x303 at 0x12BF8C4C0>,At this point in my career I thought I was past the dirty work.,122,official_winner,False,bad
+243,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x303 at 0x12BF8C4C0>,"If the jury needs another day, they're using paper plates tomorrow.",122,official_winner,True,finalist
+244,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=564x436 at 0x12BF8C400>,I said no interruptions.,498,official_winner,False,bad
+245,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=564x436 at 0x12BF8C400>,Put him through.,498,official_winner,True,finalist
+250,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=727x536 at 0x12BF8C490>,We'll eventually miss him.,367,official_winner,True,finalist
+251,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=727x536 at 0x12BF8C490>,I consider it in poor taste.,367,official_winner,False,bad
+254,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=328x268 at 0x12BF8C8B0>,The coast is clear. Set the landmime.,44,official_winner,False,bad
+255,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=328x268 at 0x12BF8C8B0>,Not a good day for a street fair.,44,official_winner,True,finalist
+260,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=719x522 at 0x12BF8CA90>,You don't have to explain - you're already viral on You-tube.,391,official_winner,True,finalist
+261,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=719x522 at 0x12BF8CA90>,They're reducing the carbon footprint at work AGAIN?,391,official_winner,False,bad
+262,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x200 at 0x12BF8C910>,"And, best of all, it's completely waterproof!",54,official_winner,True,finalist
+263,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x200 at 0x12BF8C910>,It is time for a little philosophy.,54,official_winner,False,bad
+266,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=640x800 at 0x12BF8C280>,They don't feed the animals anything we wouldn't eat.,696,official_winner,False,bad
+267,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=640x800 at 0x12BF8C280>,"If there's a ring in here, Hank, I swear to God . . .",696,official_winner,True,finalist
+268,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=791x597 at 0x12BF8CBB0>,Did you order the Obamacare Special?,405,official_winner,False,bad
+269,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=791x597 at 0x12BF8CBB0>,The gravy boat is docked at the wharf.,405,official_winner,True,finalist
+270,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x482 at 0x12BF8CEE0>,They keep away the pigeons.,564,official_winner,True,finalist
+271,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x482 at 0x12BF8CEE0>,So who gives a hoot?,564,official_winner,False,bad
+272,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x287 at 0x12BF8CFD0>,Tell my 1:30 things got way gnarly...,5,official_winner,True,finalist
+273,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x287 at 0x12BF8CFD0>,"Donald clearly misunderstood ""surfing the net.""",5,official_winner,False,bad
+274,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x581 at 0x12BF8CF10>,The relationship was less symbiotic than I’d hoped.,441,official_winner,True,finalist
+275,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x581 at 0x12BF8CF10>,"Fish & Wildlife issues new program ""Eat and Release"".",441,official_winner,False,bad
+278,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=356x295 at 0x12BF8D240>,He came in with a splinter and then he sat in Helen's chair.,110,official_winner,False,bad
+279,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=356x295 at 0x12BF8D240>,I hear he's got 100 percent coverage ... parts and labor.,110,official_winner,True,finalist
+280,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x449 at 0x12BF8D2D0>,Like I'm the first person who's tried sleeping their way to the top.,567,official_winner,True,finalist
+281,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x449 at 0x12BF8D2D0>,"You said take the cheapest overnight flight, so I used FedEx.",567,official_winner,False,bad
+282,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=240x164 at 0x12BF8D180>,There's a warm front coming through this afternoon.,266,official_winner,True,finalist
+283,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=240x164 at 0x12BF8D180>,"They always told me CPR was important, but I never listened.",266,official_winner,False,bad
+284,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x447 at 0x12BF8D390>,"Medical license? No, but he has a liquor license.",573,official_winner,True,finalist
+285,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x447 at 0x12BF8D390>,Guess what happens if you say ANYTHING!,573,official_winner,False,bad
+286,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=328x268 at 0x12BF8D420>,I'm telling you that's exactly what I said- minefield straight ahead.,44,official_winner,False,bad
+287,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=328x268 at 0x12BF8D420>,It's not good—looks like they've got a full interpretive-dance troupe.,44,official_winner,True,finalist
+290,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=589x484 at 0x12BF8D4E0>,Did you hear the one about the bishop and the queen?,399,official_winner,True,finalist
+291,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=589x484 at 0x12BF8D4E0>,I'm gonna check ya and I'm gonna check ya REAL SLOW.,399,official_winner,False,bad
+292,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x123 at 0x12BF8D3C0>,"Well, I thought it was funny.",93,official_winner,True,finalist
+293,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x123 at 0x12BF8D3C0>,Pandemic? What Pandemic?,93,official_winner,False,bad
+296,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x319 at 0x12BF8D6C0>,Let me just run this by the panel.,345,official_winner,False,bad
+297,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x319 at 0x12BF8D6C0>,Any family history with death?,345,official_winner,True,finalist
+298,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x593 at 0x12BF8D7B0>,I was told you were the last person to use the key to the mens' room.,411,official_winner,True,finalist
+299,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x593 at 0x12BF8D7B0>,"Sir, excluding Quebec from our caption contest has proved to be very popular!",411,official_winner,False,bad
+300,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x563 at 0x12BF8D810>,I'll have one of each. I've never gotten to eat AT the table before.,701,official_winner,False,bad
+301,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x563 at 0x12BF8D810>,"The last time I was here, I swear they tried to poison me.",701,official_winner,True,finalist
+302,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x679 at 0x12BF8D8A0>,I don't care if it was unintentional. A vasectomy is a vasectomy.,681,official_winner,False,bad
+303,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x679 at 0x12BF8D8A0>,You pinch me one more time and you're going to find yourself in hot water.,681,official_winner,True,finalist
+304,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x360 at 0x12BF8D630>,We have to move out—I just sold a painting.,462,official_winner,True,finalist
+305,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x360 at 0x12BF8D630>,He's used the same presentation for ages.,462,official_winner,False,bad
+306,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x233 at 0x12BF8D960>,"No, the meeting isn't over. That was just the introduction.",75,official_winner,False,bad
+307,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x233 at 0x12BF8D960>,Some of you may be aware that I have been taking piano lessons.,75,official_winner,True,finalist
+312,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x380 at 0x12BF8D5D0>,He has recreational A.D.D.,175,official_winner,True,finalist
+313,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x380 at 0x12BF8D5D0>,Kitchen sink? No room!!,175,official_winner,False,bad
+316,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x254 at 0x12BF8DD50>,It's a thongbird.,103,official_winner,True,finalist
+317,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x254 at 0x12BF8DD50>,wierd branch!,103,official_winner,False,bad
+322,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x562 at 0x12BF8DEA0>,...and then you place advertising IN the article.,750,official_winner,False,bad
+323,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x562 at 0x12BF8DEA0>,Half the flock is still grazing remotely.,750,official_winner,True,finalist
+324,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=617x350 at 0x12BF8D9C0>,His surgery paid for itself.,451,official_winner,True,finalist
+325,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=617x350 at 0x12BF8D9C0>,She says she never feels full.,451,official_winner,False,bad
+326,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x297 at 0x12BF8DF60>,And tomorrow there's a twenty-per-cent chance of anvils.,131,official_winner,True,finalist
+327,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x297 at 0x12BF8DF60>,We should never have declared war on Switzerland.,131,official_winner,False,bad
+328,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x288 at 0x12BF8DDB0>,I represent several Arabic numerals who are being held without charges.,6,official_winner,True,finalist
+329,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x288 at 0x12BF8DDB0>,The sextuplets are fine but I'm having a hard time buying pantyhose.,6,official_winner,False,bad
+330,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x497 at 0x12BF8E020>,"""When is it ever a good time to break up?",332,official_winner,True,finalist
+331,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x497 at 0x12BF8E020>,Why aren't you wearing your ring?!,332,official_winner,False,bad
+332,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=600x415 at 0x12BF8DF00>,"Well, not THE answer, but AN answer.",598,official_winner,False,bad
+333,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=600x415 at 0x12BF8DF00>,It's for my back. You have two more questions.,598,official_winner,True,finalist
+336,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x589 at 0x12BF8E230>,"And then I thought Wow, my cat really is kind of sexy.",416,official_winner,True,finalist
+337,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x589 at 0x12BF8E230>,Finally with Obamacare pre-existing conditions are covered.,416,official_winner,False,bad
+338,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=759x578 at 0x12BF8DF30>,When.,349,official_winner,True,finalist
+339,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=759x578 at 0x12BF8DF30>,Dopamine decaf.,349,official_winner,False,bad
+340,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x550 at 0x12BF8E1D0>,"We are getting too old for this, don't you think?",514,official_winner,False,bad
+341,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x550 at 0x12BF8E1D0>,Head for the carousel! It's our only chance!,514,official_winner,True,finalist
+342,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=674x532 at 0x12BF8E350>,Compliments of your ex.,390,official_winner,True,finalist
+343,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=674x532 at 0x12BF8E350>,Room for tuba?,390,official_winner,False,bad
+348,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=356x295 at 0x12BF8E500>,He still has his original brain.,110,official_winner,False,bad
+349,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=356x295 at 0x12BF8E500>,I wish I had those knees.,110,official_winner,True,finalist
+350,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x793 at 0x12BF8E740>,"Wait, we have an oven?",557,official_winner,True,finalist
+351,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x793 at 0x12BF8E740>,So good it's sinful.,557,official_winner,False,bad
+352,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x562 at 0x12BF8E950>,"Every night, when I try to sleep, I can't stop thinking about work.",750,official_winner,True,finalist
+353,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x562 at 0x12BF8E950>,No problem Newt. They still think the election was rigged.,750,official_winner,False,bad
+354,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x541 at 0x12BF8E800>,So that's where all the furniture went.,746,official_winner,True,finalist
+355,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x541 at 0x12BF8E800>,"No, it's called testosterone.",746,official_winner,False,bad
+356,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=727x536 at 0x12BF8EA10>,He had great health insurance.,367,official_winner,True,finalist
+357,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=727x536 at 0x12BF8EA10>,No one can accuse us of not trying.,367,official_winner,False,bad
+358,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=574x426 at 0x12BF8EA40>,My bedroom? That’s where the sleep happens.,464,official_winner,True,finalist
+359,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=574x426 at 0x12BF8EA40>,There are less hostile ways to bring back the magic.,464,official_winner,False,bad
+360,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x793 at 0x12BF8EBF0>,What do you mean it's your mother's recipe?,557,official_winner,True,finalist
+361,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x793 at 0x12BF8EBF0>,I still think we're going to get in trouble.,557,official_winner,False,bad
+364,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x240 at 0x12BF8EA70>,Hang on a minute; I'm downloading the answer right now.,42,official_winner,False,bad
+365,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x240 at 0x12BF8EA70>,"Yes, Mother, I know I should have started my appeal earlier.",42,official_winner,True,finalist
+366,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=574x426 at 0x12BF8EE90>,I got them on Amazon,464,official_winner,False,bad
+367,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=574x426 at 0x12BF8EE90>,You seemed disillusioned.,464,official_winner,True,finalist
+368,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x594 at 0x12BF8EF20>,"Apparently, climate change is getting more serious.",757,official_winner,True,finalist
+369,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x594 at 0x12BF8EF20>,"Looks like the kids are texting us, again.",757,official_winner,False,bad
+370,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=240x164 at 0x12BF8F100>,"Careful, the water’s hard today.",266,official_winner,True,finalist
+371,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=240x164 at 0x12BF8F100>,Year 'round employees get benefits.,266,official_winner,False,bad
+372,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BF8F040>,You would be amazed how dense it gets this time of year.,341,official_winner,False,bad
+373,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BF8F040>,"Quit joking, you guys, and grab my legs again.",341,official_winner,True,finalist
+376,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x243 at 0x12BF8F250>,I think it's a very sophisticated Sicilian message.,33,official_winner,False,bad
+377,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x243 at 0x12BF8F250>,"So, then, I guess the Johnsons are feeding our clothes.",33,official_winner,True,finalist
+378,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x287 at 0x12BF8F160>,"Susie, grab my speedo. The zebra print.",5,official_winner,False,bad
+379,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x287 at 0x12BF8F160>,Gotta reschedule. Water main break on Seventh!,5,official_winner,True,finalist
+382,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x333 at 0x12BF8F400>,"No, No - my lawyer requested and extra clause!",161,official_winner,False,bad
+383,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x333 at 0x12BF8F400>,So you think you're ready for the corner tank?,161,official_winner,True,finalist
+384,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x257 at 0x12BF8F520>,La Dolce Vita--eh kid?,4,official_winner,False,bad
+385,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x257 at 0x12BF8F520>,Pass me a beer truck?,4,official_winner,True,finalist
+386,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x547 at 0x12BF8F580>,"Oh yes, legendary. Ancient civilizations wrote songs about it.",706,official_winner,False,bad
+387,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x547 at 0x12BF8F580>,"Apparently, they wouldn't ask for directions, either.",706,official_winner,True,finalist
+388,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x169 at 0x12BF8F490>,"Cowabunga, dear.",105,official_winner,True,finalist
+389,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x169 at 0x12BF8F490>,Sunami? Where in Iowa.,105,official_winner,False,bad
+396,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x337 at 0x12BF8F7F0>,The view is great as long as you don't look down.,201,official_winner,False,bad
+397,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x337 at 0x12BF8F7F0>,They said the complaint box was anonymous.,201,official_winner,True,finalist
+400,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x365 at 0x12BF8F9A0>,Help the yardless?,210,official_winner,True,finalist
+401,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x365 at 0x12BF8F9A0>,Will shirk for Mai Tais.,210,official_winner,False,bad
+402,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x285 at 0x12BF8F850>,I told you not to bring the clown!,10,official_winner,True,finalist
+403,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x285 at 0x12BF8F850>,"Itís always about your career, Bippo.",10,official_winner,False,bad
+406,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BF8FAC0>,I don't like to cook in an empty stomach.,748,official_winner,True,finalist
+407,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BF8FAC0>,"Fred, do you remember where the entry was?",748,official_winner,False,bad
+408,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x193 at 0x12BF8FB50>,Mind if I look in the hole?,91,official_winner,True,finalist
+409,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x193 at 0x12BF8FB50>,I'm guessing you're not with Geico.,91,official_winner,False,bad
+410,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=667x629 at 0x12BF8FBB0>,Everything in my life right now just makes me feel so small.,438,official_winner,False,bad
+411,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=667x629 at 0x12BF8FBB0>,Sorry about your garage. We're having him declawed tomorrow.,438,official_winner,True,finalist
+412,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x206 at 0x12BF8FD60>,Could you order me a B.L.T. on whole wheat with a side of carrion?,136,official_winner,True,finalist
+413,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x206 at 0x12BF8FD60>,"Miss Withers, has my doctor phoned with my test results?",136,official_winner,False,bad
+418,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BF8F730>,"Don't worry, the polls show it will miss us.",551,official_winner,True,finalist
+419,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BF8F730>,The hands are small but the wave is huge.,551,official_winner,False,bad
+422,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=669x563 at 0x12BF3C1F0>,Is he doing the macarena?,315,official_winner,False,bad
+423,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=669x563 at 0x12BF3C1F0>,Must be the pesticides.,315,official_winner,True,finalist
+424,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x476 at 0x12BF3C580>,We can take turns holding it if you want.,521,official_winner,False,bad
+425,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x476 at 0x12BF3C580>,I doubled my contribution to PBS.,521,official_winner,True,finalist
+426,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=460x410 at 0x12BF3C130>,"Roger, everything reminds you of sex.",363,official_winner,True,finalist
+427,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=460x410 at 0x12BF3C130>,All we're missing is the giant yellow arrow.,363,official_winner,False,bad
+434,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=684x489 at 0x12BF3C3A0>,"Well mister, looks like this is your last hee-haw.",233,official_winner,False,bad
+435,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=684x489 at 0x12BF3C3A0>,Is this a bad time to talk about refinancing our loan?,233,official_winner,True,finalist
+436,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x447 at 0x12BF3C5B0>,"I like the effects of gin, but not the taste.",573,official_winner,False,bad
+437,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x447 at 0x12BF3C5B0>,I was just transferred to the fraternity ward.,573,official_winner,True,finalist
+438,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x645 at 0x12BF3C700>,look in the kitchen,717,official_winner,False,bad
+439,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x645 at 0x12BF3C700>,But they don't allow dogs?,717,official_winner,True,finalist
+440,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=709x498 at 0x12BF3C4F0>,I'm starting to hate your bucket list.,362,official_winner,True,finalist
+441,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=709x498 at 0x12BF3C4F0>,"Still voting Republican, Karl?",362,official_winner,False,bad
+442,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x321 at 0x12BF3C7C0>,Please tell me that was your car I just backed into.,314,official_winner,True,finalist
+443,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x321 at 0x12BF3C7C0>,They can never go where everyone knows their name.,314,official_winner,False,bad
+444,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BF3C040>,He was deemed a flight risk.,467,official_winner,True,finalist
+445,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BF3C040>,Yes I know why she sings.,467,official_winner,False,bad
+446,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=507x502 at 0x12BF3C6D0>,"Not only can't you lose it, but the dog can't take it either.",414,official_winner,False,bad
+447,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=507x502 at 0x12BF3C6D0>,There's actually a guy in here who will change the channels for you.,414,official_winner,True,finalist
+448,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x605 at 0x12BF3C970>,BWA HA HA HA HA! Wait until he finds out that there's no connection to the Yellow line.,697,official_winner,False,bad
+449,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x605 at 0x12BF3C970>,Transfer to the F train and that'll take you right to the ocean. Then jump in that.,697,official_winner,True,finalist
+450,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12BF3CAF0>,Ethnic cleansing is getting scarier then ever!,586,official_winner,False,bad
+451,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12BF3CAF0>,"Finally, an identifiable flying object.",586,official_winner,True,finalist
+456,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x280 at 0x12BF3CD60>,I warned you not to bid on the boa that didn't have a photo.,35,official_winner,False,bad
+457,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x280 at 0x12BF3CD60>,You see what happens when you carry rats in your purse?,35,official_winner,True,finalist
+458,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x196 at 0x12BF3CBB0>,"Nothing great, he tasted just like chicken.",139,official_winner,False,bad
+459,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x196 at 0x12BF3CBB0>,I still have room for a second opinion.,139,official_winner,True,finalist
+460,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x674 at 0x12BF3CE50>,Yes I'd call this a sticky situation Kevin.,685,official_winner,False,bad
+461,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x674 at 0x12BF3CE50>,I think we're O.K.—honey doesn't go bad.,685,official_winner,True,finalist
+464,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x288 at 0x12BF3CB20>,"Last thing I remember, the guy said ‘Pick a number.’",6,official_winner,True,finalist
+465,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x288 at 0x12BF3CB20>,I'm on the accounting department's Spirit Committee.,6,official_winner,False,bad
+466,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x567 at 0x12BF3CFA0>,How long can we maintain this balance of power?,729,official_winner,True,finalist
+467,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x567 at 0x12BF3CFA0>,I think this hammock would be perfect in the dungeon.,729,official_winner,False,bad
+468,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x652 at 0x12BF3CE80>,Am I high or are you high?,721,official_winner,False,bad
+469,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x652 at 0x12BF3CE80>,I'm starting to regret that haircut.,721,official_winner,True,finalist
+470,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x258 at 0x12BF3D030>,He's the lifeguard during high tide.,114,official_winner,True,finalist
+471,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x258 at 0x12BF3D030>,"It's not the size, it's how you use it.",114,official_winner,False,bad
+472,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=750x583 at 0x12BF3D540>,Am I in the running?,430,official_winner,True,finalist
+473,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=750x583 at 0x12BF3D540>,You made WHAT?!,430,official_winner,False,bad
+474,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x676 at 0x12BF3D1B0>,You're in luck. A slot for you just opened up in our kitchen.,695,official_winner,True,finalist
+475,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x676 at 0x12BF3D1B0>,"Next, after he turns around, we'll hear from the other side.",695,official_winner,False,bad
+476,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x476 at 0x12BF3D240>,It was a gift from Mr. Trump.,521,official_winner,False,bad
+477,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x476 at 0x12BF3D240>,Check to see if it's still raining.,521,official_winner,True,finalist
+478,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x355 at 0x12BF3D120>,"Remarkably, Bob's fear of flying was cured after a single session.",212,official_winner,False,bad
+479,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x355 at 0x12BF3D120>,What do you mean time's up? I just put another quarter in.,212,official_winner,True,finalist
+486,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x541 at 0x12BF3D300>,I hope you at least had some congressional funding.,746,official_winner,False,bad
+487,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x541 at 0x12BF3D300>,Just as I thought. There's nothing going on upstairs.,746,official_winner,True,finalist
+488,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=674x532 at 0x12BF3D510>,"Yes, I can play Far Far Away.",390,official_winner,False,bad
+489,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=674x532 at 0x12BF3D510>,Something romantic?,390,official_winner,True,finalist
+490,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x728 at 0x12BF3D330>,So now we know what the 'FIRE' button does.,709,official_winner,True,finalist
+491,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x728 at 0x12BF3D330>,I'm sorry this meeting is only for senior faculty.,709,official_winner,False,bad
+494,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=432x310 at 0x12BF3D6C0>,"Frankly, I saw no need for a Plan B.",409,official_winner,False,bad
+495,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=432x310 at 0x12BF3D6C0>,Oh my gosh--he IS a canary!,409,official_winner,True,finalist
+496,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x257 at 0x12BF3D4B0>,I find some of these law suits quite empty.,37,official_winner,False,bad
+497,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x257 at 0x12BF3D4B0>,"Are you now, or have you ever been?",37,official_winner,True,finalist
+498,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x372 at 0x12BF3D7B0>,"Two weeks ago, this was not considered torture.",177,official_winner,True,finalist
+499,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x372 at 0x12BF3D7B0>,Gentlemen. The proof is in the pudding.,177,official_winner,False,bad
+500,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=328x268 at 0x12BF3D7E0>,"O.K., send him in. But this goes against the Geneva conventions.",44,official_winner,True,finalist
+501,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=328x268 at 0x12BF3D7E0>,OK! Remember! Big gestures! Point at your heart and cry!,44,official_winner,False,bad
+504,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x645 at 0x12BF3D8D0>,He is an emotional support animal.,717,official_winner,False,bad
+505,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x645 at 0x12BF3D8D0>,"Well, who ever reads the entire lease?",717,official_winner,True,finalist
+506,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x637 at 0x12BF3D750>,Are my college essays done yet?,558,official_winner,False,bad
+507,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x637 at 0x12BF3D750>,Honey? The baby's outsmarted me again.,558,official_winner,True,finalist
+508,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x567 at 0x12BF3D990>,We'll show those Ottomans.,729,official_winner,True,finalist
+509,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x567 at 0x12BF3D990>,Blame the travel restrictions,729,official_winner,False,bad
+510,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=719x522 at 0x12BF3D840>,Did you hear anything about the brothel that was raided tonight?,391,official_winner,False,bad
+511,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=719x522 at 0x12BF3D840>,"Why do I wonder at times whether you are fully honest with me, Henry?",391,official_winner,True,finalist
+512,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x500 at 0x12BF3DA50>,"As long as it has 4 wheels, 2 headlights and 1 steering wheel, we're happy.",361,official_winner,True,finalist
+513,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x500 at 0x12BF3DA50>,Congratulations! Don't you wish they all came with an instruction manual.,361,official_winner,False,bad
+514,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=405x308 at 0x12BF3DB10>,The doctor will see you in the lounge.,505,official_winner,False,bad
+515,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=405x308 at 0x12BF3DB10>,Don't give me that endangered species look,505,official_winner,True,finalist
+516,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x380 at 0x12BF3DC60>,Philosophy major. English Lit minor.,175,official_winner,False,bad
+517,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x380 at 0x12BF3DC60>,He's pretty much up for anything.,175,official_winner,True,finalist
+518,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x223 at 0x12BF3DD80>,"Don't make him think he can read, Martha. He's already hell to live with.",19,official_winner,False,bad
+519,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x223 at 0x12BF3DD80>,"You won't believe this, but I just remembered where I buried the remote.",19,official_winner,True,finalist
+522,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=574x426 at 0x12BF3DFC0>,Did I mention our medical benefits?,464,official_winner,False,bad
+523,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=574x426 at 0x12BF3DFC0>,It’s not what it looks like.,464,official_winner,True,finalist
+526,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=727x536 at 0x12BF3DC90>,He never could commit.,367,official_winner,True,finalist
+527,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=727x536 at 0x12BF3DC90>,Turn the scissors upside-down.,367,official_winner,False,bad
+528,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12BF3E170>,He volunteers for Meals On Wheel,537,official_winner,False,bad
+529,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12BF3E170>,Try to look surprised.,537,official_winner,True,finalist
+534,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x550 at 0x12BF3E530>,I ain't going back to timeout!,514,official_winner,True,finalist
+535,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x550 at 0x12BF3E530>,I can't tell if they're gainin' on us.,514,official_winner,False,bad
+536,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x359 at 0x12BF3E8C0>,Things got tough after the breakup of the studio system.,180,official_winner,False,bad
+537,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x359 at 0x12BF3E8C0>,Here's to Little Miss 'Don't you touch my hat.’,180,official_winner,True,finalist
+538,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=533x383 at 0x12BF3E770>,Say something viral.,431,official_winner,True,finalist
+539,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=533x383 at 0x12BF3E770>,My Luddite days are over.,431,official_winner,False,bad
+540,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x567 at 0x12BF3E7D0>,This is definitely not as much fun as an execution.,729,official_winner,False,bad
+541,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x567 at 0x12BF3E7D0>,"We can't be overthrown, but we can be swayed.",729,official_winner,True,finalist
+542,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BF3E860>,Row v. Wave.,551,official_winner,True,finalist
+543,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BF3E860>,I already miss 2016.,551,official_winner,False,bad
+544,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x447 at 0x12BF3E5F0>,The doctor says I have only three months to party.,573,official_winner,True,finalist
+545,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x447 at 0x12BF3E5F0>,"Actually, it's one of the few things the AHCA covers.",573,official_winner,False,bad
+548,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x697 at 0x12BF3E1A0>,"First, you'll chase funding for several years. Then, as soon as you lose hope, we'll give you a piece of cheese and you'll do it all over again.",730,official_winner,False,bad
+549,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x697 at 0x12BF3E1A0>,"And, when you get hungry, the cafeteria is to your right, left, left, right, left, straight, right, straight, left, and then you push on the big lever.",730,official_winner,True,finalist
+552,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x464 at 0x12BF3EAA0>,And keep 'em above the ankle.,215,official_winner,False,bad
+553,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x464 at 0x12BF3EAA0>,Very funny. Now give me the microphone.,215,official_winner,True,finalist
+558,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x257 at 0x12BF3F040>,The committee will ask you one final time: do you come in a 42?,37,official_winner,True,finalist
+559,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x257 at 0x12BF3F040>,"And now, it seems, we're adding streaking to your list of misdemeanors.",37,official_winner,False,bad
+560,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x287 at 0x12BF3EE00>,"Hold my calls, cancel my appointments and find my speedo!",5,official_winner,True,finalist
+561,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x287 at 0x12BF3EE00>,"Donald clearly misunderstood ""surfing the net.""",5,official_winner,False,bad
+564,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x258 at 0x12BF3EEF0>,Bar Harbor has some pretty high tides.,114,official_winner,False,bad
+565,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x258 at 0x12BF3EEF0>,God needed a part time job...,114,official_winner,True,finalist
+566,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=500x378 at 0x12BF3E440>,It's a traveling exhibit.,493,official_winner,False,bad
+567,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=500x378 at 0x12BF3E440>,I prefer his later jumps.,493,official_winner,True,finalist
+570,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x436 at 0x12BF3EFE0>,Stop pouting! You're the one who said swords or fire.,524,official_winner,False,bad
+571,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x436 at 0x12BF3EFE0>,"See, right there! You did it again! You're bending your elbow.",524,official_winner,True,finalist
+572,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x217 at 0x12BF3ED70>,"I'm doing O.K., but I do miss my Lycra bike shorts. And Mildred, of course.",316,official_winner,True,finalist
+573,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x217 at 0x12BF3ED70>,"Y'know, if we put playing cards in the spokes, we could pretend we're Hell's Angels!",316,official_winner,False,bad
+574,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=599x444 at 0x12BF3F070>,I'm going to let you off with just a math lecture this time.,385,official_winner,True,finalist
+575,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=599x444 at 0x12BF3F070>,Don't go away yet ... I still have to give you our privacy statement.,385,official_winner,False,bad
+582,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x392 at 0x12BF3F3A0>,I can get over 100 channels. How about you?,561,official_winner,False,bad
+583,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x392 at 0x12BF3F3A0>,Stay still. They'll never find us.,561,official_winner,True,finalist
+584,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x436 at 0x12BF3F130>,"Take the picture, dammit, take the picture!",524,official_winner,True,finalist
+585,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x436 at 0x12BF3F130>,Smaug is not a big fan of the coin toss.,524,official_winner,False,bad
+586,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x200 at 0x12BF3F430>,Maybe this thing isn't a compass.,54,official_winner,True,finalist
+587,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x200 at 0x12BF3F430>,'Survivor' is on in 15 minutes.,54,official_winner,False,bad
+588,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=405x308 at 0x12BF3F7C0>,"Marge, I think you ordered from the wrong Amazon!",505,official_winner,True,finalist
+589,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=405x308 at 0x12BF3F7C0>,What part of 'in a while' didn't you understand?,505,official_winner,False,bad
+592,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x297 at 0x12BF3F6A0>,"Great. Safes everywhere, and I'm on probation.",131,official_winner,True,finalist
+593,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x297 at 0x12BF3F6A0>,"Hard to believe, but no two of them are identical.",131,official_winner,False,bad
+594,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12BF3F5E0>,The hole in the middle was my idea.,537,official_winner,True,finalist
+595,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12BF3F5E0>,I'm worried he's stuck in a font.,537,official_winner,False,bad
+598,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=707x478 at 0x12BF3F7F0>,Sometimes I regret going into concierge medicine.,360,official_winner,False,bad
+599,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=707x478 at 0x12BF3F7F0>,Bad news: you've got four blocks to live.,360,official_winner,True,finalist
+600,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=476x330 at 0x12BF3FB80>,I just feel like there’s no light at the end of the tunnel.,497,official_winner,True,finalist
+601,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=476x330 at 0x12BF3FB80>,...and then she backed away and hooked up with Thomas.,497,official_winner,False,bad
+602,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x244 at 0x12BF3F970>,"How’s your new boss at the C.I.A., dear?",50,official_winner,True,finalist
+603,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x244 at 0x12BF3F970>,The treehugger's society was a long time ago.,50,official_winner,False,bad
+604,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x337 at 0x12BF3FA60>,I didn't get where I am today being Mr. Nice Guy.,201,official_winner,False,bad
+605,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x337 at 0x12BF3FA60>,Maybe we should do the firings in the basement?,201,official_winner,True,finalist
+608,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=564x436 at 0x12BF3F9D0>,Ouick! Your Pen!,498,official_winner,True,finalist
+609,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=564x436 at 0x12BF3F9D0>,Had a circumcision lately?,498,official_winner,False,bad
+614,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x648 at 0x12BF3FDC0>,One immunization to rule them all.,419,official_winner,False,bad
+615,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x648 at 0x12BF3FDC0>,"Yeah, but the lollipop is amazing.",419,official_winner,True,finalist
+616,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=356x295 at 0x12BF3F340>,Dibs on his left hip!,110,official_winner,True,finalist
+617,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=356x295 at 0x12BF3F340>,What make and model was it?,110,official_winner,False,bad
+618,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x196 at 0x12BF3FCD0>,High time we held a jumble sale ?,139,official_winner,False,bad
+619,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x196 at 0x12BF3FCD0>,Tasted kind of mediciney.,139,official_winner,True,finalist
+620,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x211 at 0x12BF3FEE0>,Why do we always have to skip ahead to the part where Dorothy meets the Scarecrow?,70,official_winner,False,bad
+621,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x211 at 0x12BF3FEE0>,"I thought it sounded reputable. He's also a member, for crying out loud!",70,official_winner,True,finalist
+622,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x349 at 0x12BF3FD90>,Are you sure you know what you're doing?,150,official_winner,False,bad
+623,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x349 at 0x12BF3FD90>,"Bullets don't grow on trees, Harry.",150,official_winner,True,finalist
+626,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x365 at 0x12BF3FEB0>,"Brother, can you spare a lime?",210,official_winner,True,finalist
+627,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x365 at 0x12BF3FEB0>,They call me the Hammocker Schnorrer.,210,official_winner,False,bad
+630,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=683x436 at 0x12BF3DDE0>,They say it never rains in southern California.,379,official_winner,False,bad
+631,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=683x436 at 0x12BF3DDE0>,"After the kids moved out, the treehouse was just too big.",379,official_winner,True,finalist
+632,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=240x164 at 0x12BFBC220>,I started last summer when this was a pool.,266,official_winner,True,finalist
+633,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=240x164 at 0x12BFBC220>,"But on the plus side, no one is wearing a Speedo.",266,official_winner,False,bad
+636,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x244 at 0x12BFBC430>,I've definitely had an easier time on the subway.,50,official_winner,False,bad
+637,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x244 at 0x12BFBC430>,"I'd divorce you, but we need the firewood.",50,official_winner,True,finalist
+638,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x476 at 0x12BFBC2B0>,"Your mother thinks I exaggerate my income, too.",521,official_winner,False,bad
+639,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x476 at 0x12BFBC2B0>,You should have seen the drink it came in.,521,official_winner,True,finalist
+644,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=541x465 at 0x12BFBC520>,"Senator, the press left two hours ago.",456,official_winner,False,bad
+645,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=541x465 at 0x12BFBC520>,How are you going to spin this?,456,official_winner,True,finalist
+646,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x193 at 0x12BFBC6D0>,"Some people see the donut, others see the hole.",91,official_winner,False,bad
+647,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x193 at 0x12BFBC6D0>,"Yeah, yeah—and I invented the ticket.",91,official_winner,True,finalist
+648,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12BFBC700>,I've never seen someone actually hoovered up before.,586,official_winner,False,bad
+649,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12BFBC700>,I have a feeling they are going to treat us like dirt.,586,official_winner,True,finalist
+650,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=791x597 at 0x12BFBC640>,It's because he lost an argument with Bert and Ernie.,405,official_winner,False,bad
+651,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=791x597 at 0x12BFBC640>,Don't worry. It'll plump up as you cook it.,405,official_winner,True,finalist
+652,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=669x563 at 0x12BFBC7F0>,I always thought I would be more afraid but I'm actually quite calm.,315,official_winner,False,bad
+653,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=669x563 at 0x12BFBC7F0>,There goes eighty-three years of brand equity down the drain.,315,official_winner,True,finalist
+654,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x449 at 0x12BFBC8E0>,And where was the outrage over Alan's standing desk?,567,official_winner,True,finalist
+655,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x449 at 0x12BFBC8E0>,I'm a new man since I got an emotional support mattress.,567,official_winner,False,bad
+656,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x240 at 0x12BFBC790>,Rogaine is for wimps.,42,official_winner,False,bad
+657,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x240 at 0x12BFBC790>,Cancel my twelve-oh-one.,42,official_winner,True,finalist
+658,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x593 at 0x12BFBC0A0>,"We still haven't found your pants, sir.",411,official_winner,True,finalist
+659,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x593 at 0x12BFBC0A0>,"The heralds are a nice touch, sir.",411,official_winner,False,bad
+660,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=460x410 at 0x12BFBC940>,Your mornings can't be any worse than my afternoons.,363,official_winner,True,finalist
+661,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=460x410 at 0x12BFBC940>,"I misunderstood the term ""human resources"".",363,official_winner,False,bad
+662,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=460x410 at 0x12BFBCA90>,At least we're not the stapler.,363,official_winner,False,bad
+663,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=460x410 at 0x12BFBCA90>,Last internship I was a coatrack.,363,official_winner,True,finalist
+664,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=674x532 at 0x12BFBCB20>,Will that be allegro or allegro moderato?,390,official_winner,False,bad
+665,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=674x532 at 0x12BFBCB20>,"My name is Gary, and I'll be annoying you.",390,official_winner,True,finalist
+666,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BFBC850>,I'm getting mixed messages.,551,official_winner,False,bad
+667,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x508 at 0x12BFBC850>,We shall overcomb.,551,official_winner,True,finalist
+668,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x547 at 0x12BFBCAF0>,"Oh yes, legendary. Ancient civilizations wrote songs about it.",706,official_winner,False,bad
+669,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x547 at 0x12BFBCAF0>,"Of course—we wait forever, then two come at the same time.",706,official_winner,True,finalist
+670,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x355 at 0x12BFBCCA0>,Can we do therapy for just five more minutes? Please? Please?,212,official_winner,True,finalist
+671,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x355 at 0x12BFBCCA0>,What do you mean you don't get me. It's not rocket science.,212,official_winner,False,bad
+672,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x380 at 0x12BFBCF10>,"In this economy, you have to let the vacation come to you.",175,official_winner,True,finalist
+673,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x380 at 0x12BFBCF10>,His best chance of medaling is the dodecahedrathalon.,175,official_winner,False,bad
+674,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=541x465 at 0x12BFBCD60>,I faked my applause.,456,official_winner,True,finalist
+675,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=541x465 at 0x12BFBCD60>,I still don't feel motivated.,456,official_winner,False,bad
+676,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x612 at 0x12BFBD330>,"Bailiff, bring in the maid.",176,official_winner,False,bad
+677,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x612 at 0x12BFBD330>,Sorry about that—new gavel.,176,official_winner,True,finalist
+678,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=709x498 at 0x12BFBD120>,"Which light, powdery substance shall we try next?",362,official_winner,False,bad
+679,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=709x498 at 0x12BFBD120>,This is why I hate cross-country skiing.,362,official_winner,True,finalist
+680,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=600x415 at 0x12BFBD1B0>,"Before I settled here, I bounced around a lot.",598,official_winner,True,finalist
+681,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=600x415 at 0x12BFBD1B0>,Getting it out of my ear was the life-changer.,598,official_winner,False,bad
+686,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x372 at 0x12BFBD180>,"Hey, nice touch Vin; first time we ever whacked a poet.",177,official_winner,False,bad
+687,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x372 at 0x12BFBD180>,We are trying to reduce our concrete footprint.,177,official_winner,True,finalist
+690,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x355 at 0x12BFBD4B0>,I think this can all be traced back to my mother ship.,212,official_winner,True,finalist
+691,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x355 at 0x12BFBD4B0>,I'm assuming the treatment for arachnophobia is a lot less fun.,212,official_winner,False,bad
+692,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x217 at 0x12BFBD2A0>,A clear day? I hadn't thought of that.,316,official_winner,True,finalist
+693,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x217 at 0x12BFBD2A0>,All the Ferraris must be in Hell.,316,official_winner,False,bad
+694,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BFBD5A0>,"Makes you think, doesn't it?",748,official_winner,False,bad
+695,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BFBD5A0>,I guess it's just us for dinner.,748,official_winner,True,finalist
+696,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=627x620 at 0x12BFBD5D0>,Your priors are going to be a problem.,517,official_winner,True,finalist
+697,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=627x620 at 0x12BFBD5D0>,"All things considered, 30 years isn't so bad.",517,official_winner,False,bad
+698,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=683x436 at 0x12BFBD480>,I come here to brood.,379,official_winner,True,finalist
+699,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=683x436 at 0x12BFBD480>,It's LEED Platinum certified.,379,official_winner,False,bad
+700,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BFBD7E0>,"Yes, we are in bed with the opposition.",229,official_winner,False,bad
+701,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BFBD7E0>,How long have you been standing there?,229,official_winner,True,finalist
+702,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x123 at 0x12BFBD930>,"Marketing sent me. I'm the new, fresh face of death.",93,official_winner,True,finalist
+703,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x123 at 0x12BFBD930>,You Guys cant be serious about the hoodies.,93,official_winner,False,bad
+704,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x500 at 0x12BFBD870>,Mazda tov!,361,official_winner,True,finalist
+705,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x500 at 0x12BFBD870>,I'll name him Ed!,361,official_winner,False,bad
+708,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x240 at 0x12BFBDE40>,"...if you know the extension of the person you would like electrocuted, please press one, now.",42,official_winner,False,bad
+709,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x240 at 0x12BFBDE40>,"I can't talk, I'm expecting a call from the governor . . . wait, I could save how much?",42,official_winner,True,finalist
+710,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=500x559 at 0x12BFBDBA0>,I don't normally pick up guys like this.,504,official_winner,True,finalist
+711,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=500x559 at 0x12BFBDBA0>,It's been more than four hours; we're suing,504,official_winner,False,bad
+714,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x675 at 0x12BFBDC90>,He's done.,374,official_winner,True,finalist
+715,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x675 at 0x12BFBDC90>,Table for one?,374,official_winner,False,bad
+716,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x648 at 0x12BFBDCC0>,I now get paid by the dosage.,419,official_winner,False,bad
+717,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x648 at 0x12BFBDCC0>,Which arm do you want to keep?,419,official_winner,True,finalist
+718,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=500x378 at 0x12BFBDB70>,Are they airborn?,493,official_winner,False,bad
+719,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=500x378 at 0x12BFBDB70>,Derivative.,493,official_winner,True,finalist
+720,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=541x465 at 0x12BFBDE10>,You said this always works.,456,official_winner,False,bad
+721,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=541x465 at 0x12BFBDE10>,I’m not in favor of that position.,456,official_winner,True,finalist
+722,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x563 at 0x12BFBDC30>,Sorry to take so long. Cat caught my tongue.,701,official_winner,False,bad
+723,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x563 at 0x12BFBDC30>,There'll be several hundred of us.,701,official_winner,True,finalist
+724,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x123 at 0x12BFBE200>,"...my wife forgot it was ""dry clean only""",93,official_winner,False,bad
+725,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x123 at 0x12BFBE200>,"Perkins here, representing taxes.",93,official_winner,True,finalist
+726,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x359 at 0x12BFBDFC0>,I can hardly wait for the sleeves.,180,official_winner,False,bad
+727,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x359 at 0x12BFBDFC0>,She should have told us the fruit was real.,180,official_winner,True,finalist
+728,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x510 at 0x12BFBDF00>,Where do you see yourself five chairs from now?,550,official_winner,True,finalist
+729,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x510 at 0x12BFBDF00>,Tell the dwarfs I never promised to reopen the mines.,550,official_winner,False,bad
+730,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=627x620 at 0x12BFBDF60>,"He said up the river, not across the river.",517,official_winner,False,bad
+731,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=627x620 at 0x12BFBDF60>,I'm afraid they'll give you life.,517,official_winner,True,finalist
+734,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x728 at 0x12BFBE050>,I'll get on if it means no more Zoom meetings.,709,official_winner,False,bad
+735,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x728 at 0x12BFBE050>,We're temps―the eternally damned are back Monday.,709,official_winner,True,finalist
+738,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x392 at 0x12BFBE380>,I'll let go of the stick when you let go of the stick.,561,official_winner,True,finalist
+739,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x392 at 0x12BFBE380>,We're going to need some counseling after that procedure.,561,official_winner,False,bad
+740,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x169 at 0x12BFBE170>,It's time that child went on a diet.,105,official_winner,True,finalist
+741,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x169 at 0x12BFBE170>,Told you not to have 6 Flags install the pool,105,official_winner,False,bad
+742,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=432x310 at 0x12BFBE440>,I told you to let me break his arms!,409,official_winner,True,finalist
+743,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=432x310 at 0x12BFBE440>,"Evolution seems to be speeding up, Boss.",409,official_winner,False,bad
+744,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x320 at 0x12BFBDAE0>,"Don't look now, but I believe your snake is strangling that dog.",162,official_winner,True,finalist
+745,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x320 at 0x12BFBDAE0>,"Yeah, she's kept us out of paradise and whatnot, but we love her anyway.",162,official_winner,False,bad
+746,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BFBE350>,"We're gonna call it ""The Jonah Experience""",748,official_winner,False,bad
+747,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BFBE350>,Not the return to inside dining I was expecting.,748,official_winner,True,finalist
+748,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=533x383 at 0x12BFBE590>,I’ll see you later.,431,official_winner,True,finalist
+749,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=533x383 at 0x12BFBE590>,"Um, no. That's not Googling.",431,official_winner,False,bad
+750,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=719x522 at 0x12BFBE410>,Maybe poker isn't really your game.,391,official_winner,True,finalist
+751,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=719x522 at 0x12BFBE410>,"Wipe your feet, I just vacuumed.",391,official_winner,False,bad
+752,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=500x559 at 0x12BFBF010>,I hate carpooling,504,official_winner,False,bad
+753,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=500x559 at 0x12BFBF010>,I've found another man.,504,official_winner,True,finalist
+754,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x510 at 0x12BFBE650>,You will have one more try when the music starts.,550,official_winner,True,finalist
+755,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x510 at 0x12BFBE650>,He takes the title of Chairman quite seriously.,550,official_winner,False,bad
+758,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=507x502 at 0x12BFBE740>,"Just don't point it at your car, ok?",414,official_winner,False,bad
+759,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=507x502 at 0x12BFBE740>,It comes with its own remote.,414,official_winner,True,finalist
+760,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=297x229 at 0x12BFBEA70>,I'll be there in ten thousand feet.,270,official_winner,True,finalist
+761,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=297x229 at 0x12BFBEA70>,It's another of the service cutbacks.,270,official_winner,False,bad
+762,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x280 at 0x12BFBEC20>,"Oh, he probably just smells your python.",35,official_winner,True,finalist
+763,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x280 at 0x12BFBEC20>,I don't care if it worked for Oprah.,35,official_winner,False,bad
+764,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x667 at 0x12BFBECB0>,Looks like you're already familiar with the side effects.,700,official_winner,True,finalist
+765,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x667 at 0x12BFBECB0>,I just haven't been feeling like myself lately.,700,official_winner,False,bad
+768,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=500x559 at 0x12BFBED70>,"Typical, stiff in all the wrong places.",504,official_winner,False,bad
+769,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=500x559 at 0x12BFBED70>,Taxidermy saved our marriage.,504,official_winner,True,finalist
+770,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x233 at 0x12BFBE860>,"""O.K., let's start with 'row , row, row your boat'. Chester, you start"".",75,official_winner,False,bad
+771,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x233 at 0x12BFBE860>,And all because of the account that got awa-a-a-a-a-a-a-a-a-a-a-y ...,75,official_winner,True,finalist
+772,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=640x800 at 0x12BFBEEC0>,"Mind your manners, honey. I think they're trying to tell us something.",696,official_winner,False,bad
+773,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=640x800 at 0x12BFBEEC0>,I have a feeling I'm not going to like the suggested wine pairing.,696,official_winner,True,finalist
+774,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x211 at 0x12BFBEF50>,I think that Rogaine is a waste of money.,70,official_winner,False,bad
+775,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x211 at 0x12BFBEF50>,That actor looks exactly like you!,70,official_winner,True,finalist
+778,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x482 at 0x12BFBEFE0>,Make that one cappuccino and nine mice.,564,official_winner,False,bad
+779,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x482 at 0x12BFBEFE0>,Hire the one that said 'Whom'.,564,official_winner,True,finalist
+782,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x648 at 0x12BFBF130>,I made this on a 3D printer,419,official_winner,False,bad
+783,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x648 at 0x12BFBF130>,You will feel a thing.,419,official_winner,True,finalist
+784,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x285 at 0x12BFBEDA0>,"Call me old-fashioned, but I simply can't respect a man who eats with his hat on.",10,official_winner,False,bad
+785,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x285 at 0x12BFBEDA0>,I'm beginning to think I liked you better when you worked at Morgan Stanley.,10,official_winner,True,finalist
+786,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12BFBF040>,"So like I was saying, the patent office turned us down.",537,official_winner,False,bad
+787,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12BFBF040>,"He's not reinventing it, he's making it great again.",537,official_winner,True,finalist
+790,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=297x229 at 0x12BFBF1F0>,I guess you could call me an adventure capitalist.,270,official_winner,True,finalist
+791,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=297x229 at 0x12BFBF1F0>,All source documents are history. Don't ask.,270,official_winner,False,bad
+792,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=720x528 at 0x12BFBF370>,One thing led to another.,357,official_winner,True,finalist
+793,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=720x528 at 0x12BFBF370>,Ignore him. He's only my fantasy.,357,official_winner,False,bad
+796,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x563 at 0x12BFBF1C0>,"I know I don't look familiar, but, believe me, I eat here all the time.",701,official_winner,True,finalist
+797,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x563 at 0x12BFBF1C0>,Do you have anything that hasn't been contaminated by humans?,701,official_winner,False,bad
+800,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x360 at 0x12BFBDA50>,My agent says it will be worth a lot more after I’m dead.,462,official_winner,True,finalist
+801,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x360 at 0x12BFBDA50>,Notice how the stripes make him look more slender.,462,official_winner,False,bad
+802,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=703x618 at 0x12BFBF3D0>,This particular species is believed to have travelled in troupes.,329,official_winner,True,finalist
+803,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=703x618 at 0x12BFBF3D0>,People don't care about anything unless they can call in and vote.,329,official_winner,False,bad
+806,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=493x226 at 0x12BFBF520>,When's the last time you charged a man who looked at me?,311,official_winner,True,finalist
+807,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=493x226 at 0x12BFBF520>,"It's not a huge improvement over the elephant, but it's a start.",311,official_winner,False,bad
+818,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x333 at 0x12BFBF910>,David Foster Wallace has left you his entire estate.,161,official_winner,False,bad
+819,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x333 at 0x12BFBF910>,"I guess we have a deal, but we don't have to shake on it.",161,official_winner,True,finalist
+822,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BFBF9D0>,That rabbit had no idea who he was messing with.,341,official_winner,True,finalist
+823,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12BFBF9D0>,Tell me more about your health care system.,341,official_winner,False,bad
+824,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x793 at 0x12BFBFC40>,Really? Ritz crackers?,557,official_winner,False,bad
+825,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x793 at 0x12BFBFC40>,I'll be damned.,557,official_winner,True,finalist
+828,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x223 at 0x12BFBFB50>,See Spot run. See Spot run. Who wrote this crap?,19,official_winner,True,finalist
+829,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x223 at 0x12BFBFB50>,Brad and Angelina are postponing the wedding.,19,official_winner,False,bad
+830,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=297x229 at 0x12BFBFE20>,"I have to say, I'm not a big fan of cloud computing.",270,official_winner,True,finalist
+831,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=297x229 at 0x12BFBFE20>,The kid with the gameboy only got a warning.,270,official_winner,False,bad
+834,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x676 at 0x12BFBFD30>,"Yes, we seated a potato, but he had a jacket.",695,official_winner,True,finalist
+835,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x676 at 0x12BFBFD30>,You're assigned to all tables all the time. No tips.,695,official_winner,False,bad
+836,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x212 at 0x12BFBFF40>,Ooh... I'm going to allow this!,43,official_winner,True,finalist
+837,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x212 at 0x12BFBFF40>,I've never heard of a pro bozo attorney.,43,official_winner,False,bad
+838,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x612 at 0x12BFBFCD0>,Sometimes I really hate the adversarial system.,176,official_winner,False,bad
+839,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=792x612 at 0x12BFBFCD0>,"For a divorce case, that went smoothly.",176,official_winner,True,finalist
+842,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x676 at 0x12BFBFB20>,We have a strict dress code... put on some pants!,695,official_winner,False,bad
+843,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x676 at 0x12BFBFB20>,"I'm sorry, sir. We no longer serve bread.",695,official_winner,True,finalist
+844,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=703x618 at 0x12BFBFF10>,They hated each other when they were alive.,329,official_winner,True,finalist
+845,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=703x618 at 0x12BFBFF10>,Good. Now go put a tutu on the whale.,329,official_winner,False,bad
+846,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=614x387 at 0x12BFBF7F0>,You both know Jane,370,official_winner,True,finalist
+847,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=614x387 at 0x12BFBF7F0>,Accounting meet archives.,370,official_winner,False,bad
+848,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=445x306 at 0x12C0740A0>,I told you I felt a jerk.,444,official_winner,False,bad
+849,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=445x306 at 0x12C0740A0>,Don’t retain it.,444,official_winner,True,finalist
+850,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x303 at 0x12C074130>,I've had it with money-laundering cases.,122,official_winner,False,bad
+851,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x303 at 0x12C074130>,I wish they'd let us wear short-sleeved robes.,122,official_winner,True,finalist
+852,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=493x226 at 0x12C0742B0>,He was a terrible pet—why did we think he'd make a great coffee table?,311,official_winner,True,finalist
+853,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=493x226 at 0x12C0742B0>,"The next time they offer a choice of pledge gifts, pick the DVD.",311,official_winner,False,bad
+854,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x349 at 0x12C074370>,I told you to hire a professional!,150,official_winner,True,finalist
+855,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x349 at 0x12C074370>,"Mother's not moving in, so just forget it !",150,official_winner,False,bad
+858,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x289 at 0x12C074490>,Why did you think angels had wings?,118,official_winner,True,finalist
+859,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x289 at 0x12C074490>,"I dunno, Angie. Whatta you wanna do?",118,official_winner,False,bad
+860,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=493x226 at 0x12C0745E0>,"When it's an elephant, we'll talk.",311,official_winner,True,finalist
+861,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=493x226 at 0x12C0745E0>,"You don't feel it, do you? I knew it.",311,official_winner,False,bad
+862,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x254 at 0x12C0746A0>,It says here there are several ways to get the worm.,103,official_winner,False,bad
+863,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x254 at 0x12C0746A0>,The Speedo would suggest that he's not native to Vermont.,103,official_winner,True,finalist
+864,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x319 at 0x12C074730>,Sorry about the wait.,345,official_winner,True,finalist
+865,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x319 at 0x12C074730>,My name is Morpheus.,345,official_winner,False,bad
+866,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x697 at 0x12C0747C0>,They tell me your family has been doing lab work for generations.,730,official_winner,True,finalist
+867,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x697 at 0x12C0747C0>,"Well, this is an unexpected result, especially since you're wearing a tie.",730,official_winner,False,bad
+868,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x652 at 0x12C074850>,How's that door coming along?,721,official_winner,True,finalist
+869,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x652 at 0x12C074850>,My turn to be the mad king,721,official_winner,False,bad
+870,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12C0748B0>,And they say life can't exist in a vacuum.,586,official_winner,True,finalist
+871,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x464 at 0x12C0748B0>,I knew we should have showered this morning.,586,official_winner,False,bad
+872,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=432x310 at 0x12C074910>,I told you the cement needed more gravel.,409,official_winner,False,bad
+873,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=432x310 at 0x12C074910>,Luca Brasi flies with the seagulls!,409,official_winner,True,finalist
+876,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x257 at 0x12C074A00>,I never bought the Atkins diet either.,4,official_winner,False,bad
+877,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x257 at 0x12C074A00>,How about Little Italy for dessert?,4,official_winner,True,finalist
+878,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12C074A60>,"Finally, a CEO who doesn't suck all the oxygen out of the room.",545,official_winner,True,finalist
+879,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12C074A60>,"Plants create jobs, people. We need to build more plants.",545,official_winner,False,bad
+880,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x593 at 0x12C074AC0>,"No sir, I did not paint the cloud on your window.",411,official_winner,False,bad
+881,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x593 at 0x12C074AC0>,We're going out for a quick bite if you want to join us.,411,official_winner,True,finalist
+882,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x449 at 0x12C074B20>,Don't just stand there. Tuck me in.,567,official_winner,True,finalist
+883,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x449 at 0x12C074B20>,It's called a working siesta.,567,official_winner,False,bad
+886,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=445x306 at 0x12C074C10>,Hurry. These are billable hours.,444,official_winner,True,finalist
+887,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=445x306 at 0x12C074C10>,My mom always said he was a good catch!,444,official_winner,False,bad
+888,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12C074C70>,"No it's true. Walking, I move incredibly slow.",341,official_winner,True,finalist
+889,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x638 at 0x12C074C70>,Wow! Now THIS was worth the price of admission!,341,official_winner,False,bad
+890,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x562 at 0x12C074DF0>,I think I see the one who's going to be a problem.,750,official_winner,True,finalist
+891,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x562 at 0x12C074DF0>,"I have no idea how to tell them apart, do you?",750,official_winner,False,bad
+892,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x289 at 0x12C074EB0>,Remember when nine months seemed like an eternity?,118,official_winner,False,bad
+893,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x289 at 0x12C074EB0>,It's not the tedium. It's the uncertainty.,118,official_winner,True,finalist
+894,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x212 at 0x12C074F10>,Even the Founding Fathers couldn't predict their experiment would end up like this.,43,official_winner,False,bad
+895,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x212 at 0x12C074F10>,"I don't know about you, counsellor, but I kind of wish there were more murders at the circus.",43,official_winner,True,finalist
+896,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x244 at 0x12C074FA0>,But what if you fall when no one is around?,50,official_winner,True,finalist
+897,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x244 at 0x12C074FA0>,"Careful, Harold. You're making the CIA look good!",50,official_winner,False,bad
+902,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=614x387 at 0x12C075210>,"Harry, hairy. Hairy, Harry.",370,official_winner,True,finalist
+903,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=614x387 at 0x12C075210>,"Missing Link, meet Middle Management.",370,official_winner,False,bad
+904,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=533x383 at 0x12C0752A0>,My eyes are down here.,431,official_winner,True,finalist
+905,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=533x383 at 0x12C0752A0>,It covers the cassette slot.,431,official_winner,False,bad
+906,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x217 at 0x12C075330>,he never knew what hit him.,316,official_winner,False,bad
+907,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=300x217 at 0x12C075330>,I was hoping for eternal rest.,316,official_winner,True,finalist
+910,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x679 at 0x12C075450>,This is probably a good time to put things on ice.,681,official_winner,False,bad
+911,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x679 at 0x12C075450>,I can't believe you wore shorts. Everyone was staring.,681,official_winner,True,finalist
+912,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x169 at 0x12C0754B0>,I told you this house was too close to the moon.,105,official_winner,True,finalist
+913,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x169 at 0x12C0754B0>,hose a guy...then he make big splash and all he do is wave,105,official_winner,False,bad
+914,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x541 at 0x12C075510>,Don't make me come up there.,746,official_winner,True,finalist
+915,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x541 at 0x12C075510>,It's great for your glutes.,746,official_winner,False,bad
+920,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x679 at 0x12C075660>,Yeah. Like you're such a great catch.,681,official_winner,True,finalist
+921,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=800x679 at 0x12C075660>,You've changed since we first met,681,official_winner,False,bad
+922,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=599x444 at 0x12C0756C0>,Save it. Ignorance of the law is no defense.,385,official_winner,True,finalist
+923,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=599x444 at 0x12C0756C0>,Luckily for you I factored in the tail wind.,385,official_winner,False,bad
+924,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x212 at 0x12C075720>,"Now, THAT'S what I call good performance on probation.",43,official_winner,False,bad
+925,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x212 at 0x12C075720>,How many surprise witnesses do you have in that little car?,43,official_winner,True,finalist
+928,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x360 at 0x12C075960>,If you break her heart there will be consequences.,462,official_winner,False,bad
+929,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x360 at 0x12C075960>,He says he represents primitive artists.,462,official_winner,True,finalist
+930,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x547 at 0x12C075A50>,Do you think they know we've had a cure for ten years now?,706,official_winner,False,bad
+931,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x547 at 0x12C075A50>,"Of all the things we packed, I didn't think to bring my MetroCard.",706,official_winner,True,finalist
+934,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x320 at 0x12C075B70>,I knew he was practicing magic but I never took him serious.,162,official_winner,False,bad
+935,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x320 at 0x12C075B70>,Let's just say it attracts a more interesting type of woman.,162,official_winner,True,finalist
+936,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=500x378 at 0x12C075BD0>,Matisse now; Pollock later.,493,official_winner,True,finalist
+937,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=500x378 at 0x12C075BD0>,I get enough drama at the office.,493,official_winner,False,bad
+940,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x257 at 0x12C075CC0>,"I don't think of it as destruction, I think of it as population control.",4,official_winner,False,bad
+941,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=400x257 at 0x12C075CC0>,Remember that time you made me laugh and people came out of my nose?,4,official_winner,True,finalist
+942,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=617x350 at 0x12C075D20>,Get a hammer.,451,official_winner,True,finalist
+943,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=617x350 at 0x12C075D20>,He has no saving grace.,451,official_winner,False,bad
+944,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x667 at 0x12C075D80>,Your doctor says that he wants you to provide a stool sample.,700,official_winner,False,bad
+945,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x667 at 0x12C075D80>,"They didn't specify which one, but your insurance will only cover half.",700,official_winner,True,finalist
+950,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=640x800 at 0x12C075ED0>,Don't ask for a spoon—he'll know we're tourists.,696,official_winner,True,finalist
+951,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=640x800 at 0x12C075ED0>,Is it just me or does no one really try anymore?,696,official_winner,False,bad
+952,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x200 at 0x12C0760E0>,Thank God for TiVo.,54,official_winner,True,finalist
+953,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x200 at 0x12C0760E0>,Personal best. How'd you do?,54,official_winner,False,bad
+954,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x456 at 0x12C076140>,It's never done.,574,official_winner,True,finalist
+955,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x456 at 0x12C076140>,I tendered my resignation.,574,official_winner,False,bad
+956,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x667 at 0x12C0761D0>,"Use caution when pulling a wagon, a plow, or other machinery while you're on this medication.",700,official_winner,True,finalist
+957,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x667 at 0x12C0761D0>,Unfortunately your political affiliation is of no assistance for coverage under your plan.,700,official_winner,False,bad
+960,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12C076290>,She said she couldn't take my gas.,536,official_winner,False,bad
+961,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12C076290>,Where do the voices tell you to go?,536,official_winner,True,finalist
+962,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=564x436 at 0x12C0762F0>,We've been hacked!,498,official_winner,True,finalist
+963,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=564x436 at 0x12C0762F0>,It's just my Excaliber app.,498,official_winner,False,bad
+964,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x674 at 0x12C076350>,Can I hitch a ride back to Costco with you?,685,official_winner,False,bad
+965,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x674 at 0x12C076350>,Stay calm. I think it just wants to be squeezed.,685,official_winner,True,finalist
+968,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x319 at 0x12C076410>,Any stiffness?,345,official_winner,True,finalist
+969,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x319 at 0x12C076410>,Damn placebo!,345,official_winner,False,bad
+972,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x243 at 0x12C076500>,Some heads are going to roll at the Transportation Safety Administration over this.,33,official_winner,False,bad
+973,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x243 at 0x12C076500>,I just thought of something. What if your parents don't collect dead goldfish anymore?,33,official_winner,True,finalist
+974,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x206 at 0x12C076560>,Let me guess—the lab results aren't good.,136,official_winner,True,finalist
+975,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x206 at 0x12C076560>,"So we agree, if he's still moving he's mine.",136,official_winner,False,bad
+978,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x675 at 0x12C076680>,George was never really the same after the Times review.,374,official_winner,False,bad
+979,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x675 at 0x12C076680>,Will you all please bow your heads for the reading of the menu.,374,official_winner,True,finalist
+982,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x233 at 0x12C076770>,Hmm. What rhymes with layoffs?,75,official_winner,True,finalist
+983,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x233 at 0x12C076770>,I always wanted to be a lounge singer.,75,official_winner,False,bad
+984,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=684x489 at 0x12C076860>,"Sorry, buddy, but we've got the room for the next hour.",233,official_winner,True,finalist
+985,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=684x489 at 0x12C076860>,This would never have happened while Walt was still alive.,233,official_winner,False,bad
+988,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x320 at 0x12C0769B0>,Repossession's a bitch. Literally.,162,official_winner,False,bad
+989,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x320 at 0x12C0769B0>,"Relax, she prefers dachshunds.",162,official_winner,True,finalist
+990,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12C076A10>,We call it GPS dysfunction.,536,official_winner,False,bad
+991,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=600x600 at 0x12C076A10>,And are the clowns inside you now?,536,official_winner,True,finalist
+992,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x728 at 0x12C076AA0>,Try the stairs. This takes an eternity.,709,official_winner,True,finalist
+993,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x728 at 0x12C076AA0>,That's just not fair on so many levels,709,official_winner,False,bad
+994,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=703x618 at 0x12C076B00>,We have some very promising new theories about why they became extinct.,329,official_winner,True,finalist
+995,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=703x618 at 0x12C076B00>,"See, the female one has fewer ribs and a rounder pelvic region.",329,official_winner,False,bad
+996,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x254 at 0x12C076B60>,It's that new species of performance bird.,103,official_winner,False,bad
+997,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x254 at 0x12C076B60>,"Honey, do you have any dollar bills?",103,official_winner,True,finalist
+1000,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x652 at 0x12C076C80>,Or we could just wear the masks?,721,official_winner,False,bad
+1001,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=800x652 at 0x12C076C80>,This is why nobody likes to play with you.,721,official_winner,True,finalist
+1004,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x395 at 0x12C076D40>,No. Your policy does not cover pre-existing conditions.,194,official_winner,False,bad
+1005,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=465x395 at 0x12C076D40>,"Impressive audition, but we're going with the camel.",194,official_winner,True,finalist
+1006,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x257 at 0x12C076DA0>,It clearly says 'appear...',37,official_winner,False,bad
+1007,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=323x257 at 0x12C076DA0>,He won't get far.,37,official_winner,True,finalist
+1008,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=759x578 at 0x12C076E30>,"Quick, before Bloomberg bans it!",349,official_winner,True,finalist
+1009,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=759x578 at 0x12C076E30>,I'm having trouble sleeping.,349,official_winner,False,bad
+1010,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=507x502 at 0x12C076EC0>,"No, I'm sorry. You'll need a separate remote for your DVD.",414,official_winner,True,finalist
+1011,<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=507x502 at 0x12C076EC0>,"For aerobic fitness, it's our highest rated model.",414,official_winner,False,bad
+1012,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=683x436 at 0x12C076F50>,It's only fair. He has a man cave.,379,official_winner,True,finalist
+1013,<PIL.JpegImagePlugin.JpegImageFile image mode=L size=683x436 at 0x12C076F50>,Feeling ambitious? I dropped the remote.,379,official_winner,False,bad
