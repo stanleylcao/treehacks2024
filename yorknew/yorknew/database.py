@@ -13,9 +13,10 @@ class Entry(rx.Model, table=True):
 
 
 # State for updating the current panel being observed
+
 class State(rx.State):
-	ratingspage: int
-	rankingspage: int
+    ratingspage: int
+    rankingspage: int
 
 	# For general purpose
 	captions_set: list[Entry]
@@ -39,7 +40,7 @@ class State(rx.State):
 	
 	def load_two_captions_for_subject(self, subject):
         with rx.session() as session:
-            self.users = session.exec(
+            entry_list = session.exec(
                 Entry.select.where(
                     Entry.subject == subject
                 ).all()
