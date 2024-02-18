@@ -1,6 +1,8 @@
 from rxconfig import config
 import reflex as rx
 from typing import List
+from yorknew.ELO import adjust_rating
+
 import random
 
 entrycolumns = ["Rating", "User", "Caption"]
@@ -16,6 +18,7 @@ class Entry(rx.Model, table=True):
 
 
 # State for updating the current panel being observed
+
 
 class State(rx.State):
     ratingspage: int
@@ -35,20 +38,16 @@ class State(rx.State):
     def get_all_captions_for_subject(self, subject):
         with rx.session() as session:
             self.captions_set = session.exec(
-                Entry.select.where(
-                    Entry.subject == subject
-                ).all()
+                Entry.select.where(Entry.subject == subject).all()
             )
 
     def load_two_captions_for_subject(self, subject):
         with rx.session() as session:
             entry_list = session.exec(
-                Entry.select.where(
-                    Entry.subject == subject
-                ).all()
+                Entry.select.where(Entry.subject == subject).all()
             )
             test_caption_1, test_caption_2 = random.sample(entry_list, 2)
-    
+
     def update_captions_rating(self, caption_1_new_r, caption_2_new_r):
         with rx.session() as session:
             self.test_caption_1.rating = caption_1_new_r
@@ -56,14 +55,14 @@ class State(rx.State):
             self.test_caption_2.rating = caption_2_new_r
             session.add(test_caption_2)
             session.commit()
-    
+
     def add_new_caption(self, subject, name, caption):
         with rx.session() as session:
             session.add(
                 Entry(
                     subject=self.subject,
                     name=self.name,
-                    caption=self.caption, 
+                    caption=self.caption,
                     rating=0,
                 )
             )
@@ -89,6 +88,6 @@ class State(rx.State):
             )
             session.commit()
 
-    def update_captions_rating(self, entry_winner, entry_loser):
+    def handle_submit(self, entry_winner, entry_loser):
         with rx.session() as session:
             pass

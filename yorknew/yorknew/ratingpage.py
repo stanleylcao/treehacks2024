@@ -15,27 +15,25 @@ def ratingscontent():
             # Image
             rx.image(src="/example_nycomic.webp", width="400px"),
             # Scroller
-            scroller(1), # replace with rating_page statevar
-
-            # Submission Form
+            scroller(1),  # replace with rating_page statevar
+            # Default two choices
+            rx.hstack(
+                rx.button(
+                    "Option 1",
+                    size="4",
+                    type="submit",
+                ),
+                rx.button(
+                    "Option 2",
+                    size="4",
+                    type="submit",
+                ),
+            ),
             rx.form(
                 rx.vstack(
-                    # Default two choices
-                    rx.hstack(
-                        rx.button(
-                            "Option 1",
-                            size="4",
-                            type="submit",
-                        ),
-                        rx.button(
-                            "Option 2",
-                            size="4",
-                            type="submit",
-                        ),
-                    ),
                     # Custom choice entry
                     rx.text("Don't like either? Write your own!", size="3"),
-                    rx.text_area(
+                    rx.input(
                         placeholder="My superior caption...",
                         style={"width": "300px", "height": "50px"},
                     ),
@@ -45,9 +43,9 @@ def ratingscontent():
                         type="submit",
                     ),
                     align="center",
+                    # on_submit=FormState.handle_submit,
+                    reset_on_submit=True,
                 ),
-                # on_submit=FormState.handle_submit,
-                reset_on_submit=True,
             ),
             align="center",
             spacing="7",

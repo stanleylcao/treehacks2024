@@ -4,7 +4,7 @@ import reflex as rx
 
 import yorknew.components.styles as styles
 from yorknew.components.scroller import scroller
-from yorknew.database import State
+import yorknew.database as db
 
 def rankingscontent():
     return rx.center(
@@ -17,8 +17,8 @@ def rankingscontent():
 			scroller(1), # replace with ranking_page statevar
 
 			rx.data_table(
-				data=State.data,
-				columns=State.columns,
+				data=db.entrytable,
+				columns=db.entrycolumns,
 				on_paste=True,
 				draw_focus_ring=False,
 				freeze_columns=2,
