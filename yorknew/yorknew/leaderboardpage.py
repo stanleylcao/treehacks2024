@@ -6,6 +6,11 @@ import yorknew.components.styles as styles
 from yorknew.components.scroller import leaderboardscroller
 import yorknew.database as db
 
+theme = {
+    # "fontFamily": "Merriweather, Merriweather, adobe-caslon"
+    "baseFontStyle": "18px"
+}
+
 
 def rankingscontent():
     return rx.center(
@@ -24,20 +29,24 @@ def rankingscontent():
             rx.data_table(
                 data=db.State.leaderboard_table,
                 columns=db.entrycolumns,
+                pagination=True,
+                search=True,
+                sort=True,
                 on_paste=True,
                 draw_focus_ring=False,
                 freeze_columns=2,
                 group_header_height=50,
                 header_height=60,
                 max_column_width=300,
-                # min_column_width=100,
+                min_column_width=100,
                 row_height=50,
-                row_markers="clickable-number",
+                # row_markers="clickable-number",
                 smooth_scroll_x=True,
                 vertical_border=False,
-                column_select="multi",
+                # column_select="multi",
                 overscroll_x=100,
-                theme=styles.rankingtheme,
+                # theme=styles.rankingtheme,
+                # style=theme
                 # on_cell_clicked=DataTableState2.get_clicked_data,
                 # on_cell_edited=DataTableState2.get_edited_data,
                 # on_group_header_context_menu=DataTableState2.get_group_header_right_click,

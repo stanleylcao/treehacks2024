@@ -23,12 +23,28 @@ app = rx.App(
         "fonts/newyorkertitle.css",
     ],
     theme=rx.theme(
-        appearance="light",
+        appearance="inherit",
         has_background=True,
         radius="large",
-        accent_color="orange",
+        # accent_color="gray",
     ),
-    style={"font_family": "Libre Caslon Text, serif"},
+    style={
+        'accent_color': '#8C1515',
+        rx.button: {"font_family": "Merriweather",
+                    'transition': 'background-color 0.3s ease, transform 0.3s ease',
+                    'background-color': '#2E2D29',
+                    '_hover': {
+                        'transform': 'scale(1.1)',
+                        'background-color': '#8C1515',
+                    }
+                    },
+        rx.text: {"font_family": "Merriweather", 'font_size': '17px'},
+        rx.heading: {"font_family": "Merriweather", 'font_size': '35px'},
+        # 'font_family': "adobe-caslon",
+        'font_family': "Merriweather",
+        'font_size': '10px'
+        # rx.data_table: {"font_family": "Merriweather", }
+    },
 )
 
 
@@ -66,26 +82,25 @@ def rankings() -> rx.Component:
 
 
 def initialize_database_with_captions():
-	pass
-    # print("Initializing database...")
-    # df = pd.read_csv(REFLEX_ROOT_DIR / "data" / "combined_df.csv")
-    # added_items = 0
-    # with rx.session() as session:
-    #     for item in df.itertuples():
-    #         entry = db.Entry(
-    #             name=item.name,
-    #             caption=item.caption,
-    #             rating=item.rating,
-    #             subject=item.subject,
-    #         )
-    #         if not session.exec(
-    #             db.Entry.select.where(
-    #                 (db.Entry.name == item.name) & 
-	# 				(db.Entry.subject == item.subject)
-    #             )
-    #         ).first():
-    #             session.add(entry)
-    #             added_items += 1
+    print("Initializing database...")
+    df = pd.read_csv(REFLEX_ROOT_DIR / "data" / "combined_df.csv")
+    added_items = 0
+    with rx.session() as session:
+        for item in df.itertuples():
+            entry = db.Entry(
+                name=item.name,
+                caption=item.caption,
+                rating=item.rating,
+                subject=item.subject,
+            )
+            if not session.exec(
+                db.Entry.select.where(
+                    (db.Entry.name == item.name) & (
+                        db.Entry.subject == item.subject)
+                )
+            ).first():
+                session.add(entry)
+                added_items += 1
 
     #     session.commit()
 
