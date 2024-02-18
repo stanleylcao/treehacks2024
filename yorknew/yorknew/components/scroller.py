@@ -34,7 +34,7 @@ def ratingscroller():
             on_click=db.State.go_top_rating,
         ),
         rx.select(
-            db.State.displist,
+            db.State.imgidlist,
             placeholder="Current Page #",
             label="Page Number",
             size="2",
@@ -42,6 +42,8 @@ def ratingscroller():
             on_change=db.State.go_specific_rating,
         ),
     )
+
+
 
 def leaderboardscroller():
     return rx.hstack(
@@ -66,7 +68,7 @@ def leaderboardscroller():
             on_click=db.State.go_top_leaderboard,
         ),
         rx.select(
-            db.State.displist,
+            db.State.imgidlist,
             placeholder="Current Page #",
             label="Page Number",
             size="2",

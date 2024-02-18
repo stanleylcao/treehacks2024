@@ -25,6 +25,12 @@ columns: list[dict[str, str]] = [
     },
 ]
 
+def generate_image_list(imgpath):
+    imgidlist = listdir(imgpath)
+    imgidlist = [s.replace('.jpg', '') for s in imgidlist]
+    imgidlist.sort(key=int)
+    return imgidlist
+
 # Database for the rankings of each caption
 
 
@@ -37,10 +43,10 @@ class Entry(rx.Model, table=True):
 
 # State for updating the current panel being observed
 
-
 class State(rx.State):
-    imagelist: List[str] = listdir(path_to_contest_images)
-    displist: List[str] = [str(x) for x in range(0, len(imagelist))]
+    # imagelist: List[str] = listdir(path_to_contest_images)
+    # imgidlist: List[str] = [s.replace('.jpg', '') for s in imagelist]
+    imgidlist: List[str] = generate_image_list(path_to_contest_images)
 
     contest_number_leaderboard: int = 5
     contest_number_rating: int = 0
@@ -60,7 +66,7 @@ class State(rx.State):
         with rx.session() as session:
             entry_list = session.exec(
                 Entry.select.where(
-                    Entry.subject == self.contest_number_leaderboard)
+                    Entry.subject == self.imgidlist[self.contest_number_leaderboard])
             )
             self.leaderboard_table = list(
                 map(State.convert_entry_to_list, entry_list))
@@ -77,7 +83,7 @@ class State(rx.State):
             entry_list = list(
                 session.exec(
                     Entry.select.where(
-                    Entry.subject == self.contest_number_rating)
+                    Entry.subject == self.imgidlist[self.contest_number_rating])
                 )
             )
             if len(entry_list) >= 2:
@@ -136,19 +142,20 @@ class State(rx.State):
         self.go_page_rating(new_value)
 
     def go_up_rating(self):
-        new_value = min(len(self.imagelist) - 1,  \
+        new_value = min(len(self.imgidlist) - 1,  \
             self.contest_number_rating + 1)
         self.go_page_rating(new_value)
 
     def go_top_rating(self):
-        new_value = len(self.imagelist) - 1
+        new_value = len(self.imgidlist) - 1
         self.go_page_rating(new_value)
 
     def go_random_rating(self):
-        new_value = randrange(len(self.imagelist) - 1)
+        new_value = randrange(len(self.imgidlist) - 1)
         self.go_page_rating(new_value)
 
-    def go_specific_rating(self, new_value):
+    def go_specific_rating(self, select_val):
+        new_value = self.imgidlist.index(select_val)
         self.go_page_rating(new_value)
 
     def go_page_rating(self, new_value):
@@ -166,19 +173,20 @@ class State(rx.State):
         self.go_page_leaderboard(new_value)
 
     def go_up_leaderboard(self):
-        new_value = min(len(self.imagelist) - 1, \
+        new_value = min(len(self.imgidlist) - 1, \
             self.contest_number_leaderboard + 1)
         self.go_page_leaderboard(new_value)
 
     def go_top_leaderboard(self):
-        new_value = len(self.imagelist) - 1
+        new_value = len(self.imgidlist) - 1
         self.go_page_leaderboard(new_value)
 
     def go_random_leaderboard(self):
-        new_value = randrange(len(self.imagelist) - 1)
+        new_value = randrange(len(self.imgidlist) - 1)
         self.go_page_leaderboard(new_value)
 
-    def go_specific_leaderboard(self, new_value):
+    def go_specific_leaderboard(self, select_val):
+        new_value = self.imgidlist.index(select_val)
         self.go_page_leaderboard(new_value)
 
     def go_page_leaderboard(self, new_value):

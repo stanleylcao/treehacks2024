@@ -21,13 +21,13 @@ def ratingscontent():
         rx.vstack(
             # Heading
             rx.heading(
-                f"Rate The Caption for Image \
-                {db.State.contest_number_rating}",
+                f"Rate The Caption for Contest #\
+                {db.State.imgidlist[db.State.contest_number_rating]}",
                 size="7",
             ),
             # Image
             rx.image(
-                src=f"/contest_images/{db.State.imagelist [db.State.contest_number_rating - 1]}", height="200px"),
+                src=f"/contest_images/{db.State.imgidlist [db.State.contest_number_rating - 1]}.jpg", height="200px"),
             # Scroller
             ratingscroller(),  # replace with rating_page statevar
             # Default two choices
@@ -36,7 +36,6 @@ def ratingscontent():
                     db.State.caption_1.caption,
                     size="4",
                     type="submit",
-                    # on_click=rx.console_log('NE ADDED')
                     on_click=btnState.button_1_click,
                 ),
                 rx.button(

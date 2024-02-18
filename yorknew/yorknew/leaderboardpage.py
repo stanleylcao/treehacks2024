@@ -17,13 +17,13 @@ def rankingscontent():
         rx.vstack(
             # Heading
             rx.heading(
-                f"Caption Leaderboard for Image \
-				{db.State.contest_number_leaderboard}",
+                f"Caption Leaderboard for Contest #\
+				{db.State.imgidlist[db.State.contest_number_leaderboard]}",
                 size="7",
             ),
             # Image
             rx.image(
-                src=f"/contest_images/{db.State.imagelist [db.State.contest_number_leaderboard - 1]}", height="200px"),
+                src=f"/contest_images/{db.State.imgidlist [db.State.contest_number_leaderboard - 1]}.jpg", height="200px"),
             # Scroller
             leaderboardscroller(),  # replace with ranking_page statevar
             rx.data_table(
