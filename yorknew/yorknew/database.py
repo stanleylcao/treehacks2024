@@ -188,7 +188,7 @@ class State(rx.State):
         self.go_page_rating(new_value)
 
     def go_up_rating(self):
-        new_value = min(len(self.imagelist) - 1, self.contest_number_rating + 1)
+        new_value = min(len(self.imgidlist) - 1, self.contest_number_rating + 1)
         self.go_page_rating(new_value)
 
     def go_top_rating(self):
@@ -218,7 +218,7 @@ class State(rx.State):
         self.go_page_leaderboard(new_value)
 
     def go_up_leaderboard(self):
-        new_value = min(len(self.imagelist) - 1, self.contest_number_leaderboard + 1)
+        new_value = min(len(self.imgidlist) - 1, self.contest_number_leaderboard + 1)
         self.go_page_leaderboard(new_value)
 
     def go_top_leaderboard(self):

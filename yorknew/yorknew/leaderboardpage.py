@@ -42,13 +42,13 @@ def rankingscontent():
         ),
         # Heading
         rx.heading(
-            f"Caption Leaderboard for Image \
-				{db.State.contest_number_leaderboard}",
-            size="7",
+            f"Rate The Caption for Contest #\
+            {db.State.imgidlist[db.State.contest_number_leaderboard]}",
+            padding_top="1em",
         ),
         # Image
         rx.image(
-            src=f"/contest_images/{db.State.imagelist [db.State.contest_number_leaderboard - 1]}",
+            src=f"/contest_images/{db.State.imgidlist [db.State.contest_number_leaderboard - 1]}.jpg",
             height="200px",
         ),
         # Scroller
