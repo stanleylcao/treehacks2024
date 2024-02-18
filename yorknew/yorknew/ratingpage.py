@@ -4,7 +4,7 @@ from rxconfig import config
 import reflex as rx
 
 import yorknew.components.styles
-from yorknew.components.scroller import scroller, ratingScroller
+from yorknew.components.scroller import ratingscroller
 import yorknew.database as db
 
 
@@ -22,13 +22,14 @@ def ratingscontent():
             # Heading
             rx.heading(
                 f"Rate The Caption for Image \
-                        {db.State.contest_number_rating}",
+                {db.State.contest_number_rating}",
                 size="7",
             ),
             # Image
-            rx.image(src=f"/contest_images/729.jpg", width="400px"),
+            rx.image(src=f"/contest_images/{db.State.imagelist \
+				[db.State.contest_number_rating - 1]}", height="400px"),
             # Scroller
-            scroller(ratingScroller),  # replace with rating_page statevar
+            ratingscroller(),  # replace with rating_page statevar
             # Default two choices
             rx.hstack(
                 rx.button(

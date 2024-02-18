@@ -3,7 +3,7 @@ from rxconfig import config
 import reflex as rx
 
 import yorknew.components.styles as styles
-from yorknew.components.scroller import scroller, leaderboardScroller
+from yorknew.components.scroller import leaderboardscroller
 import yorknew.database as db
 
 
@@ -11,12 +11,16 @@ def rankingscontent():
     return rx.center(
         rx.vstack(
             # Heading
-            rx.heading("Caption Leaderboard for Image (statevar)", size="7"),
+            rx.heading(
+                f"Caption Leaderboard for Image \
+				{db.State.contest_number_leaderboard}",
+                size="7",
+            ),
             # Image
-            rx.image(src=f"/example_nycomic.webp", width="400px"),
+            rx.image(src=f"/contest_images/{db.State.imagelist \
+				[db.State.contest_number_leaderboard - 1]}", height="400px"),
             # Scroller
-            scroller(leaderboardScroller),  # replace with ranking_page statevar
-
+            leaderboardscroller(),  # replace with ranking_page statevar
             rx.data_table(
                 data=db.State.leaderboard_table,
                 columns=db.entrycolumns,
@@ -41,7 +45,6 @@ def rankingscontent():
                 # on_delete=DataTableState2.get_deleted_item,
                 # on_column_resize=DataTableState2.column_resize,
             ),
-
             align="center",
             spacing="7",
             font_size="2em",

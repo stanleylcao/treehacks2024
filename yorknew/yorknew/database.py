@@ -1,9 +1,13 @@
 import reflex as rx
 from yorknew.ELO import adjust_rating
 from sqlmodel import Session
+from os import listdir
+from typing import List
+from random import randrange
 
 import random
 
+path_to_contest_images = "./assets/contest_images/"
 entrycolumns = ["Rating", "User", "Caption"]
 
 # Database for the rankings of each caption
@@ -18,8 +22,12 @@ class Entry(rx.Model, table=True):
 
 # State for updating the current panel being observed
 
+
 class State(rx.State):
-    contest_number_leaderboard: int = 0
+    imagelist: List[str] = listdir(path_to_contest_images)
+    displist: List[str] = [str(x) for x in range(0, len(imagelist))]
+
+    contest_number_leaderboard: int = 5
     contest_number_rating: int = 0
 
     # For leaderboard display
@@ -49,11 +57,13 @@ class State(rx.State):
 
     def load_two_captions_to_rate(self):
         with rx.session() as session:
-            entry_list = session.exec(
-                Entry.select.where(Entry.subject == self.contest_number_rating).all()
-                # Entry.select.contains(self.contest_number_rating).all()
+            entry_list = list(
+                session.exec(
+                    Entry.select.where(Entry.subject == self.contest_number_rating)
+                )
             )
-            self.caption_1, self.caption_1 = random.sample(entry_list, 2)
+            if len(entry_list) >= 2:
+                self.caption_1, self.caption_2 = random.sample(entry_list, 2)
 
     def update_captions_rating(
         self, session: Session, caption_1_new_r: int, caption_2_new_r: int
@@ -95,3 +105,63 @@ class State(rx.State):
                 self.get_leaderboard_table()
             print("commited")
             session.commit()
+
+    # Scrolling callbacks for Rating Page
+
+    def go_bottom_rating(self):
+        return self.go_page_rating(0)
+
+    def go_down_rating(self):
+        new_value = max(0, self.contest_number_rating - 1)
+        self.go_page_rating(new_value)
+
+    def go_up_rating(self):
+        new_value = min(len(self.imagelist) - 1,  \
+            self.contest_number_rating + 1)
+        self.go_page_rating(new_value)
+
+    def go_top_rating(self):
+        new_value = len(self.imagelist) - 1
+        self.go_page_rating(new_value)
+
+    def go_random_rating(self):
+        new_value = randrange(len(self.imagelist) - 1)
+        self.go_page_rating(new_value)
+
+    def go_specific_rating(self, new_value):
+        self.go_page_rating(new_value)
+
+    def go_page_rating(self, new_value):
+        self.contest_number_rating = new_value
+        self.load_two_captions_to_rate()
+        print("Rating going to page", new_value)
+
+    # Scrolling callbacks for Leaderboard Page
+
+    def go_bottom_leaderboard(self):
+        return self.go_page_leaderboard(0)
+
+    def go_down_leaderboard(self):
+        new_value = max(0, self.contest_number_leaderboard - 1)
+        self.go_page_leaderboard(new_value)
+
+    def go_up_leaderboard(self):
+        new_value = min(len(self.imagelist) - 1, \
+            self.contest_number_leaderboard + 1)
+        self.go_page_leaderboard(new_value)
+
+    def go_top_leaderboard(self):
+        new_value = len(self.imagelist) - 1
+        self.go_page_leaderboard(new_value)
+
+    def go_random_leaderboard(self):
+        new_value = randrange(len(self.imagelist) - 1)
+        self.go_page_leaderboard(new_value)
+
+    def go_specific_leaderboard(self, new_value):
+        self.go_page_leaderboard(new_value)
+
+    def go_page_leaderboard(self, new_value):
+        self.contest_number_leaderboard = new_value
+        self.get_leaderboard_table()
+        print("Leaderboard going to page", new_value)

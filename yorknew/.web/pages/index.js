@@ -14,40 +14,39 @@ import NextHead from "next/head"
 
 
 
-export function Button_8acf3db9f5cfd134e66cc91cc5619fe3 () {
+export function Button_c85cc02adcc10860e1d71a9e15e1c7d3 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_9145ee51f08d0dea0717cf5b624a566c = useCallback((_e) => addEvents([Event("_redirect", {path:`/rankings`,external:false})], (_e), {}), [addEvents, Event])
+  const on_click_b049d40b7b026dd22493041e2283d642 = useCallback((_e) => addEvents([Event("state.state.go_random_rating", {})], (_e), {}), [addEvents, Event])
 
   return (
-    <RadixThemesButton onClick={on_click_9145ee51f08d0dea0717cf5b624a566c}>
-  <ViewIcon/>
-  {`Leaderboard`}
+    <RadixThemesButton onClick={on_click_b049d40b7b026dd22493041e2283d642}>
+  <StarIcon/>
 </RadixThemesButton>
   )
 }
 
-export function Button_3aaf4f98d67924d267702d81d2f1cd7e () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-  const state__state = useContext(StateContexts.state__state)
-
-  const on_click_209fb9d0d9cd73ef3110b3cdd79a0de0 = useCallback((_e) => addEvents([Event("state.btn_state.button_1_click", {})], (_e), {}), [addEvents, Event])
-
-  return (
-    <RadixThemesButton onClick={on_click_209fb9d0d9cd73ef3110b3cdd79a0de0} size={`4`} type={`submit`}>
-  {state__state.test_caption_1?.caption}
-</RadixThemesButton>
-  )
-}
-
-export function Button_10920ad0cf9cb8f6776ffb99f45c3ac9 () {
+export function Button_81e3836d02c85349ef2a73a7f3e58eb1 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_f8ff9673d89bdaf96fc01edf8008cf4d = useCallback((_e) => addEvents([Event("state.rating_scroller.go_bottom", {})], (_e), {}), [addEvents, Event])
+  const on_click_266ad2b50b31e24f79ca702a3fe3dc46 = useCallback((_e) => addEvents([Event("state.state.go_bottom_rating", {})], (_e), {}), [addEvents, Event])
 
   return (
-    <RadixThemesButton onClick={on_click_f8ff9673d89bdaf96fc01edf8008cf4d}>
+    <RadixThemesButton onClick={on_click_266ad2b50b31e24f79ca702a3fe3dc46}>
   <ArrowLeftIcon/>
+</RadixThemesButton>
+  )
+}
+
+export function Button_3f81869f991d07bcf7185cbf7da07242 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_df336efed36fc00b2a9809f569ea80c9 = useCallback((_e) => addEvents([Event("state.state.clear_db", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <RadixThemesButton onClick={on_click_df336efed36fc00b2a9809f569ea80c9}>
+  <ViewIcon/>
+  {`CLEAR`}
 </RadixThemesButton>
   )
 }
@@ -65,20 +64,48 @@ export function Button_73dccf635777e9b63a9d03f9c8e3a608 () {
   )
 }
 
-export function Button_ac371ddd6278d40eb662bf58f172e0ea () {
+export function Select__root_07c20c4405962205d910b9f56661b561 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_e85e23e7a228cd11bc28ca3620500667 = useCallback((_e) => addEvents([Event("state.rating_scroller.go_random", {})], (_e), {}), [addEvents, Event])
+  const on_change_ae26367dac624a0b1a57ca0475a4da8f = useCallback((_e0) => addEvents([Event("state.state.go_specific_rating", {new_value:_e0})], (_e0), {}), [addEvents, Event])
 
   return (
-    <RadixThemesButton onClick={on_click_e85e23e7a228cd11bc28ca3620500667}>
-  <StarIcon/>
+    <RadixThemesSelect.Root css={{"fontFamily": "IBM Plex Mono", "fontSize": "1.5em"}} onValueChange={on_change_ae26367dac624a0b1a57ca0475a4da8f} size={`2`}>
+  <RadixThemesSelect.Trigger placeholder={`Current Page #`}/>
+  <RadixThemesSelect.Content>
+  <Select__group_7f1502449cdf76b0da22ca1c90aca057/>
+</RadixThemesSelect.Content>
+</RadixThemesSelect.Root>
+  )
+}
+
+export function Button_e00a6c9cbb18ab1d43a894a35482fb5a () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_73cbbcc5d9db9e563330a061e04f36ef = useCallback((_e) => addEvents([Event("_redirect", {path:`/`,external:false})], (_e), {}), [addEvents, Event])
+
+  return (
+    <RadixThemesButton onClick={on_click_73cbbcc5d9db9e563330a061e04f36ef}>
+  <PlusSquareIcon/>
+  {`Rating`}
 </RadixThemesButton>
   )
 }
 
-export function Select__group_6375fb5186608017a23de549cdfa3551 () {
-  const state__rating_scroller = useContext(StateContexts.state__rating_scroller)
+export function Button_e2d779293d7e7b2374d69d3e2186a44b () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_cc6a26e99ce850d470e68753713179ef = useCallback((_e) => addEvents([Event("state.state.go_top_rating", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <RadixThemesButton onClick={on_click_cc6a26e99ce850d470e68753713179ef}>
+  <ArrowRightIcon/>
+</RadixThemesButton>
+  )
+}
+
+export function Select__group_7f1502449cdf76b0da22ca1c90aca057 () {
+  const state__state = useContext(StateContexts.state__state)
 
 
   return (
@@ -86,7 +113,7 @@ export function Select__group_6375fb5186608017a23de549cdfa3551 () {
   <RadixThemesSelect.Label>
   {`Page Number`}
 </RadixThemesSelect.Label>
-  {state__rating_scroller.displist.map((item, index_efe375a01b46a1f2c495265a3b440b7a) => (
+  {state__state.displist.map((item, index_efe375a01b46a1f2c495265a3b440b7a) => (
   <RadixThemesSelect.Item key={index_efe375a01b46a1f2c495265a3b440b7a} value={item}>
   {item}
 </RadixThemesSelect.Item>
@@ -95,41 +122,98 @@ export function Select__group_6375fb5186608017a23de549cdfa3551 () {
   )
 }
 
-export function Select__root_94ec74ba811674794308b19a552e1a83 () {
+export function Button_60c3aa81c4453aefc441016d0ae15ed4 () {
+  const state__state = useContext(StateContexts.state__state)
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_change_7ff3f25b3fd439863e98116207fa484b = useCallback((_e0) => addEvents([Event("state.rating_scroller.go_specific", {new_value:_e0})], (_e0), {}), [addEvents, Event])
+  const on_click_c682aa20f98c7a419c9418731a87dcb7 = useCallback((_e) => addEvents([Event("state.btn_state.button_2_click", {})], (_e), {}), [addEvents, Event])
 
   return (
-    <RadixThemesSelect.Root css={{"fontFamily": "IBM Plex Mono", "fontSize": "1.5em"}} onValueChange={on_change_7ff3f25b3fd439863e98116207fa484b} size={`2`}>
-  <RadixThemesSelect.Trigger placeholder={`Current Page #`}/>
-  <RadixThemesSelect.Content>
-  <Select__group_6375fb5186608017a23de549cdfa3551/>
-</RadixThemesSelect.Content>
-</RadixThemesSelect.Root>
-  )
-}
-
-export function Button_a90d457b485ff449f1365dbc582ded5d () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_486d68bd6984ef8738212908daba66a4 = useCallback((_e) => addEvents([Event("state.rating_scroller.go_down", {})], (_e), {}), [addEvents, Event])
-
-  return (
-    <RadixThemesButton onClick={on_click_486d68bd6984ef8738212908daba66a4}>
-  <ChevronLeftIcon/>
+    <RadixThemesButton onClick={on_click_c682aa20f98c7a419c9418731a87dcb7} size={`4`} type={`submit`}>
+  {state__state.caption_2?.caption}
 </RadixThemesButton>
   )
 }
 
-export function Button_10abf6ba190f9025d0ae74b48ae2a762 () {
+export function Button_e28dfba5279e21fc6fdecec4351bc192 () {
+  const state__state = useContext(StateContexts.state__state)
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_045e2368beb22637f5e6c9356a442f44 = useCallback((_e) => addEvents([Event("state.rating_scroller.go_top", {})], (_e), {}), [addEvents, Event])
+  const on_click_209fb9d0d9cd73ef3110b3cdd79a0de0 = useCallback((_e) => addEvents([Event("state.btn_state.button_1_click", {})], (_e), {}), [addEvents, Event])
 
   return (
-    <RadixThemesButton onClick={on_click_045e2368beb22637f5e6c9356a442f44}>
-  <ArrowRightIcon/>
+    <RadixThemesButton onClick={on_click_209fb9d0d9cd73ef3110b3cdd79a0de0} size={`4`} type={`submit`}>
+  {state__state.caption_1?.caption}
+</RadixThemesButton>
+  )
+}
+
+export function Button_b958bb37d20e4b3d349774161555716d () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_c0eef70eac6bf4641d0cfff4e9c1a276 = useCallback((_e) => addEvents([Event("state.state.go_up_rating", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <RadixThemesButton onClick={on_click_c0eef70eac6bf4641d0cfff4e9c1a276}>
+  <ChevronRightIcon/>
+</RadixThemesButton>
+  )
+}
+
+export function Root_c49442acd5c012919c5118fbd8c99ebd () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+  
+    const handleSubmit_af2c23b8e0f779a09089ef3004458a2b = useCallback((ev) => {
+        const $form = ev.target
+        ev.preventDefault()
+        const form_data = {...Object.fromEntries(new FormData($form).entries()), ...{}}
+
+        addEvents([Event("state.state.handle_submit", {form_data:form_data})])
+
+        if (true) {
+            $form.reset()
+        }
+    })
+    
+
+
+  return (
+    <RadixFormRoot className={`Root`} onSubmit={handleSubmit_af2c23b8e0f779a09089ef3004458a2b}>
+  <RadixThemesFlex align={`center`} css={{"flexDirection": "column"}} gap={`2`}>
+  <RadixThemesText as={`p`} size={`3`}>
+  {`Don't like either? Write your own!`}
+</RadixThemesText>
+  <RadixThemesTextField.Input css={{"width": "200px", "height": "50px"}} name={`new_name`} placeholder={`My leaderboard name...`}/>
+  <RadixThemesTextField.Input css={{"width": "300px", "height": "50px"}} name={`new_caption`} placeholder={`My superior caption...`}/>
+  <RadixThemesButton size={`4`} type={`submit`}>
+  {`Submit my caption`}
+</RadixThemesButton>
+</RadixThemesFlex>
+</RadixFormRoot>
+  )
+}
+
+export function Button_8acf3db9f5cfd134e66cc91cc5619fe3 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_9145ee51f08d0dea0717cf5b624a566c = useCallback((_e) => addEvents([Event("_redirect", {path:`/rankings`,external:false})], (_e), {}), [addEvents, Event])
+
+  return (
+    <RadixThemesButton onClick={on_click_9145ee51f08d0dea0717cf5b624a566c}>
+  <ViewIcon/>
+  {`Leaderboard`}
+</RadixThemesButton>
+  )
+}
+
+export function Button_7a340bd940eaaa43ce56c96c3a82b748 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_1299ddb2cbe4891341421fba0659593a = useCallback((_e) => addEvents([Event("state.state.go_down_rating", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <RadixThemesButton onClick={on_click_1299ddb2cbe4891341421fba0659593a}>
+  <ChevronLeftIcon/>
 </RadixThemesButton>
   )
 }
@@ -163,85 +247,23 @@ export function Fragment_1762bb90abdb81b879b2a22edbbe01a1 () {
   )
 }
 
-export function Button_124ba6f52e1e0e1ae680e0a5b282c7cc () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_299b7fcf30a353582788d7c3ae80b603 = useCallback((_e) => addEvents([Event("state.rating_scroller.go_up", {})], (_e), {}), [addEvents, Event])
-
-  return (
-    <RadixThemesButton onClick={on_click_299b7fcf30a353582788d7c3ae80b603}>
-  <ChevronRightIcon/>
-</RadixThemesButton>
-  )
-}
-
-export function Button_5db4940ff9dda6799299a5227c7c06dd () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
+export function Img_6fe5e9e8f869df388381452bd0542946 () {
   const state__state = useContext(StateContexts.state__state)
 
-  const on_click_c682aa20f98c7a419c9418731a87dcb7 = useCallback((_e) => addEvents([Event("state.btn_state.button_2_click", {})], (_e), {}), [addEvents, Event])
 
   return (
-    <RadixThemesButton onClick={on_click_c682aa20f98c7a419c9418731a87dcb7} size={`4`} type={`submit`}>
-  {state__state.test_caption_2?.caption}
-</RadixThemesButton>
+    <img css={{"height": "400px"}} src={`/contest_images/${state__state.imagelist.at(((state__state.contest_number_rating) - (1)))}`}/>
   )
 }
 
-export function Heading_9cf1a1296a9061d170141f36d8d2c54b () {
+export function Heading_17d8f909d00aead216bdbd2ef89a9468 () {
   const state__state = useContext(StateContexts.state__state)
 
 
   return (
     <RadixThemesHeading size={`7`}>
-  {`Rate The Caption for Image                         ${state__state.contest_number_rating}`}
+  {`Rate The Caption for Image                 ${state__state.contest_number_rating}`}
 </RadixThemesHeading>
-  )
-}
-
-export function Button_e00a6c9cbb18ab1d43a894a35482fb5a () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_73cbbcc5d9db9e563330a061e04f36ef = useCallback((_e) => addEvents([Event("_redirect", {path:`/`,external:false})], (_e), {}), [addEvents, Event])
-
-  return (
-    <RadixThemesButton onClick={on_click_73cbbcc5d9db9e563330a061e04f36ef}>
-  <PlusSquareIcon/>
-  {`Rating`}
-</RadixThemesButton>
-  )
-}
-
-export function Root_c2fad76accffdb448c632d928d4973fc () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-  
-    const handleSubmit_1594dd99e217e3483cad73ddb82b0448 = useCallback((ev) => {
-        const $form = ev.target
-        ev.preventDefault()
-        const form_data = {...Object.fromEntries(new FormData($form).entries()), ...{}}
-
-        addEvents([Event("state.state.handle_submit", {form_data:form_data})])
-
-        if (true) {
-            $form.reset()
-        }
-    })
-    
-
-
-  return (
-    <RadixFormRoot className={`Root`} onSubmit={handleSubmit_1594dd99e217e3483cad73ddb82b0448}>
-  <RadixThemesFlex align={`center`} css={{"flexDirection": "column"}} gap={`2`}>
-  <RadixThemesText as={`p`} size={`3`}>
-  {`Don't like either? Write your own!`}
-</RadixThemesText>
-  <RadixThemesTextField.Input css={{"width": "200px", "height": "50px"}} name={`new_name`} placeholder={`My leaderboard name...`}/>
-  <RadixThemesTextField.Input css={{"width": "300px", "height": "50px"}} name={`new_caption`} placeholder={`My superior caption...`}/>
-  <RadixThemesButton size={`4`} type={`submit`}>
-  {`Submit my caption`}
-</RadixThemesButton>
-</RadixThemesFlex>
-</RadixFormRoot>
   )
 }
 
@@ -251,34 +273,35 @@ export default function Component() {
     <Fragment>
   <Fragment_1762bb90abdb81b879b2a22edbbe01a1/>
   <Fragment>
-  <RadixThemesFlex align={`start`} css={{"position": "fixed", "top": "0px", "backgroundColor": "lightgray", "padding": "1em", "height": "4em", "width": "100%", "zIndex": "5", "flexDirection": "row"}} gap={`2`}>
+  <RadixThemesFlex align={`start`} css={{"position": "fixed", "top": "0px", "borderBottom": "1px solid rgb(229, 229, 229)", "backgroundColor": "white", "padding": "1em", "height": "4em", "width": "100%", "zIndex": "5", "flexDirection": "row"}} gap={`2`}>
   <img css={{"width": "2em"}} src={`/eustace-400.webp`}/>
   <RadixThemesFlex css={{"flex": 1, "justifySelf": "stretch", "alignSelf": "stretch"}}/>
-  <RadixThemesHeading css={{"fontFamily": "NYTitleFont", "fontSize": "2em", "position": "absolute", "left": "0%", "right": "0%", "textAlign": "center"}}>
+  <RadixThemesHeading css={{"fontFamily": "NYTitleFont", "fontSize": "2em", "position": "absolute", "left": "0%", "right": "0%", "textAlign": "center", "zIndex": "-1"}}>
   {`YORKNEW`}
 </RadixThemesHeading>
   <Button_73dccf635777e9b63a9d03f9c8e3a608/>
   <Button_e00a6c9cbb18ab1d43a894a35482fb5a/>
   <Button_8acf3db9f5cfd134e66cc91cc5619fe3/>
+  <Button_3f81869f991d07bcf7185cbf7da07242/>
 </RadixThemesFlex>
   <RadixThemesContainer css={{"paddingTop": "6em"}}>
   <RadixThemesFlex css={{"height": "100vh", "display": "flex", "alignItems": "center", "justifyContent": "center"}}>
   <RadixThemesFlex align={`center`} css={{"fontSize": "2em", "flexDirection": "column"}} gap={`7`}>
-  <Heading_9cf1a1296a9061d170141f36d8d2c54b/>
-  <img css={{"width": "400px"}} src={`/contest_images/729.jpg`}/>
+  <Heading_17d8f909d00aead216bdbd2ef89a9468/>
+  <Img_6fe5e9e8f869df388381452bd0542946/>
   <RadixThemesFlex align={`start`} css={{"flexDirection": "row"}} gap={`2`}>
-  <Button_10920ad0cf9cb8f6776ffb99f45c3ac9/>
-  <Button_a90d457b485ff449f1365dbc582ded5d/>
-  <Button_ac371ddd6278d40eb662bf58f172e0ea/>
-  <Button_124ba6f52e1e0e1ae680e0a5b282c7cc/>
-  <Button_10abf6ba190f9025d0ae74b48ae2a762/>
-  <Select__root_94ec74ba811674794308b19a552e1a83/>
+  <Button_81e3836d02c85349ef2a73a7f3e58eb1/>
+  <Button_7a340bd940eaaa43ce56c96c3a82b748/>
+  <Button_c85cc02adcc10860e1d71a9e15e1c7d3/>
+  <Button_b958bb37d20e4b3d349774161555716d/>
+  <Button_e2d779293d7e7b2374d69d3e2186a44b/>
+  <Select__root_07c20c4405962205d910b9f56661b561/>
 </RadixThemesFlex>
   <RadixThemesFlex align={`start`} css={{"flexDirection": "row"}} gap={`2`}>
-  <Button_3aaf4f98d67924d267702d81d2f1cd7e/>
-  <Button_5db4940ff9dda6799299a5227c7c06dd/>
+  <Button_e28dfba5279e21fc6fdecec4351bc192/>
+  <Button_60c3aa81c4453aefc441016d0ae15ed4/>
 </RadixThemesFlex>
-  <Root_c2fad76accffdb448c632d928d4973fc/>
+  <Root_c49442acd5c012919c5118fbd8c99ebd/>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesContainer>
