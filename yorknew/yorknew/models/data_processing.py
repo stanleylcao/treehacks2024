@@ -1,5 +1,6 @@
 from datasets import load_dataset, DatasetDict
 import pandas as pd
+import pickle
 
 
 # type: ignore
@@ -28,7 +29,8 @@ def get_val_ranking(num_examples=250):
     )
 
     df_final = df_final[df_final["winner_source"] == "official_winner"]
-    df_final["rank"] = df_final["is_correct"].replace({True: "finalist", False: "bad"})
+    df_final["rank"] = df_final["is_correct"].replace(
+        {True: "finalist", False: "bad"})
 
     df_final.to_csv("./val_ranking.csv")
     # print(df_final.iloc[:num_examples])
@@ -63,15 +65,19 @@ def get_val_explanation():
 def main():
     df_ranking = get_val_ranking()
     df_explan = get_val_explanation()
-    df_final = df_ranking.merge(df_explan, on=["contest_number", "caption"], how="left")
+    df_final = df_ranking.merge(
+        df_explan, on=["contest_number", "caption"], how="left")
     df_final.loc[df_final["rank_y"].notnull(), "rank_x"] = df_final["rank_y"]
     df_final.drop(
         ["rank_y", "image_y", "is_correct", "winner_source"], axis=1, inplace=True
     )
-    df_final.rename(columns={"rank_x": "rank", "image_x": "image"}, inplace=True)
+    df_final.rename(columns={"rank_x": "rank",
+                    "image_x": "image"}, inplace=True)
 
-    df_final.to_csv("./comics.csv")
-    df_final.to_parquet
+    # print(df_final['image'].iloc[0].show())
+    df_final.to_pickle("./comics.pkl")
+    # df_final.to_parquet('./comics.gzip')
+    # df_final.to_csv('./comics.csv')
 
 
 if __name__ == "__main__":
