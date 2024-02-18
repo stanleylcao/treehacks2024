@@ -146,6 +146,13 @@ class State(rx.State):
                 session.delete(e)
             session.commit()
 
+    @staticmethod
+    def strip_quotes(entry: Entry):
+        s = entry.caption
+        if len(s) > 1 and s[0] == s[-1] and s.startswith(("'", '"')):
+            entry.caption = s[1:-1]
+        return entry
+
     def load_two_captions_to_rate(self):
         with rx.session() as session:
             entry_list = list(
@@ -154,10 +161,16 @@ class State(rx.State):
                     Entry.subject == self.imgidlist[self.contest_number_rating])
                 )
             )
+            print(f'contest number rating {self.contest_number_rating}')
+            print(f'entry list {entry_list}')
+            print(self.caption_1)
             if len(entry_list) >= 2:
+                print(f'entry list!')
                 self.caption_1, self.caption_2 = random.sample(entry_list, 2)
+                # tuple(map(
+                #     State.strip_quotes, random.sample(entry_list, 2)))
             else:
-                self.caption_1, self.caption_2 = "", ""
+                self.caption_1, self.caption_2 = None, None
 
     def update_captions_rating(
         self, session: Session, caption_1_new_r: int, caption_2_new_r: int
@@ -255,12 +268,14 @@ class State(rx.State):
                     new_rating_1, new_rating_2 = adjust_rating(
                         self.caption_1.rating, self.caption_2.rating
                     )
-                    self.update_captions_rating(session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(
+                        session, new_rating_1, new_rating_2)
                 else:
                     new_rating_2, new_rating_1 = adjust_rating(
                         self.caption_2.rating, self.caption_1.rating
                     )
-                    self.update_captions_rating(session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(
+                        session, new_rating_1, new_rating_2)
                 print("WINNER")
                 self.load_two_captions_to_rate()
 

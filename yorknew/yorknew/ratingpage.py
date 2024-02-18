@@ -3,7 +3,6 @@
 from rxconfig import config
 import reflex as rx
 
-import yorknew.components.styles
 from yorknew.components.scroller import ratingscroller
 import yorknew.database as db
 
@@ -23,7 +22,7 @@ def ratingscontent():
             ratingscroller(),  # replace with rating_page statevar
             # Default two choices
             rx.cond(
-                db.State.caption_1 != "",
+                db.State.caption_1,
                 rx.hstack(
                     rx.button(
                         db.State.caption_1.caption,
@@ -36,6 +35,7 @@ def ratingscontent():
                         overflow="hidden",
                         type="submit",
                         on_click=db.State.button_1_click,
+                        # disabled=db.State.caption_1 is None
                     ),
                     rx.button(
                         db.State.caption_2.caption,
@@ -47,9 +47,9 @@ def ratingscontent():
                         font_family="adobe-caslon",
                         type="submit",
                         on_click=db.State.button_2_click,
+                        # disabled=db.State.caption_1 is None
                     ),
                 ),
-                # None
             ),
             rx.form(
                 rx.vstack(
