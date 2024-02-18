@@ -24,7 +24,7 @@ RUN rm -rf /app/.venv || true && mv /tmp/.venv /app/.venv
 RUN reflex init
 
 # Export static copy of frontend to /app/.web/_static
-RUN reflex export --frontend-only --no-zip
+# RUN reflex export --frontend-only --no-zip
 
 # Stage 2: copy artifacts into slim image
 FROM python:3.12-slim

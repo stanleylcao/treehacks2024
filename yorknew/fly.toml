@@ -24,6 +24,6 @@ API_URL = "https://yorknew.fly.dev"
   min_machines_running = 1
 
 [[vm]]
-  memory = '1gb'
+  memory = '2gb'
   cpu_kind = 'shared'
-  cpus = 1
+  cpus = 2

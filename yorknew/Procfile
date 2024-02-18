@@ -1,2 +1,2 @@
-reflex: reflex init && reflex db init && reflex db migrate && reflex run --env prod
+reflex: reflex init && reflex db init && reflex db migrate && reflex run
 caddy: caddy run --config /Caddyfile
