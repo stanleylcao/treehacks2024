@@ -15,7 +15,7 @@ theme = {
 
 def rankingscontent():
     return rx.vstack(
-        rx.heading("User ELO Ratings", padding_top="1em"),
+        rx.heading("User Leaderboard", padding_top="1em"),
         rx.text(
             rx.text.strong(db.State.n_users),
             " users, ",
