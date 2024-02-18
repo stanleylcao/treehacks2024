@@ -8,14 +8,6 @@ from yorknew.components.scroller import ratingscroller
 import yorknew.database as db
 
 
-class btnState(rx.State):
-    def button_1_click(self):
-        db.State.handle_submit({"winner": "1"})
-
-    def button_2_click(self):
-        db.State.handle_submit({"winner": "2"})
-
-
 def ratingscontent():
     return rx.center(
         rx.vstack(
@@ -37,13 +29,13 @@ def ratingscontent():
                     size="4",
                     type="submit",
                     # on_click=rx.console_log('NE ADDED')
-                    on_click=btnState.button_1_click,
+                    on_click=db.State.button_1_click,
                 ),
                 rx.button(
                     db.State.caption_2.caption,
                     size="4",
                     type="submit",
-                    on_click=btnState.button_2_click,
+                    on_click=db.State.button_2_click,
                 ),
             ),
             rx.form(

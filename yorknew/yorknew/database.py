@@ -77,11 +77,13 @@ class State(rx.State):
             entry_list = list(
                 session.exec(
                     Entry.select.where(
-                    Entry.subject == self.contest_number_rating)
+                        Entry.subject == self.contest_number_rating)
                 )
             )
             if len(entry_list) >= 2:
                 self.caption_1, self.caption_2 = random.sample(entry_list, 2)
+            else:
+                self.caption_1, self.caption_2 = '', ''
 
     def update_captions_rating(
         self, session: Session, caption_1_new_r: int, caption_2_new_r: int
@@ -102,30 +104,6 @@ class State(rx.State):
             )
         )
 
-    def handle_submit(self, form_data):
-        self.load_two_captions_to_rate(db.State.contest_number_rating)
-        with rx.session() as session:
-            if "winner" in form_data.keys():
-                if form_data["winner"] == "1":
-                    new_rating_1, new_rating_2 = adjust_rating(
-                        self.caption_1.rating, self.caption_2.rating
-                    )
-                    self.update_captions_rating(
-                        session, new_rating_1, new_rating_2)
-                else:
-                    new_rating_2, new_rating_1 = adjust_rating(
-                        self.caption_2.rating, self.caption_1.rating
-                    )
-                    self.update_captions_rating(
-                        session, new_rating_1, new_rating_2)
-            else:
-                self.add_new_caption(
-                    session, 0, form_data["new_name"], form_data["new_caption"]
-                )
-                self.get_leaderboard_table()
-            print("commited")
-            session.commit()
-
     # Scrolling callbacks for Rating Page
 
     def go_bottom_rating(self):
@@ -136,8 +114,8 @@ class State(rx.State):
         self.go_page_rating(new_value)
 
     def go_up_rating(self):
-        new_value = min(len(self.imagelist) - 1,  \
-            self.contest_number_rating + 1)
+        new_value = min(len(self.imagelist) - 1,
+                        self.contest_number_rating + 1)
         self.go_page_rating(new_value)
 
     def go_top_rating(self):
@@ -166,8 +144,8 @@ class State(rx.State):
         self.go_page_leaderboard(new_value)
 
     def go_up_leaderboard(self):
-        new_value = min(len(self.imagelist) - 1, \
-            self.contest_number_leaderboard + 1)
+        new_value = min(len(self.imagelist) - 1,
+                        self.contest_number_leaderboard + 1)
         self.go_page_leaderboard(new_value)
 
     def go_top_leaderboard(self):
@@ -185,3 +163,38 @@ class State(rx.State):
         self.contest_number_leaderboard = new_value
         self.get_leaderboard_table()
         print("Leaderboard going to page", new_value)
+
+    # Form submission
+
+    def button_1_click(self):
+        print("BUTTON 1 CLICK")
+        self.handle_submit({"winner": "1"})
+
+    def button_2_click(self):
+        self.handle_submit({"winner": "2"})
+
+    def handle_submit(self, form_data):
+        print("HANDLE SUBMIT")
+        with rx.session() as session:
+            if "winner" in form_data.keys():
+                if form_data["winner"] == "1":
+                    new_rating_1, new_rating_2 = adjust_rating(
+                        self.caption_1.rating, self.caption_2.rating
+                    )
+                    self.update_captions_rating(
+                        session, new_rating_1, new_rating_2)
+                else:
+                    new_rating_2, new_rating_1 = adjust_rating(
+                        self.caption_2.rating, self.caption_1.rating
+                    )
+                    self.update_captions_rating(
+                        session, new_rating_1, new_rating_2)
+                print("WINNER")
+                self.load_two_captions_to_rate()
+            else:
+                self.add_new_caption(
+                    session, self.contest_number_rating, form_data["new_name"], form_data["new_caption"]
+                )
+                self.get_leaderboard_table()
+            print("commited")
+            session.commit()
