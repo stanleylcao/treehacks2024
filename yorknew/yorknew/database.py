@@ -35,6 +35,15 @@ class Entry(rx.Model, table=True):
     rating: int
 
 
+class Comparison(rx.Model, table=True):
+    subject: int
+    caption_1: str
+    caption_2: str
+    name_1: str
+    name_2: str
+    one_is_better: bool
+
+
 # State for updating the current panel being observed
 
 
@@ -59,11 +68,9 @@ class State(rx.State):
     def get_leaderboard_table(self):
         with rx.session() as session:
             entry_list = session.exec(
-                Entry.select.where(
-                    Entry.subject == self.contest_number_leaderboard)
+                Entry.select.where(Entry.subject == self.contest_number_leaderboard)
             )
-            self.leaderboard_table = list(
-                map(State.convert_entry_to_list, entry_list))
+            self.leaderboard_table = list(map(State.convert_entry_to_list, entry_list))
 
     def clear_db(self):
         with rx.session() as session:
@@ -76,14 +83,13 @@ class State(rx.State):
         with rx.session() as session:
             entry_list = list(
                 session.exec(
-                    Entry.select.where(
-                        Entry.subject == self.contest_number_rating)
+                    Entry.select.where(Entry.subject == self.contest_number_rating)
                 )
             )
             if len(entry_list) >= 2:
                 self.caption_1, self.caption_2 = random.sample(entry_list, 2)
             else:
-                self.caption_1, self.caption_2 = '', ''
+                self.caption_1, self.caption_2 = "", ""
 
     def update_captions_rating(
         self, session: Session, caption_1_new_r: int, caption_2_new_r: int
@@ -114,8 +120,7 @@ class State(rx.State):
         self.go_page_rating(new_value)
 
     def go_up_rating(self):
-        new_value = min(len(self.imagelist) - 1,
-                        self.contest_number_rating + 1)
+        new_value = min(len(self.imagelist) - 1, self.contest_number_rating + 1)
         self.go_page_rating(new_value)
 
     def go_top_rating(self):
@@ -144,8 +149,7 @@ class State(rx.State):
         self.go_page_leaderboard(new_value)
 
     def go_up_leaderboard(self):
-        new_value = min(len(self.imagelist) - 1,
-                        self.contest_number_leaderboard + 1)
+        new_value = min(len(self.imagelist) - 1, self.contest_number_leaderboard + 1)
         self.go_page_leaderboard(new_value)
 
     def go_top_leaderboard(self):
@@ -181,19 +185,31 @@ class State(rx.State):
                     new_rating_1, new_rating_2 = adjust_rating(
                         self.caption_1.rating, self.caption_2.rating
                     )
-                    self.update_captions_rating(
-                        session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(session, new_rating_1, new_rating_2)
                 else:
                     new_rating_2, new_rating_1 = adjust_rating(
                         self.caption_2.rating, self.caption_1.rating
                     )
-                    self.update_captions_rating(
-                        session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(session, new_rating_1, new_rating_2)
                 print("WINNER")
                 self.load_two_captions_to_rate()
+
+                session.add(
+                    Comparison(
+                        subject=self.contest_number_rating,
+                        caption_1=self.caption_1.caption,
+                        caption_2=self.caption_2.caption,
+                        name_1=self.caption_1.name,
+                        name_2=self.caption_2.name,
+                        one_is_better=form_data["winner"] == "1",
+                    )
+                )
             else:
                 self.add_new_caption(
-                    session, self.contest_number_rating, form_data["new_name"], form_data["new_caption"]
+                    session,
+                    self.contest_number_rating,
+                    form_data["new_name"],
+                    form_data["new_caption"],
                 )
                 self.get_leaderboard_table()
             print("commited")
