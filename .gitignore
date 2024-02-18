@@ -11,3 +11,5 @@ yorknew/.env
 *.env
 comics.pkl
 .vscode
+
+*.DS_Store

@@ -4,26 +4,31 @@
 }
 
 @font-face {
+  font-family: Merriweather;
+  src: url("Merriweather-Regular.ttf") format("truetype");
+}
+
+/* @font-face {
   font-family: NYTitleFont;
   font-weight: bold;
   src: url("NY\ Irvin.ttf") format("truetype");
-}
+} */
 
-@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"); */
 
-body {
+/* body {
   font-family: "Libre Caslon Text", serif;
-}
+} */
 
-.radix-themes {
+/* .radix-themes {
   --heading-font-family: "NYTitleFont", serif !important;
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   text-transform: uppercase;
-}
+} */

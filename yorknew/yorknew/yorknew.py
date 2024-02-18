@@ -15,12 +15,25 @@ app = rx.App(
         "fonts/newyorkertitle.css",
     ],
     theme=rx.theme(
-        appearance="light",
+        appearance="inherit",
         has_background=True,
         radius="large",
-        accent_color="orange",
+        # accent_color="gray",
     ),
-    style={"font_family": "Libre Caslon Text, serif"},
+    style={
+        'accent_color': '#8C1515',
+        # "font_family": "Libre Caslon Text, serif",
+        rx.button: {"font_family": "Merriweather",
+                    'transition': 'background-color 0.3s ease, transform 0.3s ease',
+                    'background-color': '#2E2D29',
+                    '_hover': {
+                        'transform': 'scale(1.1)',
+                        'background-color': '#8C1515',
+                    }
+                    },
+        rx.text: {"font_family": "Merriweather", },
+        rx.heading: {"font_family": "Merriweather", }
+    },
 )
 
 
