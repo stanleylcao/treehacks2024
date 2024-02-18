@@ -29,8 +29,8 @@ class State(rx.State):
     leaderboard_table: list[list]
 
     # For rating systems
-    test_caption_1: Entry
-    test_caption_2: Entry
+    # test_caption_1: Entry
+    # test_caption_2: Entry
 
     def convert_entry_to_list(entry):
         return [entry.rating, entry.user, entry.caption]
