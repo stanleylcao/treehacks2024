@@ -47,8 +47,8 @@ def navbar():
         top="0px",
         border_bottom="1px solid rgb(229, 229, 229)",
         background_color="white",
-        padding="1em",
-        height="5em",
+        padding="2em",
+        height="7em",
         width="100%",
         z_index="5",
     )

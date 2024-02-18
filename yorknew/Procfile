@@ -1,2 +1,2 @@
-reflex: reflex init && REFLEX_DB= sqlite:////data/reflex.db reflex db init && REFLEX_DB= sqlite:////data/reflex.db reflex db migrate && REFLEX_DB= sqlite:////data/reflex.db reflex run --env prod
+reflex: reflex init && reflex db init && reflex db migrate && reflex run --env prod
 caddy: caddy run --config /Caddyfile
