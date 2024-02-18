@@ -54,7 +54,7 @@ app = rx.App(
 )
 
 
-@rx.page(title="Yorknew")
+@rx.page(title="Yorknew", on_load=db.State.load_two_captions_to_rate)
 def index() -> rx.Component:
     return rx.fragment(
         navbar.navbar(),

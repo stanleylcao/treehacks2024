@@ -71,9 +71,11 @@ class State(rx.State):
     def get_leaderboard_table(self):
         with rx.session() as session:
             entry_list = session.exec(
-                Entry.select.where(Entry.subject == self.contest_number_leaderboard)
+                Entry.select.where(
+                    Entry.subject == self.contest_number_leaderboard)
             )
-            self.leaderboard_table = list(map(State.convert_entry_to_list, entry_list))
+            self.leaderboard_table = list(
+                map(State.convert_entry_to_list, entry_list))
 
     def get_user_elo_table(self):
         user_elo_table = defaultdict(float)
@@ -94,7 +96,8 @@ class State(rx.State):
 
         self.user_elo_table = list(
             sorted(
-                [[name, round(rating, 0)] for name, rating in user_elo_table.items()],
+                [[name, round(rating, 0)]
+                 for name, rating in user_elo_table.items()],
                 key=lambda x: x[1],
                 reverse=True,
             )
@@ -111,17 +114,31 @@ class State(rx.State):
                 session.delete(e)
             session.commit()
 
+    @staticmethod
+    def strip_quotes(entry: Entry):
+        s = entry.caption
+        if len(s) > 1 and s[0] == s[-1] and s.startswith(("'", '"')):
+            entry.caption = s[1:-1]
+        return entry
+
     def load_two_captions_to_rate(self):
         with rx.session() as session:
             entry_list = list(
                 session.exec(
-                    Entry.select.where(Entry.subject == self.contest_number_rating)
+                    Entry.select.where(
+                        Entry.subject == self.contest_number_rating)
                 )
             )
+            print(f'contest number rating {self.contest_number_rating}')
+            print(f'entry list {entry_list}')
+            print(self.caption_1)
             if len(entry_list) >= 2:
+                print(f'entry list!')
                 self.caption_1, self.caption_2 = random.sample(entry_list, 2)
+                # tuple(map(
+                #     State.strip_quotes, random.sample(entry_list, 2)))
             else:
-                self.caption_1, self.caption_2 = "", ""
+                self.caption_1, self.caption_2 = None, None
 
     def update_captions_rating(
         self, session: Session, caption_1_new_r: int, caption_2_new_r: int
@@ -152,7 +169,8 @@ class State(rx.State):
         self.go_page_rating(new_value)
 
     def go_up_rating(self):
-        new_value = min(len(self.imagelist) - 1, self.contest_number_rating + 1)
+        new_value = min(len(self.imagelist) - 1,
+                        self.contest_number_rating + 1)
         self.go_page_rating(new_value)
 
     def go_top_rating(self):
@@ -181,7 +199,8 @@ class State(rx.State):
         self.go_page_leaderboard(new_value)
 
     def go_up_leaderboard(self):
-        new_value = min(len(self.imagelist) - 1, self.contest_number_leaderboard + 1)
+        new_value = min(len(self.imagelist) - 1,
+                        self.contest_number_leaderboard + 1)
         self.go_page_leaderboard(new_value)
 
     def go_top_leaderboard(self):
@@ -217,12 +236,14 @@ class State(rx.State):
                     new_rating_1, new_rating_2 = adjust_rating(
                         self.caption_1.rating, self.caption_2.rating
                     )
-                    self.update_captions_rating(session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(
+                        session, new_rating_1, new_rating_2)
                 else:
                     new_rating_2, new_rating_1 = adjust_rating(
                         self.caption_2.rating, self.caption_1.rating
                     )
-                    self.update_captions_rating(session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(
+                        session, new_rating_1, new_rating_2)
                 print("WINNER")
                 self.load_two_captions_to_rate()
 
