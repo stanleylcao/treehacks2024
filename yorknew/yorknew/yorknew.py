@@ -85,6 +85,35 @@ def rankings() -> rx.Component:
     )
 
 
+<<<<<<< HEAD
+=======
+def initialize_database_with_captions():
+    print("Initializing database...")
+    df = pd.read_csv(REFLEX_ROOT_DIR / "data" / "combined_df.csv")
+    added_items = 0
+    with rx.session() as session:
+        for item in df.itertuples():
+            entry = db.Entry(
+                name=item.name,
+                caption=item.caption,
+                rating=item.rating,
+                subject=item.subject,
+            )
+            if not session.exec(
+                db.Entry.select.where(
+                    (db.Entry.name == item.name) & (
+                        db.Entry.subject == item.subject)
+                )
+            ).first():
+                session.add(entry)
+                added_items += 1
+
+        session.commit()
+
+    print("Database initialized! Added {} missing items".format(added_items))
+
+
+>>>>>>> c5f40a0e46ad85a76f254192e6e494be35df6141
 app.add_page(index)
 app.add_page(about)
 app.add_page(rankings)
