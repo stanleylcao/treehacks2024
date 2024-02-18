@@ -1,22 +1,21 @@
 import asyncio
 import base64
+import json
 import logging
 import os
-from typing import Any, Coroutine, Iterator, TypeVar, cast
+from typing import Any, AsyncGenerator, Coroutine, Iterator, TypeVar, cast
 from openai import AsyncOpenAI
 from openai import OpenAIError
 from openai.types.chat import ChatCompletionMessageParam
 from dotenv import load_dotenv
-import datasets
 import pandas as pd
 from PIL import Image
 from io import BytesIO
 from more_itertools import flatten
 import tenacity
-from tqdm import tqdm
+from pathlib import Path
 from tqdm.asyncio import tqdm_asyncio
-
-from yorknew.models.data_processing import get_validation_data
+import fire
 
 
 load_dotenv()
@@ -43,9 +42,12 @@ def image_to_data_uri(image: Image.Image) -> str:
     retry=tenacity.retry_if_exception_type(OpenAIError),
     before_sleep=tenacity.before_sleep_log(logger, logging.WARNING),
 )
-async def _get_caption(df: pd.DataFrame, idx: int) -> str:
+async def _get_caption(df: pd.DataFrame, idx: int) -> tuple[str, set[int]]:
     # Compute 5 few-shot examples
-    few_shots = df.sample(NUM_FEW_SHOT_EXAMPLES)
+    few_shots = df.iloc[[i for i in range(df.shape[0]) if i != idx]].sample(
+        n=NUM_FEW_SHOT_EXAMPLES, replace=False
+    )
+    few_shot_contest_numbers = set(int(i) for i in few_shots.contest_number)
     few_shot_messages: Iterator[ChatCompletionMessageParam] = flatten(
         [
             {
@@ -89,7 +91,7 @@ async def _get_caption(df: pd.DataFrame, idx: int) -> str:
         max_tokens=512,
     )
     assert res.choices[0].message.content is not None
-    return res.choices[0].message.content
+    return res.choices[0].message.content, few_shot_contest_numbers
 
 
 T = TypeVar("T")
@@ -108,29 +110,48 @@ async def gather_with_concurrency_yield(*coros: Coroutine[Any, Any, T], n: int =
         yield await task
 
 
-async def eval_gptv(df: pd.DataFrame, limit: int | None = None) -> None:
+async def eval_gptv(
+    df: pd.DataFrame, limit: int | None = None
+) -> AsyncGenerator[dict[str, Any], None]:
     maximum = len(df) if limit is None else min(limit, len(df))
 
-    async def get_image_caption_pair(
-        df: pd.DataFrame, idx: int
-    ) -> tuple[pd.Series, str]:
-        return (
-            df.iloc[idx],
-            await _get_caption(df, idx),
-        )
+    async def get_image_caption_pair(df: pd.DataFrame, idx: int) -> dict[str, Any]:
+        caption, few_shot_contest_numbers = await _get_caption(df, idx)
+        return {
+            "contest_number": int(df.iloc[idx].contest_number),
+            "params": {},
+            "few_shot_contest_numbers": list(few_shot_contest_numbers),
+            "caption": caption,
+        }
 
     async for res in gather_with_concurrency_yield(
         *(get_image_caption_pair(df, idx) for idx in range(maximum))
     ):
-        print(res)
+        yield res
 
 
-async def main() -> None:
-    df = get_validation_data()
-    df = df.query("is_correct == True")
+OUTPUT_FILE = "data/gptv_samples.jsonl"
+INPUT_FILE = Path(__file__).parent.parent.parent.parent / "comics.pkl"
 
-    await eval_gptv(df.sample(6), limit=1)
+
+async def main(limit: int | None = None, output_file: str = OUTPUT_FILE) -> None:
+    logging.basicConfig(level=logging.INFO)
+
+    output_path = Path(output_file)
+    output_path.parent.mkdir(exist_ok=True, parents=True)
+
+    with INPUT_FILE.open("rb") as f:
+        df = pd.read_pickle(f)
+
+    df = df.query('rank == "winner"').head(100)
+
+    logger.info("Loaded %d correct captions", len(df))
+
+    with output_path.open("w") as f:
+        async for res in eval_gptv(df, limit=limit):
+            json.dump(res, f)
+            f.write("\n")
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    fire.Fire(main)

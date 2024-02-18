@@ -5,15 +5,11 @@ from PIL import Image
 import pandas as pd
 
 
-dataset = load_dataset("jmhessel/newyorker_caption_contest", "explanation")
+dataset = load_dataset("jmhessel/newyorker_caption_contest", "ranking")
 assert isinstance(dataset, DatasetDict)
 
 # %%
 
-df = dataset["test"].to_pandas()
+df = dataset["validation"].to_pandas()
 assert isinstance(df, pd.DataFrame)
 df["image"] = df["image"].apply(lambda x: Image.open(BytesIO(x["bytes"])))  # type: ignore
-
-# %%
-
-df.iloc[0]["image"]

@@ -9,3 +9,4 @@ __pycache__/
 .env
 yorknew/.env
 *.env
+comics.pkl
