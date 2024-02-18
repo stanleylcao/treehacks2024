@@ -1,16 +1,16 @@
 from collections import defaultdict
 import reflex as rx
 from yorknew.ELO import adjust_rating
-from sqlmodel import Session
+from sqlmodel import Session, select
 from os import listdir
-from typing import Any, List
+from typing import Any, List, Sequence
 from random import randrange
 
 import random
 
 path_to_contest_images = "./assets/contest_images/"
 entrycolumns = ["Rating", "User", "Caption"]
-user_elo_columns = ["Rank", "User", "Rating"]
+user_elo_columns = ["Rank", "User", "Elo", "Votes"]
 
 columns: list[dict[str, str]] = [
     {
@@ -59,6 +59,8 @@ class State(rx.State):
     # For leaderboard display
     leaderboard_table: list[list]
     user_elo_table: list[list]
+    n_users: int = 0
+    n_comparisons: int = 0
 
     # For rating page
     caption_1: Entry = None
@@ -76,11 +78,14 @@ class State(rx.State):
             self.leaderboard_table = list(map(State.convert_entry_to_list, entry_list))
 
     def get_user_elo_table(self):
-        user_elo_table = defaultdict(float)
         with rx.session() as session:
-            comparisons = session.exec(
-                Comparison.select.where(True).order_by(Comparison.id)
-            ).all()
+            users = session.exec(select(Entry.name).distinct()).all()
+            comparisons: Sequence[Comparison] = list(
+                session.exec(
+                    Comparison.select.where(True).order_by(Comparison.id)
+                ).all()
+            )
+        user_elo_table = {user: 0 for user in users}
 
         for comparison in comparisons:
             winner = (
@@ -92,16 +97,32 @@ class State(rx.State):
                 user_elo_table[winner], user_elo_table[loser]
             )
 
+        self.n_users = len(users)
+        self.n_comparisons = len(comparisons)
+
         self.user_elo_table = list(
             sorted(
-                [[name, round(rating, 0)] for name, rating in user_elo_table.items()],
+                [
+                    [
+                        name,
+                        round(rating, 0),
+                        len(
+                            [
+                                c
+                                for c in comparisons
+                                if (c.name_1 == name or c.name_2 == name)
+                            ]
+                        ),
+                    ]
+                    for name, rating in user_elo_table.items()
+                ],
                 key=lambda x: x[1],
                 reverse=True,
             )
         )
         self.user_elo_table = [
-            [i + 1, name, rating]
-            for i, (name, rating) in enumerate(self.user_elo_table)
+            [i + 1, name, rating, n_comparisons]
+            for i, (name, rating, n_comparisons) in enumerate(self.user_elo_table)
         ]
 
     def clear_db(self):

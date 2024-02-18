@@ -16,6 +16,12 @@ theme = {
 def rankingscontent():
     return rx.vstack(
         rx.heading("User ELO Ratings", padding_top="1em"),
+        rx.text(
+            rx.text.strong(db.State.n_users),
+            " users, ",
+            rx.text.strong(db.State.n_comparisons),
+            " comparisons",
+        ),
         rx.data_table(
             data=db.State.user_elo_table,
             columns=db.user_elo_columns,
