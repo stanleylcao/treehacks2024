@@ -23,20 +23,34 @@ def ratingscontent():
             # Scroller
             ratingscroller(),  # replace with rating_page statevar
             # Default two choices
-            rx.hstack(
-                rx.button(
-                    db.State.caption_1.caption,
-                    size="4",
-                    type="submit",
-                    # on_click=rx.console_log('NE ADDED')
-                    on_click=db.State.button_1_click,
+            rx.cond(
+                db.State.caption_1 != '',
+                rx.hstack(
+                    rx.button(
+                        db.State.caption_1.caption,
+                        # size="4",
+                        width="300px",    # Fixed width
+                        height="100px",
+                        font_size='20px',
+                        padding="10px",
+                        font_family='adobe-caslon',
+                        overflow="hidden",
+                        type="submit",
+                        on_click=db.State.button_1_click,
+                    ),
+                    rx.button(
+                        db.State.caption_2.caption,
+                        # size="4",
+                        width="300px",    # Fixed width
+                        height="100px",
+                        font_size='20px',
+                        padding="10px",
+                        font_family='adobe-caslon',
+                        type="submit",
+                        on_click=db.State.button_2_click,
+                    ),
                 ),
-                rx.button(
-                    db.State.caption_2.caption,
-                    size="4",
-                    type="submit",
-                    on_click=db.State.button_2_click,
-                ),
+                # None
             ),
             rx.form(
                 rx.vstack(

@@ -160,7 +160,7 @@ class State(rx.State):
         self.go_page_leaderboard(new_value)
 
     def go_page_leaderboard(self, new_value):
-        self.contest_number_leaderboard = new_value
+        self.contest_number_leaderboard = int(new_value)
         self.get_leaderboard_table()
         print("Leaderboard going to page", new_value)
 
