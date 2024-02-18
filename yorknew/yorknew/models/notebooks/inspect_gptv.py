@@ -3,7 +3,9 @@
 from pathlib import Path
 import pandas as pd
 
-DATA_PATH = Path(__file__).parent.parent.parent.parent / "data" / "gptv_samples.jsonl"
+DATA_PATH = (
+    Path(__file__).parent.parent.parent.parent / "data" / "gptv_cot1_samples_10.jsonl"
+)
 assert DATA_PATH.exists()
 INPUT_FILE = Path(__file__).parent.parent.parent.parent.parent / "comics.pkl"
 assert INPUT_FILE.exists()
