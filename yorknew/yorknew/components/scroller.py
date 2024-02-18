@@ -11,6 +11,7 @@ import yorknew.database as db
 
 path_to_contest_images = "./assets/contest_images/"
 
+
 def ratingscroller():
     return rx.hstack(
         rx.button(
@@ -39,10 +40,10 @@ def ratingscroller():
             label="Page Number",
             size="2",
             style=styles.headerfontstyle,
+            value=db.State.imgidlist[db.State.contest_number_rating],
             on_change=db.State.go_specific_rating,
         ),
     )
-
 
 
 def leaderboardscroller():
@@ -73,6 +74,7 @@ def leaderboardscroller():
             label="Page Number",
             size="2",
             style=styles.headerfontstyle,
+            value=db.State.imgidlist[db.State.contest_number_leaderboard],
             on_change=db.State.go_specific_leaderboard,
         ),
     )

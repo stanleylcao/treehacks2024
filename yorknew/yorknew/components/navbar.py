@@ -10,11 +10,11 @@ navbar_height = "6em"
 def navbar():
     return rx.hstack(
         rx.image(src="/eustace-400.webp", width="3em"),
-        rx.button(
-            rx.chakra.icon(tag="view"),
-            "CLEAR",
-            on_click=db.State.clear_db,
-        ),
+        # rx.button(
+        #     rx.chakra.icon(tag="view"),
+        #     "CLEAR",
+        #     on_click=db.State.clear_db,
+        # ),
         rx.spacer(),
         rx.link(
             rx.heading(

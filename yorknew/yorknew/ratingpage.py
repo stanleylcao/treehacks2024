@@ -11,13 +11,14 @@ def ratingscontent():
     return rx.center(
         rx.vstack(
             # Heading
-            rx.heading(f"Contest #{db.State.imgidlist[db.State.contest_number_rating]}", size="7"),
+            rx.heading(
+                f"Contest #{db.State.imgidlist[db.State.contest_number_rating]}", size="7"),
             rx.text(
                 "Vote for your favorite caption.", size="7", font_family="adobe-caslon"
             ),
             # Image
             rx.image(
-                src=f"/contest_images/{db.State.imgidlist[db.State.contest_number_rating]}.jpg", height="200px"),
+                src=f"/contest_images/{db.State.imgidlist[db.State.contest_number_rating]}.jpg", height="33vh"),
             # Scroller
             ratingscroller(),  # replace with rating_page statevar
             # Default two choices
@@ -26,8 +27,7 @@ def ratingscontent():
                 rx.hstack(
                     rx.button(
                         db.State.caption_1.caption,
-                        # size="4",
-                        width="300px",  # Fixed width
+                        width="400px",  # Fixed width
                         height="100px",
                         font_size="20px",
                         padding="10px",
@@ -35,19 +35,18 @@ def ratingscontent():
                         overflow="hidden",
                         type="submit",
                         on_click=db.State.button_1_click,
-                        # disabled=db.State.caption_1 is None
+                        style={'text-align': 'center'}
                     ),
                     rx.button(
                         db.State.caption_2.caption,
-                        # size="4",
-                        width="300px",  # Fixed width
+                        width="400px",  # Fixed width
                         height="100px",
                         font_size="20px",
                         padding="10px",
                         font_family="adobe-caslon",
                         type="submit",
                         on_click=db.State.button_2_click,
-                        # disabled=db.State.caption_1 is None
+                        style={'text-align': 'center'}
                     ),
                 ),
             ),

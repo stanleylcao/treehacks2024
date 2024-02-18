@@ -49,7 +49,7 @@ def rankingscontent():
         # Image
         rx.image(
             src=f"/contest_images/{db.State.imgidlist [db.State.contest_number_leaderboard]}.jpg",
-            height="200px",
+            height="300px",
         ),
         # Scroller
         leaderboardscroller(),  # replace with ranking_page statevar

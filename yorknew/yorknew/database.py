@@ -180,9 +180,8 @@ class State(rx.State):
             print(self.caption_1)
             if len(entry_list) >= 2:
                 print(f"entry list!")
-                self.caption_1, self.caption_2 = random.sample(entry_list, 2)
-                # tuple(map(
-                #     State.strip_quotes, random.sample(entry_list, 2)))
+                self.caption_1, self.caption_2 = tuple(map(
+                    State.strip_quotes, random.sample(entry_list, 2)))
             else:
                 self.caption_1, self.caption_2 = None, None
 
@@ -215,7 +214,8 @@ class State(rx.State):
         self.go_page_rating(new_value)
 
     def go_up_rating(self):
-        new_value = min(len(self.imgidlist) - 1, self.contest_number_rating + 1)
+        new_value = min(len(self.imgidlist) - 1,
+                        self.contest_number_rating + 1)
         self.go_page_rating(new_value)
 
     def go_top_rating(self):
@@ -245,7 +245,8 @@ class State(rx.State):
         self.go_page_leaderboard(new_value)
 
     def go_up_leaderboard(self):
-        new_value = min(len(self.imgidlist) - 1, self.contest_number_leaderboard + 1)
+        new_value = min(len(self.imgidlist) - 1,
+                        self.contest_number_leaderboard + 1)
         self.go_page_leaderboard(new_value)
 
     def go_top_leaderboard(self):
@@ -282,12 +283,14 @@ class State(rx.State):
                     new_rating_1, new_rating_2 = adjust_rating(
                         self.caption_1.rating, self.caption_2.rating
                     )
-                    self.update_captions_rating(session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(
+                        session, new_rating_1, new_rating_2)
                 else:
                     new_rating_2, new_rating_1 = adjust_rating(
                         self.caption_2.rating, self.caption_1.rating
                     )
-                    self.update_captions_rating(session, new_rating_1, new_rating_2)
+                    self.update_captions_rating(
+                        session, new_rating_1, new_rating_2)
                 print("WINNER")
                 self.load_two_captions_to_rate()
 
