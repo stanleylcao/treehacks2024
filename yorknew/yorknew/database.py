@@ -1,10 +1,13 @@
 from rxconfig import config
 import reflex as rx
 from typing import List
+import random
 
 entrycolumns = ["Rating", "User", "Caption"]
 
 # Database for the rankings of each caption
+
+
 class Entry(rx.Model, table=True):
     subject: int
     name: str
@@ -36,8 +39,7 @@ class State(rx.State):
                     Entry.subject == subject
                 ).all()
             )
-    
-    
+
     def load_two_captions_for_subject(self, subject):
         with rx.session() as session:
             entry_list = session.exec(
@@ -45,6 +47,7 @@ class State(rx.State):
                     Entry.subject == subject
                 ).all()
             )
+            test_caption_1, test_caption_2 = random.sample(entry_list, 2)
     
     def update_captions_rating(self, caption_1_new_r, caption_2_new_r):
         with rx.session() as session:
@@ -65,6 +68,27 @@ class State(rx.State):
                 )
             )
             session.commit()
-    
-    
 
+    def update_captions_rating(self, caption_1_new_r, caption_2_new_r):
+        with rx.session() as session:
+            self.test_caption_1.rating = caption_1_new_r
+            session.add(self.test_caption_1)
+            self.test_caption_2.rating = caption_2_new_r
+            session.add(self.test_caption_2)
+            session.commit()
+
+    def add_new_caption(self, subject, name, caption):
+        with rx.session() as session:
+            session.add(
+                Entry(
+                    subject=self.subject,
+                    name=self.name,
+                    caption=self.caption,
+                    rating=self.rating,
+                )
+            )
+            session.commit()
+
+    def update_captions_rating(self, entry_winner, entry_loser):
+        with rx.session() as session:
+            pass
