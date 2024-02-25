@@ -12,7 +12,7 @@ def aboutcontent():
             rx.heading("It's time to train your captioning skills!"),
             rx.text(
                 "This website is inspired by the New Yorker comic \
-			captioning contest. It's fun for all ages and trains your \
+			captioning contest.It's fun for all ages and trains your \
 			comedy muscles, but it only happens once a week. We're \
 			offering a platform that generalizes this competition to \
 			all kinds of images, so people can competitively caption without a care.",
@@ -25,7 +25,7 @@ def aboutcontent():
                 font_size="24px",
             ),
             rx.text(
-                "Made by Brion, Stanley, and Kevin",
+                "Made by Brion, Stanley, and Kevin. This website is unofficial and not affiliated with the New Yorker publication.",
                 font_family="adobe-caslon",
                 font_size="24px",
             ),
